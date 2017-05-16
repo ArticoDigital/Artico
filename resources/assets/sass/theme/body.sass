@@ -90,7 +90,6 @@
   top: rem(-20)
   @include respond-to(medium)
     position: static
-
   svg
     max-width: calc(100vw - 40px)
 .Header-number-mobile
@@ -111,12 +110,23 @@
     width: rem(30)
     margin-bottom: rem(5)
     display: block
+    transform-origin: 50% 50%
+    transition: .3s
     &:nth-child(2)
       width: rem(23)
     &:nth-child(3)
       width: rem(26)
   @include respond-to(medium)
     display: none
+  &.open
+    span
+      &:nth-child(1)
+        transform: rotate(-45deg) translate(-6px, 1px)
+      &:nth-child(2)
+        display: none
+      &:nth-child(3)
+        width: rem(30)
+        transform: rotate(45deg) translateX(-4px)
 .Polo-footer
   background: #FEFEFE
   box-shadow: 0 rem(6) rem(13) rgba(0,0,0,0.06)
