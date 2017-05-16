@@ -36,17 +36,17 @@
     position: fixed
     top: rem(55)
     left: 100vw
-    background: #538bf4
+    background: #5E89E0
     height: calc(100vh - 55px)
     width: 100%
     will-change: translateX
-    transition: .3s linear, ease-in-out
-
+    transition: .3s  ease-in-out
     @include respond-to(medium)
       background: #ffffff
       height: auto
       position: static
       display: block
+      width: auto
     &.open
       transform: translateX(-100vw)
     ul
