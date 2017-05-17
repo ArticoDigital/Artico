@@ -6,10 +6,11 @@ btnMenu.addEventListener('click', function () {
     this.classList.toggle('open')
 });
 document.addEventListener('DOMContentLoaded', function(){
-    Typed.new('.Header-message', {
-        strings: ["First sen", "Second ^1000  sentence.","hola"],
-        typeSpeed: 20,
-        loop: true,
+    Typed.new('#typed', {
+        strings: ["Amamos lo que hacemos y por eso nunca trabajamos", "Creativos","Creativos/Geeks"],
+        typeSpeed: 50,
+        backDelay: 20,
+        startDelay:20,
         cursorChar: "_"
     });
 });

@@ -77,9 +77,8 @@
   font-weight: 100
   color: white
   font-style: italic
-  padding: 0 rem(20)
-  position: absolute
-  left: 0
+  padding:  rem(20)
+  height: rem(10)
   @include respond-to(medium)
     padding: rem(25)
 
@@ -106,7 +105,7 @@
   position: absolute
   top: rem(60)
   left: calc(50% - 61px)
-  transition: .5s all
+  transition: .5s all cubic-bezier(.25,.75,.5,1.25)
   max-width: calc(100vw - 210px) !important
 .Header-btn-menu
   margin: 0 rem(10)
@@ -172,6 +171,20 @@ $rotateDeg: 11
   @else
     $leftHover: $leftHover + 1
     $rotate: $rotate + 1
+
+.typed-cursor
+  opacity: 1
+  -webkit-animation: blink 0.7s infinite
+  -moz-animation: blink 0.7s infinite
+  animation: blink 0.7s infinite
+
+@keyframes blink
+  0%
+    opacity: 1
+  50%
+    opacity: 0
+  100%
+    opacity: 1
 
 
 

@@ -258,7 +258,7 @@
                 </g>
             </svg>
         </div>
-        <div class="Header-message"></div>
+        <div class="Header-message"><span id="typed"></span></div>
     </section>
 
 </header>
