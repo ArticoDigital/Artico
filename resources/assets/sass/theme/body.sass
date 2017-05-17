@@ -26,7 +26,7 @@
   width: 100%
   background: white
   box-shadow: 0 6px 13px 0 rgba(0,0,0,0.15)
-  z-index: 2
+  z-index: 3
   li
     margin: 0 rem(10)
     width: 100%
@@ -78,11 +78,11 @@
   color: white
   font-style: italic
   padding: 0 rem(20)
-  top: rem(-10)
-  position: relative
+  position: absolute
+  left: 0
   @include respond-to(medium)
     padding: rem(25)
-    position: static
+
   @include respond-to(large)
     padding: rem(40)
 .Header-compass
@@ -92,6 +92,8 @@
     position: static
   svg
     max-width: calc(100vw - 40px)
+.Header-compassContainer
+  position: relative
 .Header-number-mobile
   @include respond-to(medium)
     display: none
@@ -100,6 +102,12 @@
 .Header-montain
   position: absolute
   bottom: rem(-4)
+.Header-arrow
+  position: absolute
+  top: rem(60)
+  left: calc(50% - 61px)
+  transition: .5s all
+  max-width: calc(100vw - 210px) !important
 .Header-btn-menu
   margin: 0 rem(10)
   padding-top: rem(7)
@@ -111,7 +119,8 @@
     margin-bottom: rem(5)
     display: block
     transform-origin: 50% 50%
-    transition: .3s
+    will-change: rotate, translate
+    transition:  all .5s ease
     &:nth-child(2)
       width: rem(23)
     &:nth-child(3)
@@ -136,4 +145,33 @@
   svg
     position: relative
     top: rem(-10)
+.control
+  position: absolute
+  width: 10%
+  height: 125px
+  z-index: 2
+  top: 0
+$leftHover: 0
+$topHover: 0
+$rotate: 0
+$rotateInit: -55
+$rotateDeg: 11
+
+@for $i from 1 through 50
+  .hover-#{$i}
+    left: $leftHover * 10%
+    top: $topHover * 125px
+    &:hover ~ .Header-compass .Header-arrow
+      transform: rotate(($rotateInit + ($rotate * $rotateDeg )) * 1deg )
+  @if $i % 10 == 0
+    $leftHover: 0
+    $topHover: $topHover + 1
+    $rotateInit: $rotateInit - 10
+    $rotate: 0
+    $rotateDeg: $rotateDeg + 2.5
+  @else
+    $leftHover: $leftHover + 1
+    $rotate: $rotate + 1
+
+
 
