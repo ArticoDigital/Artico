@@ -1,6 +1,4 @@
 .Header
-  height: 100vh
-  background: #5E89E0 url('../img/montain.svg') bottom center no-repeat
   a
     color: #ffffff
     font-weight: 100
@@ -19,6 +17,9 @@
       display: none
       @include respond-to(medium)
         display: block
+.Header-home
+  height: 100vh
+  background: #5E89E0 url('../img/montain.svg') bottom center no-repeat
 .Header-bar
   position: fixed
   top: 0
@@ -112,6 +113,11 @@
   margin-bottom: rem(48)
   @include respond-to(medium)
     display: none
+.Header-contentMenu
+  position: relative
+  top: rem(-32)
+  @include respond-to(medium)
+    position: static
 .Header-btn-menu
   margin: 0 rem(10)
   padding-top: rem(7)
