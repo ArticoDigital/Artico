@@ -11,7 +11,6 @@ gulp.task('sass', function () {
     return gulp.src('./resources/assets/sass/main.sass')
         .pipe(sourcemaps.init())
         .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
-        .pipe(sourcemaps.write())
         .pipe(autoprefixer())
         .pipe(minifyCss())
         .pipe(concat('main.css'))
@@ -19,6 +18,7 @@ gulp.task('sass', function () {
             basename: 'main',
             extname: '.min.css'
         }))
+        .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest('./public/css/'));
 });
 
