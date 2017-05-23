@@ -826,6 +826,12 @@
                 cursorChar: "_"
             });
         });
+        if ('ondeviceorientation' in window){
+            window.addEventListener('deviceorientation', function(e) {
+                document.querySelector('.Header-arrow').style.transform = "rotate(" +  e.alpha +"deg)"
+            }, false);
+        }
+
 
     </script>
 @endsection
