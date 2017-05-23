@@ -36,7 +36,7 @@
             </g>
         </svg>
 
-        <svg width="351px" height="351px" viewBox="0 0 351 351" version="1.1" xmlns="http://www.w3.org/2000/svg"
+        <svg class="Header-arrowContent" width="351px" height="351px" viewBox="0 0 351 351" version="1.1" xmlns="http://www.w3.org/2000/svg"
              xmlns:xlink="http://www.w3.org/1999/xlink">
             <defs>
                 <filter x="-15.5%" y="-6.5%" width="131.1%" height="119.0%" filterUnits="objectBoundingBox"

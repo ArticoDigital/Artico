@@ -828,7 +828,7 @@
         });
         if ('ondeviceorientation' in window){
             window.addEventListener('deviceorientation', function(e) {
-                document.querySelector('.Header-compassContainer').style.transform = "rotate(" +  e.alpha +"deg)"
+                document.querySelector('.Header-arrowContent').style.transform = "rotate(" +  e.alpha +"deg)"
             }, false);
         }
 
