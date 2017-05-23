@@ -24,11 +24,45 @@
     margin: 0
   hr
     border: none
-    border-top: rem(3) dotted #567A23
+    border-top: rem(2) dotted #567A23
+    transform: rotate(90deg) translateX(45px)
+    transform-origin: 50% 0
+    @include respond-to(medium)
+      transform: rotate(0) translateX(0)
   p
     font-size: rem(23)
     font-weight: 100
     line-height: rem(40)
     margin: rem(40) 0
+  svg
+    @include respond-to(medium)
+      max-width: rem(150)
+    @include respond-to(large)
+      max-width: rem(200)
+
+.Make-hr
+  width: rem(100)
+  height: rem(100)
+  padding: 0 rem(10)
+  @include respond-to(medium)
+      width: auto
+      height: auto
+.Make-hr--vertical
+  width: calc( 545px + 37.5% )
+  height: rem(26)
+  div
+    width: rem(180)
+  hr
+    width: rem(36)
+    transform:  rotate(90deg) translatex(16px)
+.Make-process
+  flex-direction: column
+  @include respond-to(medium)
+    flex-direction: row
+  div:nth-child(4) hr
+    border-top-color:  #FD7373
+  div:nth-child(6) hr
+    border-top-color:  #67BDBC
+
 
 
