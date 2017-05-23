@@ -10,7 +10,7 @@
 
             <defs>
                 <filter x="-15.5%" y="-6.5%" width="131.1%" height="119.0%" filterUnits="objectBoundingBox"
-                        id="filter-1">
+                        id="shadowFilter">
                     <feOffset dx="0" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
                     <feGaussianBlur stdDeviation="4.5" in="shadowOffsetOuter1"
                                     result="shadowBlurOuter1"></feGaussianBlur>
@@ -25,11 +25,10 @@
             <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                 <g id="iPad-Pro-Portrait-Copy" transform="translate(-115.000000, -59.000000)">
                     <g id="Brujula">
-                        <g id="arrow" filter="url(#filter-1)" transform="translate(124.173984, 62.374754)">
+                        <g id="arrow" filter="url(#shadowFilter)" transform="translate(124.173984, 62.374754)">
                             <path d="M0.773340859,160.369305 L48.160751,4.52934638 C49.9753853,-1.43788087 52.9355167,-1.43485221 54.7389863,4.53616088 L77.5387719,80.027908 C79.3422415,85.998921 82.2934412,95.7693944 84.0969108,101.741165 L102.168822,161.578499 C103.972292,167.55027 101.501918,169.270551 96.681005,165.402946 L60.2268036,136.163457 C55.4051462,132.295852 47.4722618,132.239821 42.5985025,136.039282 L6.33558941,164.311112 C1.46183007,168.110573 -1.04129342,166.337289 0.773340859,160.369305 Z"
                                   id="Shape" fill="#DFDFDF"></path>
-                            <path d="M0.773340859,160.369305 L48.160751,4.52934638 C49.9753853,-1.43788087 51.460289,-1.20997383 51.460289,5.03664777 L51.460289,117.773403 C51.460289,123.280273 51.3933009,129.702557 46.5195416,133.502018 L6.33558941,164.311112 C1.46183007,168.110573 -1.04129342,166.337289 0.773340859,160.369305 Z"
-                                  id="Shape" fill="#FFFFFF"></path>
+
                         </g>
                     </g>
                 </g>
