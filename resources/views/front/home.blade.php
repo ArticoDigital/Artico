@@ -209,8 +209,7 @@
             <div id="Make-marketing">
                 <div>
                     <svg width="170px" height="170px" viewBox="0 0 170 170" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
-                        <desc>Created with Sketch.</desc>
+
                         <defs>
                             <path d="M119.746227,17.4284731 C138.339705,43.307115 153.927039,77.1664718 144.18337,107.739652 C134.4397,138.312832 104.638207,153.687445 74.4192464,153.687445 C44.2002854,153.687445 18.8102037,133.618294 7.12287465,107.739652 C-4.56445437,81.8610101 -0.845758772,57.0386393 16.6852348,26.4067774 C34.2162283,-4.22508439 101.152749,-8.45016878 119.746227,17.4284731 Z" id="path-1"></path>
                         </defs>
@@ -393,9 +392,9 @@
                             </g>
                         </g>
                     </svg>
-                     <h3>Investigación de mercado</h3>
+                     <h3 class="color-green--1">Investigación de mercado</h3>
                     <div class="Make-hr--vertical" >
-                       <hr>
+                       <hr class="borderColor-green--1">
                     </div>
                 </div>
             </div>
@@ -403,8 +402,7 @@
             <div id="Make-prototypes">
                 <div>
                     <svg width="329px" height="139px" viewBox="0 0 329 139" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
-                        <desc>Created with Sketch.</desc>
+
                         <defs></defs>
                         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                             <g id="iPad-Pro-Landscape" transform="translate(-238.000000, -2126.000000)">
@@ -499,18 +497,16 @@
                             </g>
                         </g>
                     </svg>
-                    <h3>Planeación del proyecto</h3>
+                    <h3 class="color-black--1"> Prototipos funcionales </h3>
                 </div>
             </div>
-
             <div class="col-3  medium-1  Make-hr">
                 <hr>
             </div>
             <div id="Make-sketches">
                 <div>
                     <svg width="215px" height="199px" viewBox="0 0 215 199" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
-                        <desc>Created with Sketch.</desc>
+
                         <defs></defs>
                         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                             <g id="iPad-Pro-Landscape" transform="translate(-260.000000, -1833.000000)">
@@ -723,18 +719,15 @@
                             </g>
                         </g>
                     </svg>
-                    <h3>Planeación del proyecto</h3>
+                    <h3 class="color-gray--1"> Estructura y bocetos </h3>
                 </div>
             </div>
             <div class="col-3  medium-1  Make-hr">
-                <hr>
+                <hr class="borderColor-blue--1">
             </div>
             <div id="Make-requirements">
                 <div>
-
                     <svg width="141px" height="152px" viewBox="0 0 141 152" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
-                        <desc>Created with Sketch.</desc>
                         <defs></defs>
                         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                             <g id="iPad-Pro-Landscape" transform="translate(-816.000000, -1822.000000)">
@@ -808,7 +801,7 @@
                             </g>
                         </g>
                     </svg>
-                    <h3>Planeación del proyecto</h3>
+                    <h3 class="color-blue--1">Planeación del proyecto</h3>
                 </div>
             </div>
         </article>

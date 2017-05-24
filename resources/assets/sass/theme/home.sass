@@ -21,7 +21,9 @@
     font-size: rem(16 )
     font-weight: 100
     color: #567A23
-    margin: 0
+    margin: rem(10)
+    @include respond-to(medium)
+      margin: 0
   hr
     border: none
     border-top: rem(2) dotted #567A23
