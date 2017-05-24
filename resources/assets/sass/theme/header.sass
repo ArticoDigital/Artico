@@ -11,11 +11,15 @@
       display: inline
   figure
     margin: rem(8) rem(18) rem(5)
-    @include respond-to(medium)
+    @include respond-to(large)
       margin: rem(10) rem(40)
     #isotipo
+      display: block
+      @include respond-to(large)
+        display: none
+    #imagotipo
       display: none
-      @include respond-to(medium)
+      @include respond-to(large)
         display: block
 .Header-home
   height: 100vh
