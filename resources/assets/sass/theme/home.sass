@@ -48,13 +48,22 @@
       width: auto
       height: auto
 .Make-hr--vertical
-  width: calc( 545px + 37.5% )
-  height: rem(26)
-  div
-    width: rem(180)
+  left: calc(50% - 18px)
+  height: rem(100)
+  @include respond-to(medium)
+    position: absolute
   hr
-    width: rem(36)
-    transform:  rotate(90deg) translatex(16px)
+    width: rem(80)
+    @include respond-to(medium)
+      width: rem(36)
+      transform:  rotate(90deg) translatex(16px)
+#Make-marketing
+  position: relative
+.Make-hrSpace
+  height: rem(26)
+  display: none
+  @include respond-to(medium)
+    display: block
 .Make-process
   flex-direction: column
   @include respond-to(medium)
