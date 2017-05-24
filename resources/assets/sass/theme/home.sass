@@ -59,13 +59,22 @@
     @include respond-to(medium)
       width: rem(36)
       transform:  rotate(90deg) translatex(16px)
-#Make-marketing
+
+#Make-marketing,#Make-prototypes,#Make-changes
   position: relative
+#Make-changes
+  max-width: rem(167)
+#Make-test
+  width: rem(200)
 .Make-hrSpace
   height: rem(26)
   display: none
   @include respond-to(medium)
     display: block
+.Make-hrSpaceTwo
+  height: rem(50)
+.Make-hrSpaceThree
+  height: rem(40)
 .Make-process
   flex-direction: column
   @include respond-to(medium)
@@ -74,6 +83,48 @@
     border-top-color:  #FD7373
   div:nth-child(6) hr
     border-top-color:  #67BDBC
+@media (max-width: 36rem)
+  #Make-start
+    order: 1
+  #Make-hr--1
+    order: 2
+  #Make-planner
+    order: 3
+  #Make-hr--2
+    order: 4
+  #Make-marketing
+    order: 5
+  #Make-requirements
+    order: 6
+  #Make-hr--3
+    order: 7
+  #Make-sketches
+    order: 8
+  #Make-hr--4
+    order: 9
+  #Make-prototypes
+    order: 10
+  #Make-developer
+    order: 11
+  #Make-hr--5
+    order: 12
+  #Make-test
+    order: 13
+  #Make-hr--6
+    order: 14
+  #Make-changes
+    order: 15
+  #Make-deploy
+    order: 16
+  #Make-hr--7
+    order: 17
+  #Make-production
+    order: 18
+  #Make-hr--8
+    order: 19
+  #Make-social
+    order: 20
+
 
 
 
