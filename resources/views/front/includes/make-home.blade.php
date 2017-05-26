@@ -982,7 +982,7 @@
                     </g>
                 </g>
             </svg>
-            <h3>Marketing y redes sociales</h3>
+            <h3 class="color-blue--3">Marketing y redes sociales</h3>
         </div>
     </div>
     <div id="Make-hr--7" class="col-3  medium-1  Make-hr">
