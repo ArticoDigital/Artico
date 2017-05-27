@@ -8,10 +8,10 @@
     top: rem(-10)
 .Home
   h2
-    font-size: rem(48)
+    font-size: rem(32)
     color: #1F2E4C
     font-weight: 800
-    text-align: center
+    text-align: left
 .Make
   margin: rem(90) auto
 
@@ -30,7 +30,7 @@
     @include respond-to(medium)
       transform: rotate(0) translateX(0)
   p
-    font-size: rem(23)
+    font-size: rem(22)
     font-weight: 100
     line-height: rem(40)
     margin: rem(40) 0
@@ -125,6 +125,53 @@
     order: 19
   #Make-social
     order: 20
+
+.WeDo
+  margin: rem(90) auto 0
+  p
+    font-size: rem(22)
+    font-weight: 100
+    line-height: rem(40)
+    margin: rem(40) 0
+  ul
+    text-align: justify
+    @include respond-to(medium)
+      margin: auto
+  a
+    display: block
+    height: rem(60)
+    line-height: rem(60)
+    color: #434C5E
+    font-weight: 300
+    padding: 0 1rem
+    transition:  all 0.5s
+    border-left: rem(3) solid #fff
+    font-size: rem(20)
+  li
+    transition:  all 0.5s
+    span
+      color: #c6c8cc
+      transition:  all 0.5s
+      position: relative
+      display: inline-block
+      padding-right: rem(50)
+      &:before
+        content: ''
+        position: absolute
+        border-top: rem(1) solid  #c6c8cc
+        width: rem(30)
+        height: rem(1)
+        top: rem(30)
+        left: rem(28)
+        bo
+    &:hover
+      a
+        color: #538bf4
+        border-left-color:  #538bf4
+      span
+        color: #538bf4
+        &:before
+          border-top-color: #538bf4
 
 
 
