@@ -84,8 +84,34 @@
             </g>
         </svg>
     </div>
-    <section class="Make">
-        @include('front.includes.make-home')
+    <section class="container Home">
+        <article>
+            <h2>LO QUE HACEMOS</h2>
+            <div class="row">
+                <div class="col-5 row columns ">
+                    <ul class="auto">
+                        <li><a href=""> 01 - Sitios web corporativos</a></li>
+                        <li><a href=""> 02 - Landing page</a></li>
+                    </ul>
+                </div>
+                <div class="col-5 row columns ">
+                    <ul class="auto">
+                        <li><a href=""> 01 - Sitios web corporativos</a></li>
+                        <li><a href=""> 02 - Landing page</a></li>
+                    </ul>
+                </div>
+                <div class="col-5 row columns ">
+                    <ul class="auto">
+                        <li><a href=""> 01 - Sitios web corporativos</a></li>
+                        <li><a href=""> 02 - Landing page</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </article>
+        <article class="Make ">
+            @include('front.includes.make-home')
+        </article>
     </section>
 @endsection
 @section('scripts')
@@ -100,9 +126,9 @@
                 cursorChar: "_"
             });
         });
-        if ('ondeviceorientation' in window){
-            window.addEventListener('deviceorientation', function(e) {
-                document.querySelector('.Header-arrowContent').style.transform = "rotate(" +  e.alpha +"deg)"
+        if ('ondeviceorientation' in window) {
+            window.addEventListener('deviceorientation', function (e) {
+                document.querySelector('.Header-arrowContent').style.transform = "rotate(" + e.alpha + "deg)"
             }, false);
         }
 

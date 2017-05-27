@@ -1,5 +1,5 @@
 <article>
-    <h1>LO QUE HACEMOS</h1>
+    <h2>COMO LO HACEMOS</h2>
     <p>
         Diseñamos soluciones limpias, elegantes y originales que utilizan una gran variedad de plataformas,
         entre
