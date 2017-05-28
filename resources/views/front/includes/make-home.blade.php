@@ -314,7 +314,7 @@
     <div class="col-16 medium-16 Make-hrSpace"></div>
     <div id="Make-prototypes">
         <div>
-            <svg width="319px" height="200px" viewBox="0 0 319 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <svg width="319px" height="160px" viewBox="0 0 319 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <defs></defs>
                 <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                     <g id="iPad-Pro-Landscape" transform="translate(-248.000000, -2074.000000)">
