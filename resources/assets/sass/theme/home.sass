@@ -8,10 +8,12 @@
     top: rem(-10)
 .Home
   h2
-    font-size: rem(32)
+    font-size: rem(28)
     color: #1F2E4C
     font-weight: 800
     text-align: left
+    @include respond-to(medium)
+      font-size: rem(32)
 .Make
   margin: rem(90) auto
 
@@ -30,10 +32,15 @@
     @include respond-to(medium)
       transform: rotate(0) translateX(0)
   p
-    font-size: rem(22)
+    font-size: rem(18)
     font-weight: 100
-    line-height: rem(40)
-    margin: rem(40) 0
+    line-height: rem(32)
+    margin: rem(28) 0
+    @include respond-to(medium)
+      font-size: rem(22)
+      font-weight: 100
+      line-height: rem(40)
+      margin: rem(40) 0
   svg
     @include respond-to(medium)
       max-width: rem(150)
@@ -129,24 +136,32 @@
 .WeDo
   margin: rem(90) auto 0
   p
-    font-size: rem(22)
+    font-size: rem(18)
     font-weight: 100
-    line-height: rem(40)
-    margin: rem(40) 0
+    line-height: rem(32)
+    margin: rem(28) 0
+    @include respond-to(medium)
+      line-height: rem(40)
+      margin: rem(40) 0
+      margin: rem(32) 0
   ul
     text-align: justify
     @include respond-to(medium)
       margin: auto
   a
     display: block
-    height: rem(60)
-    line-height: rem(60)
+    height: rem(56)
+    line-height: rem(56)
     color: #434C5E
     font-weight: 300
     padding: 0 1rem
     transition:  all 0.5s
     border-left: rem(3) solid #fff
-    font-size: rem(20)
+    font-size: 4.7vw
+    @include respond-to(medium)
+      font-size: rem(20)
+      height: rem(60)
+      line-height: rem(60)
   li
     transition:  all 0.5s
     span
