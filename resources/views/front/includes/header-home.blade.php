@@ -3,8 +3,6 @@
 @endfor
 <section id="Header-compass" class="Header-compass">
     <div class="Header-compassContainer">
-
-
         <svg class="Header-arrow" width="121px" height="185px" viewBox="0 0 121 185" version="1.1"
              xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 
@@ -35,7 +33,8 @@
             </g>
         </svg>
 
-        <svg class="Header-arrowContent" width="351px" height="351px" viewBox="0 0 351 351" version="1.1" xmlns="http://www.w3.org/2000/svg"
+        <svg class="Header-arrowContent" width="351px" height="351px" viewBox="0 0 351 351" version="1.1"
+             xmlns="http://www.w3.org/2000/svg"
              xmlns:xlink="http://www.w3.org/1999/xlink">
             <defs>
                 <filter x="-15.5%" y="-6.5%" width="131.1%" height="119.0%" filterUnits="objectBoundingBox"
@@ -170,4 +169,12 @@
     </div>
     <div class="Header-message"><span id="typed"></span></div>
 </section>
+<div class="Header-more">
+    <svg height="23.1" width="23.1">
+        <g xmlns="http://www.w3.org/2000/svg" fill="none"  stroke-linecap="round" stroke-linejoin="round"  stroke-miterlimit="10" stroke-width="2" stroke="#FFFFFF">
+            <polyline points="17,17 11.5,22.4 11.5,0.8" ></polyline>
+            <line x1="6.2" y1="17" x2="11.5" y2="22.4" ></line>
+        </g>
+    </svg>
+</div>
 

@@ -1,3 +1,4 @@
+<article class="Make ">
 <article>
     <h2>COMO LO HACEMOS POSIBLE</h2>
     <p>
@@ -5,7 +6,8 @@
         entre
         algunas E-commerce, sitios web, aplicaciones móviles, aplicaciones complejas, incluyendo plataformas en
         medios sociales y administrador de contenidos.
-    </p></article>
+    </p>
+</article>
 <article class="row middle center Make-process">
     <div id="Make-start">
         <div>
