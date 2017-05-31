@@ -8,8 +8,11 @@
     <section class="container Home">
         @include('front.includes.wedo-home')
         @include('front.includes.make-home')
-        <article class="Home-Client">
-
+        @include('front.includes.porfolio-home')
+    </section>
+    <section class="Home-about ">
+        <article class="container row center middle">
+            <p>"somos los mejores"</p>
         </article>
     </section>
 @endsection
@@ -33,10 +36,10 @@
         more.addEventListener('click', function () {
             zenscroll.toY(window.innerHeight + 100, 500)
         })
-      /*  if ('ondeviceorientation' in window) {
-            window.addEventListener('deviceorientation', function (e) {
-                document.querySelector('.Header-arrowContent').style.transform = "rotate(" + e.alpha + "deg)"
-            }, false);
-        }*/
+        /*  if ('ondeviceorientation' in window) {
+         window.addEventListener('deviceorientation', function (e) {
+         document.querySelector('.Header-arrowContent').style.transform = "rotate(" + e.alpha + "deg)"
+         }, false);
+         }*/
     </script>
 @endsection

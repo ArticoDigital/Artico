@@ -222,3 +222,277 @@ body.in-transition
   60%
     transform: translateY(-.625rem)
 
+  .Home-Client
+    li
+      width: rem(300)
+      height: rem(300)
+      background: red
+.Polo-footer
+  background: #FEFEFE
+  box-shadow: 0 rem(6) rem(13) rgba(0, 0, 0, 0.06)
+  height: rem(140)
+  min-width: 100vw
+  svg
+    position: relative
+    top: rem(-10)
+
+.Home
+  h2
+    font-size: rem(28)
+    color: #1F2E4C
+    font-weight: 800
+    text-align: left
+    @include respond-to(medium)
+      font-size: rem(32)
+
+.Make
+  margin: rem(90) auto
+
+  h3
+    font-size: rem(16)
+    font-weight: 100
+    color: #567A23
+    margin: rem(10)
+    @include respond-to(medium)
+      margin: 0
+  hr
+    border: none
+    border-top: rem(2) dotted #567A23
+    transform: rotate(90deg) translateX(45px)
+    transform-origin: 50% 0
+    @include respond-to(medium)
+      transform: rotate(0) translateX(0)
+  p
+    font-size: rem(18)
+    font-weight: 100
+    line-height: rem(32)
+    margin: rem(28) 0
+    @include respond-to(medium)
+      font-size: rem(22)
+      font-weight: 100
+      line-height: rem(40)
+      margin: rem(40) 0
+  svg
+    @include respond-to(medium)
+      max-width: rem(150)
+    @include respond-to(large)
+      max-width: rem(200)
+
+.Make-hr
+  width: rem(100)
+  height: rem(100)
+  padding: 0 rem(10)
+  @include respond-to(medium)
+    width: auto
+    height: auto
+
+.Make-hr--vertical
+  left: calc(50% - 18px)
+  height: rem(100)
+  @include respond-to(medium)
+    position: absolute
+  hr
+    width: rem(80)
+    @include respond-to(medium)
+      width: rem(36)
+      transform: rotate(90deg) translatex(16px)
+
+#Make-marketing, #Make-prototypes, #Make-changes
+  position: relative
+
+#Make-prototypes svg
+  max-width: rem(184)
+
+#Make-changes
+  @include respond-to(medium)
+    max-width: rem(167)
+
+#Make-test
+  width: rem(200)
+
+.Make-hrSpace
+  height: rem(26)
+  display: none
+  @include respond-to(medium)
+    display: block
+
+.Make-hrSpaceTwo
+  height: rem(50)
+
+.Make-hrSpaceThree
+  height: rem(40)
+
+.Make-process
+  flex-direction: column
+  @include respond-to(medium)
+    flex-direction: row
+  div:nth-child(4) hr
+    border-top-color: #FD7373
+  div:nth-child(6) hr
+    border-top-color: #67BDBC
+
+@media (max-width: 36rem)
+  #Make-start
+    order: 1
+  #Make-hr--1
+    order: 2
+  #Make-planner
+    order: 3
+  #Make-hr--2
+    order: 4
+  #Make-marketing
+    order: 5
+  #Make-requirements
+    order: 6
+  #Make-hr--3
+    order: 7
+  #Make-sketches
+    order: 8
+  #Make-hr--4
+    order: 9
+  #Make-prototypes
+    order: 10
+  #Make-developer
+    order: 11
+  #Make-hr--5
+    order: 12
+  #Make-test
+    order: 13
+  #Make-hr--6
+    order: 14
+  #Make-changes
+    order: 15
+  #Make-deploy
+    order: 16
+  #Make-hr--7
+    order: 17
+  #Make-production
+    order: 18
+  #Make-hr--8
+    order: 19
+  #Make-social
+    order: 20
+
+.WeDo
+  margin: rem(90) auto 0
+  p
+    font-size: rem(18)
+    font-weight: 100
+    line-height: rem(32)
+    margin: rem(28) 0
+    @include respond-to(medium)
+      font-size: rem(22)
+      font-weight: 100
+      line-height: rem(40)
+      margin: rem(40) 0
+  ul
+    text-align: justify
+    @include respond-to(medium)
+      margin: auto
+  a
+    display: block
+    height: rem(56)
+    line-height: rem(56)
+    color: #434C5E
+    font-weight: 300
+    padding: 0 1rem
+    transition: all 0.5s
+    border-left: rem(3) solid #fff
+    font-size: 4.7vw
+    @include respond-to(medium)
+      font-size: rem(20)
+      height: rem(60)
+      line-height: rem(60)
+  li
+    transition: all 0.5s
+    span
+      color: #c6c8cc
+      transition: all 0.5s
+      position: relative
+      display: inline-block
+      padding-right: rem(50)
+      &:before
+        content: ''
+        position: absolute
+        border-top: rem(1) solid #c6c8cc
+        width: rem(30)
+        height: rem(1)
+        top: rem(30)
+        left: rem(28)
+        bo
+    &:hover
+      a
+        color: #538bf4
+        border-left-color: #538bf4
+      span
+        color: #538bf4
+        &:before
+          border-top-color: #538bf4
+body.in-transition
+  transition: transform 900ms ease
+
+.Header-more
+  position: absolute
+  animation: bounce 1.6s infinite
+  transition: color .3s cubic-bezier(.4, 0, .2, 1)
+  right: rem(10)
+  bottom: rem(80)
+  cursor: pointer
+  z-index: 10
+  @include respond-to(medium)
+    right: rem(40)
+    bottom: rem(40)
+
+@keyframes bounce
+  0%,100%,20%,50%,80%
+    transform: translateY(0)
+  40%
+    transform: translateY(-1.25rem)
+  60%
+    transform: translateY(-.625rem)
+
+.Home-Client
+  margin: rem(90) 0
+  .Home-ClientContent div
+    width: rem(320)
+    height: rem(320)
+    margin: 0 rem(16) rem(32)
+    padding: rem(20)
+    box-shadow: 0 20px 20px rgba(0,0,0,.08)
+    transition: all .25s cubic-bezier(.02,.01,.47,1)
+    cursor: pointer
+    &:hover
+      box-shadow: 0 40px 40px rgba(0,0,0,.16)
+      transform: translateY(-10px)
+.lilipink
+  background: #E11581
+.agrosellers
+  background: #27383F
+.avena
+  background: #F8D59B
+.via
+  background: #851B7C
+.circulart
+  background: #DF4025
+.micsur
+  background: #FDD200
+
+.Home-Client
+  a
+    background: #5e89e0
+    font-size: rem(20)
+    color: #FFFFFF
+    letter-spacing: 0
+    display: block
+    font-weight: 100
+    padding: rem(16) rem(48) rem(13)
+    margin: rem(20)
+    box-shadow: 0 1rem 1.25rem -0.625rem rgba(97,97,97,.3)
+.Home-about
+  background: #F2F3F6
+  .container
+    height: rem(600)
+  p
+    font-size: rem(48)
+
+
