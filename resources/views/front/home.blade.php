@@ -12,7 +12,15 @@
     </section>
     <section class="Home-about ">
         <article class="container row center middle">
-            <p>"somos los mejores"</p>
+            <blockquote><span>‘‘</span> somos los <mejores></mejores> y lo únicos <span>’’</span></blockquote>
+        </article>
+    </section>
+    <section class="Home-contact">
+        <article class="container row center middle">
+            <div class=" center Home-contactButton ">
+                <p>Nos gusta trabajar con empresas únicas y ambiciosas, <span>Hagámos algo grande juntos</span></p>
+                <a href="">INICIA TU PROYECTO</a>
+            </div>
         </article>
     </section>
 @endsection

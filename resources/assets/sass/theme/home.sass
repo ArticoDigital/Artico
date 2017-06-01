@@ -455,29 +455,29 @@ body.in-transition
   margin: rem(90) 0
   .Home-ClientContent div
     width: rem(320)
-    height: rem(320)
-    margin: 0 rem(16) rem(32)
+    height: rem(160)
+    margin: 0 0 rem(32)
     padding: rem(20)
-    box-shadow: 0 20px 20px rgba(0,0,0,.08)
+    box-shadow: 0 rem(10) rem(20) rem(-5) rgba(0,0,0,.08)
     transition: all .25s cubic-bezier(.02,.01,.47,1)
     cursor: pointer
+    @include respond-to(medium)
+      margin: 0 rem(16) rem(32)
     &:hover
       box-shadow: 0 40px 40px rgba(0,0,0,.16)
       transform: translateY(-10px)
-.lilipink
-  background: #E11581
-.agrosellers
-  background: #27383F
-.avena
-  background: #F8D59B
-.via
-  background: #851B7C
-.circulart
-  background: #DF4025
-.micsur
-  background: #FDD200
 
-.Home-Client
+.avena svg
+  max-width: rem(216)
+  @include respond-to(medium)
+    max-width: 100%
+
+.Home-contactButton
+  p
+    font-size: 1.875rem
+  span
+    font-size: 1.25rem
+    display: block
   a
     background: #5e89e0
     font-size: rem(20)
@@ -486,13 +486,25 @@ body.in-transition
     display: block
     font-weight: 100
     padding: rem(16) rem(48) rem(13)
-    margin: rem(20)
-    box-shadow: 0 1rem 1.25rem -0.625rem rgba(97,97,97,.3)
-.Home-about
+    box-shadow: 0 rem(10) rem(20) rem(-5) rgba(0,0,0,.08)
+    width: 100%
+    @include respond-to(medium)
+      width: auto
+
+.Home-about, .Home-contact
   background: #F2F3F6
   .container
-    height: rem(600)
-  p
+    height: rem(360)
+  blockquote
     font-size: rem(48)
+    position: relative
+    span
+      letter-spacing: -0.05em
+      font-family: 'Montserrat', sans-serif
+      color: #538bf4
+      font-size: rem(52)
 
+
+.Home-contact
+  background: white
 
