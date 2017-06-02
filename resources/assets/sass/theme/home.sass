@@ -475,9 +475,13 @@ body.in-transition
 .Home-contactButton
   p
     font-size: 1.875rem
+    margin: rem(20)
   span
-    font-size: 1.25rem
+    font-size: rem(18)
     display: block
+    color: #5e89e0
+    font-weight: 100
+    line-height: 1
   a
     background: #5e89e0
     font-size: rem(20)
@@ -491,20 +495,47 @@ body.in-transition
     @include respond-to(medium)
       width: auto
 
-.Home-about, .Home-contact
-  background: #F2F3F6
-  .container
-    height: rem(360)
+.Home-about
+  background: #538bf4
+  height: 100vh
+  @include respond-to(medium)
+    height: rem(380)
   blockquote
-    font-size: rem(48)
+    max-width: rem(960)
+    font-size: rem(16)
+    font-style: italic
+    font-weight: 100
     position: relative
+    color: white
+    padding: rem(20)
+    line-height: 2em
+    text-align: left
+    @include respond-to(medium)
+      font-size: rem(19)
     span
       letter-spacing: -0.05em
       font-family: 'Montserrat', sans-serif
-      color: #538bf4
-      font-size: rem(52)
-
-
+      color: white
+      font-size: rem(28)
+    a
+      color: white
+      font-size: rem(16)
+    em
+      vertical-align: middle
+      font-size: rem(20)
+      font-style: normal
+      animation: bounceArrow 1.6s infinite
+      animation-timing-function: ease-in-out
+      display: inline-block
+      will-change: translateX
+@keyframes bounceArrow
+  0%,100%,20%,50%,80%
+    transform: translateX(0)
+  40%
+    transform: translateX(6px)
+  60%
+    transform: translateX(2px)
 .Home-contact
   background: white
+  height: 100vh
 

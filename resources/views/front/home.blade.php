@@ -10,18 +10,25 @@
         @include('front.includes.make-home')
         @include('front.includes.porfolio-home')
     </section>
-    <section class="Home-about ">
-        <article class="container row center middle">
-            <blockquote><span>‘‘</span> somos los <mejores></mejores> y lo únicos <span>’’</span></blockquote>
-        </article>
+    <section class="Home-about row center middle">
+        <blockquote>
+            <span>‘‘</span>
+            Somos un experimentado equipo de estrategas digitales Diseñadores, Desarrolladores <b>Analistas</b>,
+            apasionados <b>creativos</b> - <b>geeks</b> (Que aman la tecnología?), que resolvemos problemas a través de
+            un
+            buen diseño y facilidad de uso.<span>’’</span>
+            <div class="col-16">
+                <a href=""> Cultura Artico <em> → </em></a>
+            </div>
+        </blockquote>
+
     </section>
-    <section class="Home-contact">
-        <article class="container row center middle">
+
+    <section class="Home-contact row center middle">
             <div class=" center Home-contactButton ">
-                <p>Nos gusta trabajar con empresas únicas y ambiciosas, <span>Hagámos algo grande juntos</span></p>
+                <p>Estás listo?<span>Hagámos algo grande juntos</span></p>
                 <a href="">INICIA TU PROYECTO</a>
             </div>
-        </article>
     </section>
 @endsection
 @section('scripts')
