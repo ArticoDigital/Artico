@@ -7,7 +7,7 @@
         medios sociales y administrador de contenidos.
     </p>
     <div class="Home-ClientContent row center">
-        <div class=" row end bottom">
+        <div class=" row center middle">
             <svg width="192px" height="35px" viewBox="0 0 192 35" version="1.1" xmlns="http://www.w3.org/2000/svg"
                  xmlns:xlink="http://www.w3.org/1999/xlink">
                 <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -19,7 +19,7 @@
                 </g>
             </svg>
         </div>
-        <div class=" row end bottom">
+        <div class=" row center middle">
             <svg width="190px" height="43px" viewBox="0 0 190 43" version="1.1" xmlns="http://www.w3.org/2000/svg"
                  xmlns:xlink="http://www.w3.org/1999/xlink">
                 <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -54,7 +54,7 @@
                 </g>
             </svg>
         </div>
-        <div class=" row end bottom avena">
+        <div class=" row  center middle avena">
             <svg width="252px" height="33px" viewBox="0 0 252 33" version="1.1" xmlns="http://www.w3.org/2000/svg"
                  xmlns:xlink="http://www.w3.org/1999/xlink">
 
@@ -68,7 +68,7 @@
                 </g>
             </svg>
         </div>
-        <div class=" row end bottom">
+        <div class=" row center middle">
             <svg width="90px" height="36px" viewBox="0 0 90 36" version="1.1" xmlns="http://www.w3.org/2000/svg"
                  xmlns:xlink="http://www.w3.org/1999/xlink">
                 <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -87,7 +87,7 @@
                 </g>
             </svg>
         </div>
-        <div class=" row end bottom">
+        <div class=" row  center middle">
             <svg width="179px" height="46px" viewBox="0 0 179 46" version="1.1" xmlns="http://www.w3.org/2000/svg"
                  xmlns:xlink="http://www.w3.org/1999/xlink">
                 <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -112,7 +112,7 @@
                 </g>
             </svg>
         </div>
-        <div class=" row end bottom">
+        <div class=" row center middle">
 
             <svg width="143px" height="30px" viewBox="0 0 143 30" version="1.1" xmlns="http://www.w3.org/2000/svg"
                  xmlns:xlink="http://www.w3.org/1999/xlink">

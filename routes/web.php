@@ -11,6 +11,5 @@
 |
 */
 
-Route::get('/', function () {
-    return view('front.home');
-});
+Route::get('/', 'HomeController@home');
+Route::get('/contacto','HomeController@contact');

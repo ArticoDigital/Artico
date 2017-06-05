@@ -4,7 +4,34 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ártico Agencia Digital</title>
+    <title>@yield('title', config('app.name'))</title>
+
+    <meta name="copyright" content="{{ config('app.name') }}">
+    <meta name="author" content="{{ config('app.name') }}"/>
+    <meta name="application-name" content="@yield('title', config('app.name'))">
+    <!--GEO Tags-->
+    <meta name="DC.title" content="@yield('title', config('app.name'))"/>
+    <meta name="geo.region" content="CO"/>
+    <meta name="geo.placename" content="Bogot&aacute;"/>
+    <meta name="geo.position" content="4.667995;-74.062052" />
+    <meta name="ICBM" content="4.667995, -74.062052" />
+
+    <!--Facebook Tags-->
+    <meta property="og:site_name" content="{{ config('app.name') }}">
+    <meta property="og:type" content="article"/>
+    <meta property="og:url" content="{{ request()->fullUrl() }}"/>
+    <meta property="og:title" content="@yield('title', config('app.name'))"/>
+    <meta property="og:description" content="@yield('description', config('app.description'))"/>
+    <meta property="og:image" content="{{ request()->root() }}/images/TODO.png"/>
+    <meta property="article:author" content="https://www.facebook.com/ArticoDigital/"/>
+    <meta property="og:locale" content="en_UK"/>
+
+    <!--Twitter Tags-->
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="{{ '@' . config('app.name') }}"/>
+    <meta name="twitter:title" content="@yield('title', config('app.name'))"/>
+    <meta name="twitter:description" content="@yield('description', config('app.description'))"/>
+    <meta name="twitter:image" content="{{ request()->root() }}/images/TODO.png"/>
 
 
     <link rel="apple-touch-icon" sizes="57x57" href="{{asset('img/ico/apple-icon-57x57.png')}}">
