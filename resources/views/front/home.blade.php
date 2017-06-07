@@ -26,8 +26,8 @@
 
     <section class="Home-contact row center middle">
             <div class=" center Home-contactButton ">
-                <p>Estás listo?<span>Hagámos algo grande juntos</span></p>
-                <a href="">INICIA TU PROYECTO</a>
+                <p>¿Estás listo?<span>Hagámos algo grande juntos</span></p>
+                <a href="/contacto">INICIA TU PROYECTO</a>
             </div>
     </section>
 @endsection
