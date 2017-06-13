@@ -98,7 +98,7 @@
     padding: rem(16)
     margin-top: rem(20)
     border: rem(1) solid #eee
-    height: rem(300)
+    height: rem(180)
     &:focus
       border: rem(2) solid #1f2e4c
       outline: none
@@ -152,6 +152,7 @@
     background: #538bf4
   &:after
     content: "➝"
+
 .Contact-range
   height: 6em
   div
@@ -263,3 +264,25 @@
     background: #a1d0ff
     cursor: pointer
 
+.Contact-formFile
+  position: relative
+  height: rem(180)
+  width: 100%
+  margin-top: rem(20)
+  input
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    width: 100%
+    opacity: 0
+    cursor: pointer
+  svg
+    vertical-align: middle
+  p
+    color: #538bf4
+.Contact-formFileButton
+  border-radius: rem(4)
+  border: rem(2) dashed #538bf4
+  height: 100%
+  padding: rem(20)

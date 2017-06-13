@@ -8,10 +8,13 @@
     <section class="container Contact">
         <h2 class="Contact-h2">Deseamos trabajar contigo</h2>
         <p class="Contact-p">
-            Aquí, en la forma, no usamos plantillas, no hacemos sitios web estándar. Esto significa que creamos
-            soluciones a medida para usted y su marca. Así que cuanta más información nos puede dar, más precisa será la
-            cita será. Si prefiere encontrarse cara a cara, eso está bien, rellene el siguiente formulario y nos
-            pondremos en contacto tan pronto como sea posible o, alternativamente, el anillo Andy en 01942 894596
+
+            Su proyecto es muy importante para nosotros y por eso obtendrá lo mejor de nuestro equipo.
+            Creamos soluciones limpias, elegantes y originales, no nos basamos en plantillas o en diseños preestablecidos,
+            lo que significa que su proyecto será único y a la medida según su marca, sus clientes y nuestra genialidad.
+            Lo invitamos a que ingrese la información en el formulario, recuerde que entre más detallado sea, más precisa
+            será nuestra cita.
+
         </p>
         <ul class="row center middle Contact-ul">
             <li class="col-4 small-16 medium-8">
@@ -210,7 +213,28 @@
                     <h3>Resumen del proyecto</h3>
                     <hr>
                     <textarea name="" id="" placeholder="Escriba de que trata su proyecto"></textarea>
-                    <button class="button  Contact-formButton">ENVIAR SOLICITUD  </button>
+                    <h3>Documento anexo </h3>
+                    <hr>
+                    <div class="Contact-formFile">
+                        <div class="Contact-formFileButton row center middle">
+                            <p>
+
+
+<svg width="20px" height="17px" viewBox="0 0 20 17" version="1.1" xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink">
+
+        <g fill-rule="nonzero" fill="#5C87E3">
+            <path d="M10,0.0820941333 C11.5343778,0.0820941333 13.0728889,0.673576267 14.2430667,1.86709413 C15.1511111,2.7933244 15.6921333,3.95221213 15.8958222,5.1537608 C18.2193778,5.53871107 20,7.58056973 20,10.055432 C20,12.8041053 17.8058889,15.0420987 15.1111111,15.0420987 L12.6666667,15.0420987 C12.5063844,15.0444102 12.3572981,14.9585145 12.2764957,14.8173025 C12.1956932,14.6760905 12.1956932,14.5014401 12.2764957,14.3602282 C12.3572981,14.2190162 12.5063844,14.1331205 12.6666667,14.135432 L15.1111111,14.135432 C17.3254889,14.135432 19.1111111,12.3140973 19.1111111,10.055432 C19.1111111,7.92265053 17.5180889,6.17840747 15.4791556,5.98959413 C15.2698754,5.97105951 15.1018894,5.80561319 15.0764,5.59292747 C14.9481778,4.4663352 14.4666444,3.37722227 13.6180444,2.51167747 C12.6186222,1.49224867 11.3092222,0.9887608 10,0.9887608 C8.69077778,0.9887608 7.38897778,1.49157547 6.38888889,2.51167747 C5.233,3.6906796 4.7504,5.29177587 4.93055556,6.82542747 C4.94656518,6.9551284 4.9069094,7.08556576 4.82176343,7.18327075 C4.73661746,7.28097575 4.61426893,7.33643835 4.48611111,7.33542747 L4.22222222,7.33542747 C2.36786667,7.33542747 0.888888911,8.84398933 0.888888911,10.735432 C0.888888911,12.6268747 2.36786667,14.135432 4.22222222,14.135432 L7.33333333,14.135432 C7.49361559,14.1331205 7.64270186,14.2190162 7.72350433,14.3602282 C7.8043068,14.5014401 7.8043068,14.6760905 7.72350433,14.8173025 C7.64270186,14.9585145 7.49361559,15.0444102 7.33333333,15.0420987 L4.22222222,15.0420987 C1.8908,15.0420987 2.22225935e-08,13.1134827 2.22225935e-08,10.735432 C2.22225935e-08,8.42032667 1.79564444,6.5483932 4.04166667,6.4500108 C3.97666667,4.80061187 4.5318,3.12383387 5.76388889,1.86709413 C6.93331111,0.674249467 8.46562222,0.0820941333 10,0.0820941333 L10,0.0820941333 Z M10,7.7887608 C10.1188667,7.79102747 10.2351111,7.8427528 10.2986222,7.90209413 L12.7430667,10.1687653 C12.9257111,10.3309227 12.9345778,10.6366733 12.7777778,10.8133373 C12.6209556,10.9899787 12.3183556,11.002332 12.1458222,10.8416707 L10.4444444,9.26209867 L10.4444444,16.4020987 C10.4444444,16.6524747 10.2455111,16.855432 10,16.855432 C9.75448889,16.855432 9.55555556,16.6524747 9.55555556,16.4020987 L9.55555556,9.26209867 L7.85417778,10.8416707 C7.68164444,11.002332 7.38728889,10.982 7.22222222,10.8133373 C7.05108889,10.6385093 7.08304444,10.3279307 7.25693333,10.1687653 L9.70137778,7.90209413 C9.79922222,7.81090613 9.88204444,7.78837547 10,7.7887608 L10,7.7887608 Z"
+                  id="Shape"></path>
+        </g>
+
+</svg>
+                                    Arrastra o haz clic para subir un archivo
+                            </p>
+                        </div>
+                        <input type="file">
+                    </div>
+                    <button class="button  Contact-formButton">ENVIAR SOLICITUD</button>
                 </fieldset>
 
             </form>
@@ -265,7 +289,7 @@
             rangeS.forEach(function (el) {
                 el.oninput = function () {
                     var slide1 = parseFloat(rangeS[0].value),
-                          slide2 = parseFloat(rangeS[1].value);
+                        slide2 = parseFloat(rangeS[1].value);
 
                     if (slide1 > slide2) {
                         [slide1, slide2] = [slide2, slide1];
