@@ -1,8 +1,265 @@
-.Header-contactPage
-
-  height: rem(100)
-  background: #5E89E0
 #map
   margin-top: rem(58)
   height: 300px
   width: 100%
+
+.Contact
+  margin: rem(20) auto
+  @include respond-to(large)
+    margin: rem(80) auto
+
+.Contact-h2
+  text-align: left
+  font-weight: 400
+  color: #1F2E4C
+
+.Contact-span
+  display: block
+  font-weight: 600
+  color: #1F2E4C
+  margin-top: rem(6)
+
+.Contact-p
+  font-weight: 100
+
+.Contact-ul
+  margin: rem(20) 0
+  @include respond-to(large)
+    margin: rem(60) 0
+  li
+    margin: rem(20) 0
+    @include respond-to(large)
+      margin: 0
+
+.Contact-link
+  font-weight: 400
+  color: #1F2E4C
+
+.Contact-selectForm
+  background: #E6EEFD
+  color: #538BF4
+  height: rem(60)
+  border-radius: rem(8) rem(8) 0 0
+  font-size: rem(20)
+  font-weight: 300
+
+.Contact-selectFormSelect
+  background: #538BF4
+  line-height: rem(60)
+  color: #E6EEFD
+
+.Contact-selectForm li
+  cursor: pointer
+
+.Contact-selectForm li:last-child
+  border-radius: 0 rem(8) 0 0
+
+.Contact-selectForm li:first-child
+  border-radius: rem(8) 0 0 0
+
+.Contact-contentForm
+  label
+    margin: rem(20) 0
+    &:nth-child(even)
+      padding-left: 0
+      @include respond-to(medium)
+        padding-left: rem(20)
+    &:nth-child(odd)
+      padding-right: 0
+      @include respond-to(medium)
+        padding-right: rem(20)
+
+.Contact-form
+  fieldset
+    border: none
+  h3
+    color: #1f2e4c
+    text-align: left
+    margin: rem(64) 0 0
+    font-weight: 300
+    font-size: rem(20)
+  hr
+    border: none
+    height: rem(1)
+    background: #1f2e4c
+  input[type="text"], input[type="email"], input[type="date"]
+    background: none
+    color: #1f2e4c
+    border: none
+    border-bottom: rem(1) solid #eee
+    width: 100%
+    padding: rem(10) 0
+    font-weight: 100
+    &:focus
+      border-bottom: rem(2) solid #1f2e4c
+      outline: none
+  textarea
+    width: 100%
+    padding: rem(16)
+    margin-top: rem(20)
+    border: rem(1) solid #eee
+    height: rem(300)
+    &:focus
+      border: rem(2) solid #1f2e4c
+      outline: none
+  input[type="checkbox"]
+    position: relative
+    &:before
+      content: ''
+      position: absolute
+      top: 50%
+      -webkit-transform: translateY(-50%)
+      transform: translateY(-50%)
+      left: 0
+      width: rem(20)
+      height: rem(20)
+      border: rem(3) solid #538bf4
+      -webkit-transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86)
+      transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86)
+      background: white
+      text-align: center
+      color: white
+      line-height: rem(22)
+    &:checked:before
+      background: #538bf4
+      content: '✓'
+  label
+    margin: rem(20) 0
+  span
+    vertical-align: middle
+    margin-left: rem(20)
+
+.Contact-rangeNumber
+  font-size: rem(20)
+  font-weight: 100
+
+.Contact-formButton
+  height: rem(52)
+  line-height: rem(50)
+  text-align: center
+  padding: 0 rem(20)
+  font-size: rem(18)
+  cursor: pointer
+  transition: .2s
+  background: 0 0
+  border: 2px solid #538bf4
+  color: #538bf4
+  width: rem(256)
+  margin: rem(40) auto
+  display: block
+  &:hover
+    color: #FFF
+    background: #538bf4
+  &:after
+    content: "➝"
+.Contact-range
+  height: 6em
+  div
+    position: relative
+    text-align: center
+    @include respond-to(medium)
+      text-align: left
+  input[type=range]
+    position: absolute
+    left: 0
+    top: 0
+
+  input[type=text]
+    width: rem(97)
+    border: none
+    -moz-appearance: textfield
+
+  input[type=text]::-webkit-outer-spin-button,
+  input[type=text]::-webkit-inner-spin-button
+    -webkit-appearance: none
+
+  input[type=text]:invalid,
+  input[type=text]:out-of-range
+    border: 2px solid #ff6347
+  input[type=range]
+    -webkit-appearance: none
+    width: 100%
+
+  input[type=range]:focus
+    outline: none
+
+  input[type=range]:focus::-webkit-slider-runnable-track
+    background: #538bf4
+
+  input[type=range]:focus::-ms-fill-lower
+    background: #538bf4
+
+  input[type=range]:focus::-ms-fill-upper
+    background: #538bf4
+
+  input[type=range]::-webkit-slider-runnable-track
+    width: 100%
+    height: 5px
+    cursor: pointer
+    animate: 0.2s
+    background: #538bf4
+    border-radius: 1px
+    box-shadow: none
+    border: 0
+
+  input[type=range]::-webkit-slider-thumb
+    z-index: 2
+    position: relative
+    box-shadow: 0px 0px 0px #000
+    border: 1px solid #538bf4
+    height: 18px
+    width: 18px
+    border-radius: 25px
+    background: #a1d0ff
+    cursor: pointer
+    -webkit-appearance: none
+    margin-top: -7px
+
+  input[type=range]::-moz-range-track
+    width: 100%
+    height: 5px
+    cursor: pointer
+    animate: 0.2s
+    background: #538bf4
+    border-radius: 1px
+    box-shadow: none
+    border: 0
+
+  input[type=range]::-moz-range-thumb
+    z-index: 2
+    position: relative
+    box-shadow: 0px 0px 0px #000
+    border: 1px solid #538bf4
+    height: 18px
+    width: 18px
+    border-radius: 25px
+    background: #a1d0ff
+    cursor: pointer
+
+  input[type=range]::-ms-track
+    width: 100%
+    height: 5px
+    cursor: pointer
+    animate: 0.2s
+    background: transparent
+    border-color: transparent
+    color: transparent
+
+  input[type=range]::-ms-fill-lower
+  input[type=range]::-ms-fill-upper
+    background: #538bf4
+    border-radius: 1px
+    box-shadow: none
+    border: 0
+
+  input[type=range]::-ms-thumb
+    z-index: 2
+    position: relative
+    box-shadow: 0px 0px 0px #000
+    border: 1px solid #538bf4
+    height: 18px
+    width: 18px
+    border-radius: 25px
+    background: #a1d0ff
+    cursor: pointer
+
