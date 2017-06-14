@@ -38,24 +38,29 @@
 .Contact-selectForm
   background: #E6EEFD
   color: #538BF4
-  height: rem(60)
   border-radius: rem(8) rem(8) 0 0
   font-size: rem(20)
   font-weight: 300
 
 .Contact-selectFormSelect
-  background: #538BF4
-  line-height: rem(60)
+  background: #538BF4 !important
   color: #E6EEFD
+  line-height: rem(60)
 
 .Contact-selectForm li
   cursor: pointer
+  height: rem(60)
+  line-height: rem(60)
+  background: #E6EEFD
 
 .Contact-selectForm li:last-child
-  border-radius: 0 rem(8) 0 0
-
+  border-radius: rem(8) rem(8) 0 0
+  @include respond-to(medium)
+    border-radius: 0 rem(8) 0 0
 .Contact-selectForm li:first-child
-  border-radius: rem(8) 0 0 0
+  border-radius: rem(8) rem(8)  0 0
+  @include respond-to(medium)
+    border-radius: rem(8) 0 0 0
 
 .Contact-contentForm
   label
@@ -152,7 +157,7 @@
     background: #538bf4
   &:after
     content: "➝"
-
+    margin-left: rem(4)
 .Contact-range
   height: 6em
   div
@@ -268,7 +273,7 @@
   position: relative
   height: rem(180)
   width: 100%
-  margin-top: rem(20)
+  margin-top: rem(32)
   input
     position: absolute
     top: 0
@@ -286,3 +291,16 @@
   border: rem(2) dashed #538bf4
   height: 100%
   padding: rem(20)
+
+.Contact-contentForms
+  .form-hidden
+    display: none
+.Contact-formMessage
+  textarea
+    margin-top: 0
+    height: rem(193)
+  > div
+    div:first-child
+     padding-right: rem(20)
+    div:last-child
+     padding-left: rem(20)
