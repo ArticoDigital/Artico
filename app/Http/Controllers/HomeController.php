@@ -37,6 +37,6 @@ class HomeController extends Controller
         $data = $request->all();
         $data['attached'] = $image;
         $form = Form::create($data);
-        \Mail::to('soporte@artico.io')->send(new NewForm($form))  ;
+        \Mail::to('hola@artico.io')->send(new NewForm($form))  ;
     }
 }
