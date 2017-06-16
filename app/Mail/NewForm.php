@@ -32,11 +32,7 @@ class NewForm extends Mailable
      */
     public function build()
     {
-        $mail = $this->subject('Formulario Ártico')
-            ->view('emails.forms');
-        if(!empty($this->form->attached)){
-            $mail->attach(Storage::disk('public')->url($this->form->attached));
-        }
-        return $mail;
+        $this->form->attached = (empty($this->form->attached))?'':Storage::disk('public')->url($this->form->attached);
+        return $this->subject('Formulario Ártico')->view('emails.forms');
     }
 }
