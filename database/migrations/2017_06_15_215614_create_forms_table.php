@@ -28,7 +28,7 @@ class CreateFormsTable extends Migration
             $table->tinyInteger('website')->nullable();
             $table->tinyInteger('appmobile')->nullable();
             $table->tinyInteger('appweb')->nullable();
-            $table->tinyInteger('seo"')->nullable();
+            $table->tinyInteger('seo')->nullable();
             $table->tinyInteger('3d')->nullable();
             $table->tinyInteger('elearning')->nullable();
             $table->tinyInteger('rrss')->nullable();

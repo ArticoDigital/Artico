@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\ContactBudgetRequest;
 use App\Http\Requests\ContactMessageRequest;
+use App\Mail\NewForm;
 use App\Models\Form;
 use Illuminate\Http\Request;
 
@@ -35,6 +36,7 @@ class HomeController extends Controller
         $image = ($request->hasFile('attached')) ? $request->file('attached')->store('forms','public'):'';
         $data = $request->all();
         $data['attached'] = $image;
-        Form::create($data);
+        $form = Form::create($data);
+        \Mail::to('soporte@artico.io')->send(new NewForm($form))  ;
     }
 }
