@@ -12,4 +12,12 @@
 */
 
 Route::get('/', 'HomeController@home');
-Route::get('/contacto','HomeController@contact');
+Route::get('/contacto', 'HomeController@contact');
+Route::post('/contactProject', [
+    'as' => 'contactProject',
+    'uses' => 'HomeController@contactProject'
+]);
+Route::post('/contactMessage', [
+    'as' => 'contactMessage',
+    'uses' => 'HomeController@contactMessage'
+]);

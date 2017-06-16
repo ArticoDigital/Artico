@@ -5,6 +5,7 @@
 @endsection
 @section('content')
     <div id="map"></div>
+
     <section class="container Contact">
         <h2 class="Contact-h2">Deseamos trabajar contigo</h2>
         <p class="Contact-p">
@@ -12,11 +13,12 @@
             Su proyecto es muy importante para nosotros y por eso obtendrá lo mejor de nuestro equipo.
             Creamos soluciones limpias, elegantes y originales, no nos basamos en plantillas o en diseños
             preestablecidos,
-            lo que significa que su proyecto será único y a la medida según su marca, sus clientes y nuestra genialidad.
-            Lo invitamos a que ingrese la información en el formulario, recuerde que entre más detallado sea, más
-            precisa será nuestra  reunión.
+            lo que significa que tu proyecto será único y a la medida según su marca, sus clientes y nuestra genialidad.
+            Te invitamos a que ingrese la información en el formulario, recuerde que entre más detallado seas, más
+            precisa será nuestra reunión.
 
         </p>
+
         <ul class="row center middle Contact-ul">
             <li class="col-4 small-16 medium-8">
                 <svg width="63px" height="59px" viewBox="0 0 63 59" version="1.1" xmlns="http://www.w3.org/2000/svg"
@@ -114,150 +116,207 @@
                     </g>
                 </svg>
                 <span class="Contact-span"> Listo para iniciar una idea </span>
-                <a class="Contact-link" id="Contact-formLink" href="#Contact-formLink   ">Escríbenos en el
+                <a class="Contact-link" id="Contact-formLink" href="#Contact-formLink">Escríbenos en el
                     formulario</a>
             </li>
         </ul>
         <article id="Contact-selectForm">
             <ul class="Contact-selectForm row center middle small-16">
-                <li class="col-8 medium-8 small-16 Contact-selectFormSelect" data-form="project">Planea tu proyecto</li>
-                <li class="col-8 medium-8 small-16" data-form="message">Envia un mensaje</li>
+                <li class="col-8 medium-8 small-16 {{($errors->count() && $errors->has('message'))?'':'Contact-selectFormSelect'}}" data-form="project">Planea tu proyecto</li>
+                <li class="col-8 medium-8 small-16 {{($errors->count() && $errors->has('message'))?'Contact-selectFormSelect':''}}" data-form="message">Envia un mensaje</li>
             </ul>
+
             <div class=" Contact-contentForms">
-                <form action="" id="project" class="Contact-form">
+                <form action="{{route('contactProject')}}"  id="project" class="Contact-form {{($errors->count() && $errors->has('message'))?'form-hidden':''}}" method="post"
+                      enctype="multipart/form-data">
+                    {{csrf_field()}}
+                    <input type="hidden" name="type-form" value="budget">
                     <fieldset>
                         <h3>Háblanos de ti</h3>
                         <hr>
                         <div class="Contact-contentForm">
                             <div class="row between">
-                                <label for="" class="col-8 medium-8 small-16"><input type="text"
-                                                                                     placeholder="Nombre"></label>
-                                <label for="" class="col-8 medium-8 small-16"><input type="email"
-                                                                                     placeholder="Email"></label>
+                                <label for="" class="col-8 medium-8 small-16 required {{($errors->has('name')) ? 'Contact-error Error': ''}}">
+                                    <input type="text" required  name="name" value="{{old('name')}}"
+                                           placeholder="Nombre">
+                                </label>
+                                <label for="" class="col-8 medium-8 small-16 required {{($errors->has('email')) ? 'Contact-error Error': ''}}">
+                                    <input type="email" required name="email" value="{{old('email')}}"
+                                           placeholder="Email"></label>
                             </div>
                             <div class="row between">
-                                <label for="" class="col-8 medium-8 small-16"><input type="text"
-                                                                                     placeholder="Celular"></label>
-                                <label for="" class="col-8 medium-8 small-16"><input type="text"
-                                                                                     placeholder="Teléfono "></label>
+                                <label for="" class="col-8 medium-8 small-16 required {{($errors->has('celphone')) ? 'Contact-error Error': ''}}">
+                                    <input type="text" required name="celphone" placeholder="Celular"
+                                           value="{{old('celphone')}}"></label>
+                                <label for="" class="col-8 medium-8 small-16">
+                                    <input type="text" name="phone" placeholder="Teléfono "
+                                           value="{{old('phone')}}"></label>
                             </div>
                             <h3>Cuéntanos de tu empresa</h3>
                             <hr>
                             <div class="row between">
-                                <label for="" class="col-8 medium-8 small-16"><input type="text"
-                                                                                     placeholder="Nombre Empresa"></label>
-                                <label for="" class="col-8 medium-8 small-16"><input type="text"
-                                                                                     placeholder="Sitio web"></label>
+                                <label for="" class="col-8 medium-8 small-16 required {{($errors->has('name-company')) ? 'Contact-error Error': ''}}">
+                                    <input type="text" name="name-company" value="{{old('name-company')}}" required
+                                           placeholder="Nombre Empresa"></label>
+                                <label for="" class="col-8 medium-8 small-16">
+                                    <input type="text" name="website-company" value="{{old('website-company')}}"
+                                           placeholder="Sitio web"></label>
                             </div>
                             <div class="row between">
-                                <label for="" class="col-8 medium-8 small-16"><input type="text"
-                                                                                     placeholder="¿En qué ciudad están?"></label>
-                                <label for="" class="col-8 medium-8 small-16"><input type="text"
-                                                                                     placeholder="¿A qué se dedica tu empresa?"></label>
+                                <label for="" class="col-8 medium-8 small-16 required {{($errors->has('city')) ? 'Contact-error Error': ''}}">
+                                    <input type="text" name="city" value="{{old('city')}}" required
+                                           placeholder="¿En qué ciudad están?"></label>
+                                <label for="" class="col-8 medium-8 small-16 required {{($errors->has('do-company')) ? 'Contact-error Error': ''}}">
+                                    <input type="text" name="do-company" value="{{old('do-company')}}" required
+                                           placeholder="¿A qué se dedica tu empresa?"></label>
                             </div>
                         </div>
                         <h3>¿Con que necesitas ayuda?</h3>
                         <hr>
 
                         <div class="row between">
+                            @if ($errors->has('website'))
+                                <div class="Contact-errorType Error  col-16 small-16 medium-16">
+                                    Debes seleccionar al menos un tipo de proyecto
+                                </div>
+                            @endif
                             <label for="website" class="col-5 medium-5 small-16">
-                                <input id="website" type="checkbox"> <span>Sitio web</span>
+                                <input id="website" {{old('website')?'checked':''}} value="1"  name="website" type="checkbox">
+                                <span>Sitio web</span>
                             </label>
                             <label for="appmobile" class="col-5 medium-5 small-16">
-                                <input id="appmobile" type="checkbox"> <span>Aplicación móvil</span>
+                                <input id="appmobile" {{old('appmobile')?'checked':''}} value="1"  name="appmobile"
+                                       type="checkbox"> <span>Aplicación móvil</span>
                             </label>
                             <label for="appweb" class="col-5 medium-5 small-16  ">
-                                <input type="checkbox" id="appweb"> <span>Aplicación web</span>
+                                <input type="checkbox" {{old('appweb')?'checked':''}} value="1"  id="appweb" name="appweb" a>
+                                <span>Aplicación web</span>
                             </label>
-                            <label for="seo" class="col-5 medium-5 small-16  ">
-                                <input type="checkbox" id="seo"> <span>Posicionamiento web</span>
+                            <label for="seo" class="col-5 medium-5 small-16">
+                                <input type="checkbox" {{old('seo')?'checked':''}} value="1"  id="seo" name="seo"> <span>Posicionamiento web</span>
                             </label>
                             <label for="3d" class="col-5 medium-5 small-16  ">
-                                <input type="checkbox" id="3d"> <span>Animación y diseño 3D</span>
+                                <input type="checkbox" {{old('3d')?'checked':''}} value="1"   name="3d" id="3d"> <span>Animación y diseño 3D</span>
                             </label>
-                            <label for="3d" class="col-5 medium-5 small-16 ">
-                                <input type="checkbox" id="3d"> <span>E-learning</span>
+                            <label for="elearning" class="col-5 medium-5 small-16 ">
+                                <input type="checkbox" {{old('elearning')?'checked':''}} value="1"  id="elearning"
+                                       name="elearning"> <span>E-learning</span>
                             </label>
                             <label for="rrss" class="col-5 medium-5 small-16  ">
-                                <input type="checkbox" id="rrss"> <span>Campaña en redes </span>
+                                <input type="checkbox" {{old('rrss')?'checked':''}} value="1"  id="rrss" name="rrss"> <span>Campaña en redes </span>
                             </label>
                             <label for="landing" class="col-5 medium-5 small-16  ">
-                                <input type="checkbox" id="landing"> <span>E-mail marketing</span>
+                                <input type="checkbox" {{old('landing')?'checked':''}} value="1"  id="landing" name="landing">
+                                <span></span>Landing</span>
                             </label>
                             <label for="adwords" class="col-5 medium-5 small-16  ">
-                                <input type="checkbox" id="adwords"> <span>Pauta en adwords</span>
+                                <input type="checkbox" {{old('adwords')?'checked':''}} value="1"  id="adwords" name="adwords">
+                                <span>Pauta en adwords</span>
+                            </label>
+                            <label for="ux" class="col-5 medium-5 small-16  ">
+                                <input type="checkbox" {{old('ux')?'checked':''}} value="1"  id="ux" name="ux"> <span>Experiencia usuario</span>
+                            </label>
+                            <label for="email-marketing" class="col-5 medium-5 small-16  ">
+                                <input type="checkbox" {{old('email-marketing')?'checked':''}} value="1"  id="email-marketing"
+                                       name="email-marketing"> <span>E-mail marketing</span>
+                            </label>
+                            <label for="other" class="col-5 medium-5 small-16  ">
+                                <input type="checkbox" {{old('appmobile')?'checked':''}} value="1"  id="other" name="other"> <span>Otro</span>
                             </label>
                         </div>
                         <h3>¿Cuál es el presupuesto?</h3>
                         <hr>
                         <div class="Contact-range row middle">
                             <div class="col-4 medium-6 small-16 Contact-rangeNumber">
-                                <input type="text" value="$3,000,000" min="500000" max="20000000" readonly/> -
-                                <input type="text" value="$4,000,000" min="500000" max="20000000" readonly/>
+                                <input type="text" name="budget-min"
+                                       value="{{old('budget-min')?old('budget-min'):'$3,000,000'}}" readonly/> -
+                                <input type="text" name="budget-max"
+                                       value="{{old('budget-max')?old('budget-max'):'$4,000,000'}}" readonly/>
                             </div>
                             <div class="col-12 medium-10 small-16">
-                                <input value="3000000" min="500000" max="20000000" step="100000" type="range"/>
-                                <input value="4000000" min="500000" max="20000000" step="100000" type="range"/>
+                                <input value="{{old('budger-slideMin')?old('budger-slideMin'):'3000000'}}" min="500000"
+                                       name="budger-slideMin" max="20000000" step="100000" type="range"/>
+                                <input value="{{old('budger-slideMax')?old('budger-slideMax'):'4000000'}}" min="500000"
+                                       name="budger-slideMax" max="20000000" step="100000" type="range"/>
                             </div>
                         </div>
                         <div class="row middle between">
                             <label for="datei" class="col-5 medium-5 small-16  ">
                                 <em>Fecha inicio ideal</em>
-                                <input type="date" id="datei">
+                                <input type="date" name="date-initial" value="{{old('date-initial')}}" id="datei">
                             </label>
                             <label for="datel" class="col-5 medium-5 small-16  ">
                                 <em>Fecha final ideal</em>
-                                <input type="date" id="datel">
+                                <input type="date" name="date-end" value="{{old('date-end')}}" id="datel">
                             </label>
                             <label for="notsure" class="col-5 medium-5 small-16  ">
-                                <input type="checkbox" id="notsure"> <span>No tengo idea</span>
+                                    <input type="checkbox" {{old('not-sure')?'checked':''}} value="1"  name="not-sure" id="notsure">
+                                <span>No tengo idea</span>
                             </label>
                         </div>
                         <h3>Resumen del proyecto</h3>
                         <hr>
-                        <textarea name="" id="" placeholder="Escriba de que trata su proyecto"></textarea>
+                        @if ($errors->has('summary'))
+                            <div class="Contact-errorType Error  col-16 small-16 medium-16">
+                                Para nosotros es muy importante saber de que se trata tu proyecto, cuéntanoslo en menos de 500 carateres
+                            </div>
+                        @endif
+                        <div class="Contact-contentTextarea">
+                            <textarea  required name="summary" id=""
+                                      placeholder="Escriba de que trata su proyecto">{{old('summary')}}</textarea>
+                        </div>
                         <h3>Documento anexo </h3>
                         <hr>
+                        @if ($errors->has('attached'))
+                            <div class="Contact-errorType Error  col-16 small-16 medium-16">
+                               !Nos vas a llenar el servidor 😅 !, puedes subir cualquier archivo que no pese más de 5MG y claro que no sea un virus 😷
+                            </div>
+                        @endif
                         <div class="Contact-formFile">
                             <div class="Contact-formFileButton row center middle">
                                 <p>
-
-
                                     <svg width="20px" height="17px" viewBox="0 0 20 17" version="1.1"
                                          xmlns="http://www.w3.org/2000/svg"
                                          xmlns:xlink="http://www.w3.org/1999/xlink">
-
-                                        <g fill-rule="nonzero" fill="#5C87E3">
+                                            <g fill-rule="nonzero" id="nonzero" fill="#5C87E3">
                                             <path d="M10,0.0820941333 C11.5343778,0.0820941333 13.0728889,0.673576267 14.2430667,1.86709413 C15.1511111,2.7933244 15.6921333,3.95221213 15.8958222,5.1537608 C18.2193778,5.53871107 20,7.58056973 20,10.055432 C20,12.8041053 17.8058889,15.0420987 15.1111111,15.0420987 L12.6666667,15.0420987 C12.5063844,15.0444102 12.3572981,14.9585145 12.2764957,14.8173025 C12.1956932,14.6760905 12.1956932,14.5014401 12.2764957,14.3602282 C12.3572981,14.2190162 12.5063844,14.1331205 12.6666667,14.135432 L15.1111111,14.135432 C17.3254889,14.135432 19.1111111,12.3140973 19.1111111,10.055432 C19.1111111,7.92265053 17.5180889,6.17840747 15.4791556,5.98959413 C15.2698754,5.97105951 15.1018894,5.80561319 15.0764,5.59292747 C14.9481778,4.4663352 14.4666444,3.37722227 13.6180444,2.51167747 C12.6186222,1.49224867 11.3092222,0.9887608 10,0.9887608 C8.69077778,0.9887608 7.38897778,1.49157547 6.38888889,2.51167747 C5.233,3.6906796 4.7504,5.29177587 4.93055556,6.82542747 C4.94656518,6.9551284 4.9069094,7.08556576 4.82176343,7.18327075 C4.73661746,7.28097575 4.61426893,7.33643835 4.48611111,7.33542747 L4.22222222,7.33542747 C2.36786667,7.33542747 0.888888911,8.84398933 0.888888911,10.735432 C0.888888911,12.6268747 2.36786667,14.135432 4.22222222,14.135432 L7.33333333,14.135432 C7.49361559,14.1331205 7.64270186,14.2190162 7.72350433,14.3602282 C7.8043068,14.5014401 7.8043068,14.6760905 7.72350433,14.8173025 C7.64270186,14.9585145 7.49361559,15.0444102 7.33333333,15.0420987 L4.22222222,15.0420987 C1.8908,15.0420987 2.22225935e-08,13.1134827 2.22225935e-08,10.735432 C2.22225935e-08,8.42032667 1.79564444,6.5483932 4.04166667,6.4500108 C3.97666667,4.80061187 4.5318,3.12383387 5.76388889,1.86709413 C6.93331111,0.674249467 8.46562222,0.0820941333 10,0.0820941333 L10,0.0820941333 Z M10,7.7887608 C10.1188667,7.79102747 10.2351111,7.8427528 10.2986222,7.90209413 L12.7430667,10.1687653 C12.9257111,10.3309227 12.9345778,10.6366733 12.7777778,10.8133373 C12.6209556,10.9899787 12.3183556,11.002332 12.1458222,10.8416707 L10.4444444,9.26209867 L10.4444444,16.4020987 C10.4444444,16.6524747 10.2455111,16.855432 10,16.855432 C9.75448889,16.855432 9.55555556,16.6524747 9.55555556,16.4020987 L9.55555556,9.26209867 L7.85417778,10.8416707 C7.68164444,11.002332 7.38728889,10.982 7.22222222,10.8133373 C7.05108889,10.6385093 7.08304444,10.3279307 7.25693333,10.1687653 L9.70137778,7.90209413 C9.79922222,7.81090613 9.88204444,7.78837547 10,7.7887608 L10,7.7887608 Z"
                                                   id="Shape"></path>
                                         </g>
-
                                     </svg>
-                                    Arrastra o haz clic para subir un archivo
+                                    <span>Arrastra o haz clic para subir un archivo</span>
                                 </p>
                             </div>
-                            <input type="file">
+                            <input type="file" name="attached" id="attached">
                         </div>
                         <button class="button  Contact-formButton">ENVIAR SOLICITUD</button>
                     </fieldset>
 
                 </form>
-                <form class="form-hidden Contact-form Contact-formMessage" id="message" c action="">
+                <form method="post" class=" Contact-form Contact-formMessage {{($errors->count() && $errors->has('message'))?'':'form-hidden'}}" id="message"
+                      action="{{route('contactMessage')}}">
+                    {{csrf_field()}}
+                    <input type="hidden" name="type-form" value="message">
                     <h3>Dejanos tu mensaje</h3>
                     <hr>
                     <div class="row between ">
-                        <div class="row col-8 small-16">
-                            <label for="" class="col-16 medium-16 small-16">
-                                <input type="text" placeholder="Nombre"></label>
-                            <label for="" class="col-16 medium-16 small-16">
-                                <input type="email" placeholder="Email"></label>
-                            <label for="" class="col-16 medium-16 small-16">
-                                <input type="text" placeholder="Celular">
+                        <div class="row col-8 medium-8 small-16">
+                            <label for="" class="col-16 medium-16 small-16 required  {{($errors->has('name')) ? 'Contact-error Error': ''}}">
+                                <input type="text" value="{{old('name')}}"  required name="name" placeholder="Nombre">
+                            </label>
+                            <label for="" class="col-16 medium-16 small-16 required {{($errors->has('email')) ? 'Contact-error Error': ''}}">
+                                <input type="email" required placeholder="Email" value="{{old('email')}}" name="email"></label>
+                            <label for="" class="col-16 medium-16 small-16 required {{($errors->has('celphone')) ? 'Contact-error Error': ''}}">
+                                <input type="text" required placeholder="Celular" value="{{old('celphone')}}" name="celphone">
                             </label>
                         </div>
-                        <div class="row col-8 small-16">
-                            <label for="" class="col-16 medium-16 small-16">
-                                <textarea name="" placeholder="Escribe tu mensaje"></textarea>
+                        <div class="row col-8 medium-8  small-16">
+                            @if ($errors->has('summary'))
+                                <div class="Contact-errorType Error  col-16 small-16 medium-16">
+                                    ¡Para nosotros es muy importante que nos quieres contar!
+                                </div>
+                            @endif
+                            <label for="" class="col-16 medium-16 small-16 required">
+                                <textarea required name="summary"  placeholder="Escribe tu mensaje">{{old('summary')}}</textarea>
                             </label>
                         </div>
                     </div>
@@ -272,7 +331,28 @@
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrhX-WElUsi_iyMJ2NNC741pN_mQUIhVE&callback=initMap">
     </script>
     <script src="{{asset('js/zenscroll-min.js')}}"></script>
+
     <script>
+        @if($errors->count())
+document.addEventListener("DOMContentLoaded", function () {
+            swal({
+                title: '¡Upss!',
+                text: "Estás a muy poco para iniciar un proyecto con nosotros, por favor revisa los campos y vuelve a enviar, estamos muy atentos a recibir tu solicitud.",
+                type: 'info',
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Voy a eso!'
+            }).then(function () {
+                zenscroll.to(document.querySelector('.Error'))
+            });
+        });
+        @endif
+
+        const file = document.getElementById('attached');
+        file.addEventListener('change',function () {
+            document.querySelector('.Contact-formFileButton span').innerText = this.files[0].name;
+            document.querySelector('.Contact-formFileButton').classList.add('Contact-fileChange');
+        })
 
         function tabs(el) {
             this.DOM = {}
@@ -280,7 +360,6 @@
             this.initEvents();
         }
         tabs.prototype.initEvents = function () {
-            console.log(this.DOM.el);
             this.DOM.el.addEventListener('click', this.clickFn.bind(this), false);
         }
         tabs.prototype.clickFn = function () {

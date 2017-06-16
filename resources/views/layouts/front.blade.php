@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>@yield('title', config('app.name'))</title>
+    <title>@yield('title', 'Agencia creativa digital especializada en posicionamiento digital ')</title>
 
     <meta name="copyright" content="{{ config('app.name') }}">
     <meta name="author" content="{{ config('app.name') }}"/>
@@ -57,6 +57,7 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="{{asset('css/main.min.css')}}"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/sweetalert2/6.6.1/sweetalert2.css">
     @yield('styles')
 </head>
 <body>
@@ -170,6 +171,7 @@
     </div>
     @yield('header')
 </header>
+
 <main class="MainBack">
     @yield('content')
 </main>
@@ -264,6 +266,7 @@
     </section>
 
 </footer>
+<script defer src="https://cdn.jsdelivr.net/sweetalert2/6.6.1/sweetalert2.js"></script>
 <script>
     const btnMenu = document.querySelector('#Menu'),
         nav = document.querySelector('nav')
@@ -272,6 +275,26 @@
         nav.classList.toggle('open')
         this.classList.toggle('open')
     });
+    @if (session('messageModal'))
+            @php
+                 $infoModal = session('messageModal')
+            @endphp
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const ButtonColor = {
+            'success': '#4CAF50'
+        }, ButtonText = {
+            'success': 'Continuar'
+        }
+        swal({
+            title: '{{$infoModal['title']}}',
+            text: '{{$infoModal['text']}}',
+            type: '{{$infoModal['type']}}',
+            cancelButtonColor: ButtonColor.{{$infoModal['type']}},
+            confirmButtonText: ButtonText.{{$infoModal['type']}},
+        })
+    });
+    @endif
 
 </script>
 @yield('scripts')

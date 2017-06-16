@@ -57,8 +57,9 @@
   border-radius: rem(8) rem(8) 0 0
   @include respond-to(medium)
     border-radius: 0 rem(8) 0 0
+
 .Contact-selectForm li:first-child
-  border-radius: rem(8) rem(8)  0 0
+  border-radius: rem(8) rem(8) 0 0
   @include respond-to(medium)
     border-radius: rem(8) 0 0 0
 
@@ -67,6 +68,8 @@
     margin: rem(20) 0
     &:nth-child(even)
       padding-left: 0
+      &:after
+        right: rem(4) !important
       @include respond-to(medium)
         padding-left: rem(20)
     &:nth-child(odd)
@@ -104,6 +107,7 @@
     margin-top: rem(20)
     border: rem(1) solid #eee
     height: rem(180)
+    position: relative
     &:focus
       border: rem(2) solid #1f2e4c
       outline: none
@@ -130,10 +134,10 @@
       content: '✓'
   label
     margin: rem(20) 0
+    position: relative
   span
     vertical-align: middle
     margin-left: rem(20)
-
 .Contact-rangeNumber
   font-size: rem(20)
   font-weight: 100
@@ -158,6 +162,7 @@
   &:after
     content: "➝"
     margin-left: rem(4)
+
 .Contact-range
   height: 6em
   div
@@ -286,6 +291,7 @@
     vertical-align: middle
   p
     color: #538bf4
+
 .Contact-formFileButton
   border-radius: rem(4)
   border: rem(2) dashed #538bf4
@@ -295,12 +301,55 @@
 .Contact-contentForms
   .form-hidden
     display: none
+
 .Contact-formMessage
   textarea
     margin-top: 0
     height: rem(193)
   > div
     div:first-child
-     padding-right: rem(20)
+      @include respond-to(medium)
+        padding-right: rem(20)
     div:last-child
-     padding-left: rem(20)
+      @include respond-to(medium)
+        padding-left: rem(20)
+  label.required::after
+    right: 0 !important
+  div div:last-child label.required::after
+    right: rem(10) !important
+
+.Contact label.required::after
+  content: "*"
+  color: #538bf4
+  right: rem(0)
+  top: rem(12)
+  position: absolute
+  font-size: rem(24)
+  @include respond-to(medium)
+    right: rem(24)
+.Contact-contentTextarea
+  position: relative
+  &::after
+    content: "*"
+    color: #538bf4
+    right: rem(16)
+    position: absolute
+    top: rem(32)
+    font-size: rem(24)
+.Contact-errorType
+  padding: rem(18) 1rem rem(15)
+  margin: 1rem 0
+  color: #ffffff
+  border-radius: rem(4)
+  background: #F44336
+.Contact-contentForms label.Contact-error
+  input
+    border-bottom: rem(2) solid #f44336
+  &:after
+    color: #f44336
+.Contact-fileChange
+  border-color: #4CAF50
+  #nonzero
+    fill: #4CAF50
+  span
+    color: #4CAF50
