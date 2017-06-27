@@ -2,10 +2,7 @@
 <article>
     <h2>COMO LO HACEMOS POSIBLE</h2>
     <p>
-        Diseñamos soluciones limpias, elegantes y originales que utilizan una gran variedad de plataformas,
-        entre
-        algunas E-commerce, sitios web, aplicaciones móviles, aplicaciones complejas, incluyendo plataformas en
-        medios sociales y administrador de contenidos.
+        La calidad de nuestros productos y la satisfacción de nuestros clientes es nuestra prioridad. Creamos relaciones con nuestros clientes a largo plazo y proponemos varias soluciones post-desarrollo para asegurarle los productos digitales más actualizados.
     </p>
 </article>
 <article class="row middle center Make-process">

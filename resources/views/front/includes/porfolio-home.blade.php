@@ -1,10 +1,9 @@
 <article class="Home-Client ">
     <h2 id="target">PORTAFOLIO</h2>
     <p>
-        Diseñamos soluciones limpias, elegantes y originales que utilizan una gran variedad de plataformas,
-        entre
-        algunas E-commerce, sitios web, aplicaciones móviles, aplicaciones complejas, incluyendo plataformas en
-        medios sociales y administrador de contenidos.
+
+        Nos gusta trabajar con empresas únicas y ambiciosas, con buenas ideas.
+
     </p>
     <div class="Home-ClientContent row center">
         <div class=" row center middle">

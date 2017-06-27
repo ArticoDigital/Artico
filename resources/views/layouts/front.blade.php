@@ -120,9 +120,9 @@
                     </svg>
                 </a>
                 <ul class="row middle ">
-                    <li><a href="">Lo que hacemos</a></li>
-                    <li><a href="">Logros</a></li>
-                    <li><a href="">Cultura</a></li>
+                    <li><a id="WeDo" href="#LoQueHacemos">Lo que hacemos</a></li>
+                    <li><a id="Portfolio" href="#Logros">Logros</a></li>
+                    <li><a id="Culture" href="#Cultura">Cultura</a></li>
                     <li><a href="">Blog</a></li>
                     <li class="Header-contact"><a href="/contacto">Inicia un proyecto</a></li>
                     <li class="Header-number-mobile">
@@ -269,7 +269,7 @@
 <script defer src="https://cdn.jsdelivr.net/sweetalert2/6.6.1/sweetalert2.js"></script>
 <script>
     const btnMenu = document.querySelector('#Menu'),
-        nav = document.querySelector('nav')
+        nav = document.querySelector('nav');
 
     btnMenu.addEventListener('click', function () {
         nav.classList.toggle('open')

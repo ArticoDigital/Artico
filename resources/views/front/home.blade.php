@@ -13,10 +13,11 @@
     <section class="Home-about row center middle">
         <blockquote>
             <span>‘‘</span>
-            Somos un experimentado equipo de estrategas digitales Diseñadores, Desarrolladores <b>Analistas</b>,
-            apasionados <b>creativos</b> - <b>geeks</b> (Que aman la tecnología?), que resolvemos problemas a través de
-            un
-            buen diseño y facilidad de uso.<span>’’</span>
+            Somos una agencia creativa digital con sede en Bogotá, Colombia, especializada en <b>posicionamiento digital</b>.
+            Logramos que su marca, producto y/o servicio llegue de manera efectiva al público objetivo de su
+            interés en internet. Contamos con un experimentado equipo de estrategas digitales, Diseñadores, Desarrolladores
+            y Analistas apasionados <b>creativos</b> - <b>geeks</b>, que resolvemos problemas a través de un buen
+            diseño y una experiencia de usuario efectiva.<span>’’</span>
             <div class="col-16">
                 <a href=""> Cultura Artico <em> → </em></a>
             </div>
@@ -37,7 +38,10 @@
     <script src="{{asset('js/zenscroll-min.js')}}"></script>
     <script>
         const more = document.querySelector('.Header-more'),
-            target = document.getElementById("target")
+            target = document.getElementById("target"),
+            weDo = document.querySelector('#WeDo'),
+            portfolio = document.querySelector('#Portfolio'),
+            culture = document.querySelector('#Culture')
 
         document.addEventListener('DOMContentLoaded', function () {
             Typed.new('#typed', {
@@ -50,6 +54,15 @@
         });
         more.addEventListener('click', function () {
             zenscroll.toY(window.innerHeight + 100, 500)
+        })
+        weDo.addEventListener('click', function (e) {
+            zenscroll.toY(800, 500)
+        })
+        portfolio.addEventListener('click', function () {
+            zenscroll.toY(2600)
+        })
+        culture.addEventListener('click', function () {
+            zenscroll.toY(3281, 500)
         })
         /*  if ('ondeviceorientation' in window) {
          window.addEventListener('deviceorientation', function (e) {

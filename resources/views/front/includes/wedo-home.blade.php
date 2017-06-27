@@ -1,10 +1,10 @@
 <article class="WeDo">
     <h2 id="target">AMÁMOS LO QUE HACEMOS</h2>
     <p>
-        Diseñamos soluciones limpias, elegantes y originales que utilizan una gran variedad de plataformas,
-        entre
-        algunas E-commerce, sitios web, aplicaciones móviles, aplicaciones complejas, incluyendo plataformas en
-        medios sociales y administrador de contenidos.
+        Ya sea por redes sociales, email marketing,  campañas o anuncios en google adwords y facebook ads, logramos llegar a sus usuarios en internet y hacemos que se enamoren de su marca, producto o servicio.
+
+        Con el apoyo de especialistas apasionados, Ártico ofrece dentro de su portafolio las siguientes soluciones para el posicionamiento en internet de su empresa:
+
     </p>
     <div class="row center">
         <div class="col-5 medium-8 row small-16 columns ">
