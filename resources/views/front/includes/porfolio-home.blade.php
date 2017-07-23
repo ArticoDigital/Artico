@@ -1,6 +1,6 @@
 <article class="Home-Client row middle">
     <div>
-        <h2 style="text-align: center" id="target">Trabajamos con empresas únicas, ambiciosas y con buenas ideas.</h2>
+      {{--  <h2 style="text-align: center" id="target">Trabajamos con empresas únicas, ambiciosas y con buenas ideas.</h2>--}}
         <p>
 
         </p>
@@ -84,9 +84,11 @@
                         </g>
                     </g>
                 </svg>
+                <span style="    color: #8c2883;">  FESTIVAL DE TEATRO BOGOTA</span>
             </div>
             <div class=" row  center middle">
-                <svg width="179px" height="46px" viewBox="0 0 179 46" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                <img src="{{asset('img/unipanamericana.png')}}" alt="">
+               {{-- <svg width="179px" height="46px" viewBox="0 0 179 46" version="1.1" xmlns="http://www.w3.org/2000/svg"
                      xmlns:xlink="http://www.w3.org/1999/xlink">
                     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                         <g id="iPad-Pro-Landscape" transform="translate(-644.000000, -3562.000000)" fill="#DF4025">
@@ -108,7 +110,7 @@
                             </g>
                         </g>
                     </g>
-                </svg>
+                </svg>--}}
             </div>
             <div class=" row center middle">
 
@@ -138,6 +140,7 @@
                         </g>
                     </g>
                 </svg>
+                <span style="color:#c75809">MINISTERIO DE CULTURA</span>
             </div>
         </div>
     </div>
