@@ -1,4 +1,4 @@
-<article class="WeDo row middle">
+<article class="WeDo row middle scrollTarget" id="wedo">
     <div class="content row middle">
     <div class="col-8  medium-16  small-16">
         <h2 id="target" class="col-16">AMÁMOS LO QUE HACEMOS</h2>

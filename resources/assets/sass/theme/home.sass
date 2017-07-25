@@ -400,10 +400,6 @@ body.in-transition
 
 
 
-
-
-
-
 body.in-transition
   transition: transform 900ms ease
 
@@ -414,7 +410,7 @@ body.in-transition
   right: rem(10)
   bottom: rem(80)
   cursor: pointer
-  z-index: 10
+  z-index: 2
   @include respond-to(medium)
     right: rem(40)
     bottom: rem(40)
@@ -529,5 +525,42 @@ body.in-transition
   height: calc(100vh - 58px)
   background-size:  contain
 
+.Home-menu
+  position: fixed
+  left: 30px
+  top: 50%
+  transform: translateY(-50%)
+  transition: opacity .5s ease-out
+  z-index: 7
+  margin: 0
+  padding: 0
+  display: none
+  @include respond-to(medium)
+    display: block
+  li
+    margin-top: rem(20)
+  a
+    width: 30px
+    height: 10px
+    display: block
+    margin-left: auto
+    position: relative
+    &:after
+      content: ""
+      width: 10px
+      opacity: .6
+      height: rem(2)
+      background: #1F2E52
+      display: block
+      top: 50%
+      position: absolute
+      right: 0
+      -webkit-transition: width .2s ease
+      transition: width .2s ease
+    &:hover:after, &.active:after
+      background: #FF9800
+      height: rem(4)
+body
+  overflow: hidden
 
 

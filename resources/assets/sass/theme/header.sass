@@ -18,8 +18,8 @@
       display: inline
 
   figure
-    margin: rem(8) rem(18) rem(5)
-    @include respond-to(large)
+    margin: rem(-1)
+    @include respond-to(medium)
       margin: rem(10) rem(40)
     #logotipo
       display: block
@@ -43,8 +43,19 @@
   li
     margin: 0 rem(10)
     width: 100%
+    position: relative
     @include respond-to(medium)
       width: auto
+    &:hover  div
+      visibility: visible
+      opacity: 1
+    div
+      position: absolute
+      height: rem(32)
+      width: 100%
+      visibility: hidden
+      opacity: 0
+      transition: visibility 0s, opacity 0.1s linear
   nav
     position: fixed
     top: rem(55)
@@ -62,7 +73,7 @@
       width: auto
     &.open
       transform: translateX(-100vw)
-    ul
+    > ul
       position: relative
       top: rem(-20)
       @include respond-to(medium)
@@ -82,7 +93,7 @@
   @include respond-to(medium)
     display: block
   a
-    font-size: rem(13)
+    font-size: rem(14)
     margin-left: rem(6)
 .Header-message
   width: 100%
@@ -205,3 +216,34 @@ $rotateDeg: 11
     opacity: 0
   100%
     opacity: 1
+.submenu
+  position: absolute
+  background: white
+  top: rem(32)
+  width: rem(195)
+  padding: rem(10) 0
+  color: #538bf4
+  font-size: rem(13)
+  border-radius: rem(4)
+  box-shadow: 0 rem(7) rem(20) rem(-1) rgba(0, 0, 0, 0.15)
+  text-align: left
+  text-transform: uppercase
+  border: rem(1) solid #EFEFF1
+
+  a
+    padding: rem(5)
+    display: block
+    color: #538bf4
+  &:before
+    position: absolute
+    top: rem(-6)
+    left: rem(55)
+    width: rem(10)
+    height: rem(10)
+    box-shadow: rem(-1) rem(1) rem(5) rem(-1) rgba(0,0,0,.15)
+    border-top: 0
+    border-right: 0
+    border-bottom-left-radius: rem(3)
+    background: #fff
+    content: ""
+    transform: rotate(135deg)

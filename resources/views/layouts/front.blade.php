@@ -60,8 +60,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/sweetalert2/6.6.1/sweetalert2.css">
     @yield('styles')
 </head>
-<body>
-<header class="Header row middle center @yield('headerClass', '')">
+<body id="top">
+<header class="Header row middle center @yield('headerClass', '') scrollTarget">
     <div class="Header-bar row between middle">
         <figure>
             <a href="/">
@@ -120,7 +120,18 @@
                     </svg>
                 </a>
                 <ul class="row middle ">
-                    <li><a id="WeDo" href="#LoQueHacemos">Lo que hacemos</a></li>
+                    <li>
+                        <a id="WeDo" href="#LoQueHacemos">Lo que hacemos</a>
+                        <div>
+                            <ul class="submenu">
+                                <li><a href="">E-learning</a></li>
+                                <li><a href="">Diseño web</a></li>
+                                <li><a href="">Marketing digital</a></li>
+                                <li><a href="">Desarrollo de Apps</a></li>
+                                <li><a href="">Diseño y animación 3D</a></li>
+                            </ul>
+                        </div>
+                    </li>
                     <li><a id="Portfolio" href="#Logros">Logros</a></li>
                     <li><a id="Culture" href="#Cultura">Cultura</a></li>
                     <li><a href="">Blog</a></li>
@@ -175,8 +186,8 @@
 <main class="MainBack">
     @yield('content')
 </main>
-<footer class="Footer ">
-    <section >
+<footer class="Footer scrollTarget" id="footer">
+    <section>
         <div class="row content around">
             <div class="row col-5 medium-8 small-16 ">
                 <ul class="Footer-info">

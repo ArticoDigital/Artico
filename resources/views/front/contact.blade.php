@@ -7,8 +7,9 @@
     <div id="map"></div>
 
     <section class="container Contact">
+        <div class="content Contact-info">
         <h2 class="Contact-h2">Deseamos trabajar contigo</h2>
-        <p class="Contact-p">
+        <p class="Contact-p ">
 
             Su proyecto es muy importante para nosotros y por eso obtendrá lo mejor de nuestro equipo.
             Creamos soluciones limpias, elegantes y originales, no nos basamos en plantillas o en diseños
@@ -20,7 +21,7 @@
         </p>
 
         <ul class="row center middle Contact-ul">
-            <li class="col-4 small-16 medium-8">
+            <li class="col-4 small-8 medium-8">
                 <svg width="63px" height="59px" viewBox="0 0 63 59" version="1.1" xmlns="http://www.w3.org/2000/svg"
                      xmlns:xlink="http://www.w3.org/1999/xlink">
                     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -40,7 +41,7 @@
                 <span class="Contact-span">Envíenos un correo</span>
                 <a class="Contact-link" href="mailto:hola@artico.io">hola@artico.io</a>
             </li>
-            <li class="col-4 small-16 medium-8">
+            <li class="col-4 small-8 medium-8">
                 <svg width="36px" height="60px" viewBox="0 0 36 60" version="1.1" xmlns="http://www.w3.org/2000/svg"
                      xmlns:xlink="http://www.w3.org/1999/xlink">
                     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -60,7 +61,7 @@
                 <span class="Contact-span">Llámenos </span>
                 <a class="Contact-link" href="tel:573005549372">(+57) 300 554 93 72</a>
             </li>
-            <li class="col-4 small-16 medium-8">
+            <li class="col-4 small-8 medium-8">
                 <svg width="43px" height="60px" viewBox="0 0 43 60" version="1.1" xmlns="http://www.w3.org/2000/svg"
                      xmlns:xlink="http://www.w3.org/1999/xlink">
                     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -80,7 +81,7 @@
                 <span class="Contact-span">Visítenos</span>
                 <a class="Contact-link" id="Contact-mapLink" href="#">Cra 22 # 80-10 Bogotá - Col </a>
             </li>
-            <li class="col-4 small-16 medium-8">
+            <li class="col-4 small-8 medium-8">
                 <svg width="44px" height="60px" viewBox="0 0 44 60" version="1.1" xmlns="http://www.w3.org/2000/svg"
                      xmlns:xlink="http://www.w3.org/1999/xlink">
                     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -120,6 +121,7 @@
                     formulario</a>
             </li>
         </ul>
+        </div>
         <article id="Contact-selectForm">
             <ul class="Contact-selectForm row center middle small-16">
                 <li class="col-8 medium-8 small-16 {{($errors->count() && $errors->has('message'))?'':'Contact-selectFormSelect'}}" data-form="project">Planea tu proyecto</li>
@@ -324,6 +326,7 @@
                 </form>
             </div>
         </article>
+
     </section>
 @endsection
 @section('scripts')
