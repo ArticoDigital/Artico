@@ -60,7 +60,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/sweetalert2/6.6.1/sweetalert2.css">
     @yield('styles')
 </head>
-<body id="top">
+<body id="body" class="@yield('classBody')">
 <header class="Header row middle center @yield('headerClass', '') scrollTarget">
     <div class="Header-bar row between middle">
         <figure>

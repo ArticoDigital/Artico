@@ -560,7 +560,8 @@ body.in-transition
     &:hover:after, &.active:after
       background: #FF9800
       height: rem(4)
-body
-
+body.home
+  @include respond-to(medium)
+    overflow-y: hidden
 
 

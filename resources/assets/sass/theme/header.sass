@@ -219,8 +219,8 @@ $rotateDeg: 11
 .submenu
   position: absolute
   background: white
-  top: rem(32)
-  width: rem(195)
+  top: 0
+  width: rem(260)
   padding: rem(10) 0
   color: #538bf4
   font-size: rem(13)
@@ -229,7 +229,12 @@ $rotateDeg: 11
   text-align: left
   text-transform: uppercase
   border: rem(1) solid #EFEFF1
-
+  left: calc(50% - 130px)
+  z-index: 1
+  @include respond-to(medium)
+    top: rem(32)
+    width: rem(195)
+    left: 0
   a
     padding: rem(5)
     display: block
@@ -237,7 +242,7 @@ $rotateDeg: 11
   &:before
     position: absolute
     top: rem(-6)
-    left: rem(55)
+    left: calc(50% - 5px)
     width: rem(10)
     height: rem(10)
     box-shadow: rem(-1) rem(1) rem(5) rem(-1) rgba(0,0,0,.15)
@@ -247,3 +252,5 @@ $rotateDeg: 11
     background: #fff
     content: ""
     transform: rotate(135deg)
+    @include respond-to(medium)
+      left: rem(55)

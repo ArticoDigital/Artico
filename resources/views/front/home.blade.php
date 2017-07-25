@@ -1,5 +1,6 @@
 @extends('layouts.front')
 @section('headerClass') Header-home @endsection
+@section('classBody') home @endsection
 @section('header')
     @include('front.includes.header-home')
 @endsection
@@ -7,7 +8,7 @@
     @include('front.includes.polo-footer')
     <aside class="Home-menu">
         <ul>
-            <li><a href="top" class="active" data-index="0"></a></li>
+            <li><a href="body" class="active" data-index="0"></a></li>
             <li><a href="wedo" data-index="1"></a></li>
             <li><a href="howdo" data-index="2"></a></li>
             <li><a href="portfolio" data-index="3"></a></li>
@@ -78,12 +79,7 @@
                 cursorChar: "_"
             });
         });
-        more.addEventListener('click', function () {
-            zenscroll.toY(window.innerHeight + 100, 500)
-        })
-        more.addEventListener('click', function () {
-            zenscroll.toY(window.innerHeight + 100, 500)
-        })
+
 
         const buttonNavHome = document.querySelectorAll(".Home-menu a"),
             scrollTarget = document.querySelectorAll(".scrollTarget");
@@ -128,6 +124,15 @@
             window.addEventListener('mousewheel', this.someAction, false);
             window.addEventListener('wheel', this.someAction, false);
             window.addEventListener('keydown', this.someAction, false);
+            more.addEventListener('click', function () {
+                this.index = 1;
+                animation = true;
+                zenscroll.toY(document.getElementById('wedo') - 58, 1000)
+                actionsClass(buttonNavHome, function (el) {
+                    el.classList.remove('active')
+                })
+                buttonNavHome[1].classList.add('active');
+            })
         };
 
         scrollMove.prototype.someAction = function (e) {
