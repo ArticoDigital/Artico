@@ -19,7 +19,7 @@ class HomeController extends Controller
 
     public function home()
     {
-        $messages = Message::where('day',Carbon::today()->dayOfWeek)->where('status',1)->get();
+        $messages = Message::where('day',Carbon::today()->dayOfWeek)->where('status',1)->orderBy('order')->get();
         return view('front.home',compact('messages'));
     }
 
