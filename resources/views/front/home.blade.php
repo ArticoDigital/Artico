@@ -125,22 +125,21 @@
             window.addEventListener('wheel', this.someAction, false);
             window.addEventListener('keydown', this.someAction, false);
             more.addEventListener('click', function () {
-                this.index = 1;
-                animation = true;
-                zenscroll.toY(document.getElementById('wedo') - 58, 1000)
+                scrollObject.index = 1;
+                zenscroll.toY(document.getElementById('wedo').offsetTop - 58, 1000)
                 actionsClass(buttonNavHome, function (el) {
                     el.classList.remove('active')
                 })
                 buttonNavHome[1].classList.add('active');
+                animation = true;
             })
         };
-
         scrollMove.prototype.someAction = function (e) {
             scrollObject.isKey = (e.keyCode == 40 || e.keyCode == 38) ? true : false;
             if (e.deltaY > 0 || e.keyCode == 40) {
                 if (!zenscroll.moving() && animation) {
                     animation = false;
-                    if (scrollObject.index > 6) {
+                    if (scrollObject.index >= 6) {
                         scrollObject.index = 6
                     } else {
                         scrollObject.index++;
@@ -151,7 +150,7 @@
             else if (e.deltaY < 0 || e.keyCode == 38) {
                 if (!zenscroll.moving() && animation) {
                     animation = false;
-                    if (scrollObject.index < 0) {
+                    if (scrollObject.index <= 0) {
                         scrollObject.index = 0
                     } else {
                         scrollObject.index--;

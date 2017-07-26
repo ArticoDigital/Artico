@@ -13,34 +13,6 @@
     @include respond-to(medium)
       font-size: rem(32)
 
-.Make
-  padding:  3rem 2rem !important
-  @include respond-to(medium)
-    height: calc(100vh - 58px)
-  h3
-    font-size: rem(16)
-    font-weight: 100
-    color: #567A23
-    margin: rem(10)
-    @include respond-to(medium)
-      margin: 0
-  hr
-    border: none
-    border-top: rem(2) dotted #567A23
-    transform: rotate(90deg) translateX(45px)
-    transform-origin: 50% 0
-    @include respond-to(medium)
-      transform: rotate(0) translateX(0)
-  p
-    font-size: rem(18)
-    font-weight: 100
-    line-height: rem(32)
-    margin: rem(28) 0
-    @include respond-to(medium)
-      font-size: rem(22)
-      font-weight: 100
-      line-height: rem(40)
-      margin: rem(40) 0
 
 .Make-hr
   width: rem(100)
@@ -153,11 +125,10 @@
     font-weight: 100
     line-height: rem(32)
     margin: rem(28) 0
+    text-align: justify
     @include respond-to(medium)
-      font-size: rem(22)
-      font-weight: 100
-      line-height: rem(40)
-      margin: rem(40) 0
+      line-height: rem(36)
+      margin: rem(22) 0
   ul
     text-align: justify
     @include respond-to(medium)
@@ -215,13 +186,12 @@ body.in-transition
   position: absolute
   animation: bounce 1.6s infinite
   transition: color .3s cubic-bezier(.4, 0, .2, 1)
-  right: rem(10)
-  bottom: rem(80)
+  right: calc(50% - 5px)
+  bottom: rem(12)
+  opacity: .5
   cursor: pointer
   z-index: 10
-  @include respond-to(medium)
-    right: rem(40)
-    bottom: rem(40)
+
 
 @keyframes bounce
   0%, 100%, 20%, 50%, 80%
@@ -264,6 +234,10 @@ body.in-transition
     @include respond-to(medium)
       font-size: rem(32)
 
+.Make
+  padding:  3rem 2rem !important
+  @include respond-to(medium)
+    height: calc(100vh - 58px)
 
 .Make
   background: #f6f9ff
@@ -297,11 +271,10 @@ body.in-transition
     font-weight: 100
     line-height: rem(32)
     margin: rem(28) 0
+    text-align: justify
     @include respond-to(medium)
-      font-size: rem(22)
-      font-weight: 100
-      line-height: rem(40)
-      margin: rem(40) 0
+      line-height: rem(36)
+      margin: rem(22) 0
 
 .Make-hr
   width: rem(100)
@@ -403,18 +376,16 @@ body.in-transition
 body.in-transition
   transition: transform 900ms ease
 
-.Header-more
+.Header-navKey
   position: absolute
-  animation: bounce 1.6s infinite
-  transition: color .3s cubic-bezier(.4, 0, .2, 1)
-  right: rem(10)
-  bottom: rem(80)
-  cursor: pointer
+  left: calc(50% - 19px)
+  bottom: 4rem
   z-index: 2
+  display: none
+  opacity: .4
+  width: rem(38)
   @include respond-to(medium)
-    right: rem(40)
-    bottom: rem(40)
-
+    display: block
 @keyframes bounce
   0%, 100%, 20%, 50%, 80%
     transform: translateY(0)
@@ -564,4 +535,10 @@ body.home
   @include respond-to(medium)
     overflow-y: hidden
 
-
+.messenger
+  position: fixed
+  bottom: rem(6)
+  right: rem(12)
+  @include respond-to(medium)
+    bottom: rem(32)
+    right: rem(32)

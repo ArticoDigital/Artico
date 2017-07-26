@@ -168,13 +168,24 @@
         </svg>
     </div>
     <div class="Header-message"><span id="typed"></span></div>
+
 </section>
+
 <div class="Header-more">
-    <svg height="23.1" width="23.1">
-        <g xmlns="http://www.w3.org/2000/svg" fill="none"  stroke-linecap="round" stroke-linejoin="round"  stroke-miterlimit="10" stroke-width="2" stroke="#FFFFFF">
-            <polyline points="17,17 11.5,22.4 11.5,0.8" ></polyline>
-            <line x1="6.2" y1="17" x2="11.5" y2="22.4" ></line>
+
+    <svg width="11px" height="20px" viewBox="0 0 11 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+            <g id="iPad-Pro-Portrait" transform="translate(-324.000000, -600.000000)" stroke="#4166B0" stroke-width="1.56521739">
+                <g id="1" transform="translate(325.000000, 601.000000)">
+                    <polyline id="Shape" points="9 13.3043478 4.5 17.5304348 4.5 0.626086957"></polyline>
+                    <path d="M0.163636364,13.3043478 L4.5,17.5304348" id="Shape"></path>
+                </g>
+            </g>
         </g>
     </svg>
 </div>
 
+<div class="Header-navKey">
+    <img src="data:image/gif;base64,R0lGODlhLwAfAPQAAFyH42uS5XCW5naa546r65Ov7Zm07p+47q3D8bzO9MLS9MjX9dPe9+Lp+uvw/PX3/f///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH/C05FVFNDQVBFMi4wAwEAAAAh+QQJyAARACwAAAAALwAfAAAF2yAgjmQJQGiqrmbrvuIqq3Bdz7itt/i8/6NZwQf8yQwAg6xoVClGChZTt2IkAAmGdHpbOQCOJber+oa3Y5fMLE6rveC229STz0l19D2YT+3/MH1+gignhBBUJ4mINoWNio+MXYuUjZKBkCMCEAIliJcvjiMDPJkim514pqOelwgNpaConqsiDQh4jAFaDwq+CgQxq7OqjAS/Cg8QDAExurzIwYqXBAcQB9LCxsjKzM4kr7EkSihIQbUAt7klpHSrUU/FLe18lSQL7qBv9pj6PP75+IU6ZEhQwT4hAAAh+QQJyAARACwAAAAALwAfAAAF4CAgjmQJQGiqrmbrviIEj/Jsu/Wc33x8772faWECBnUlBURRMh5fO0PKQHI+WzvCAXIgVK9CkgAiaIJtwHH5e4alyeY2tKSOy7HhezGvr67+KX2CboCAJ4V/h4gsaIqLKCc/VmaPKpFok1+VgZk0nT5/DgAOiZ+HJQN4oaOlLal+JAgNqiuipCxODQiwAAEMEA8Kwgpekau3ljUEwwoPEAwBMTW+wMzFMisMCQAJv8kiy8PO0NKxs3srTCJK3ya6vCOvlCtUUriuTabYfwWG+vqOHl3SAXATpH8GAy5SiCgEADs=">
+</div>
