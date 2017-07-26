@@ -18,6 +18,8 @@ class CreateMessagesTable extends Migration
             $table->string('day');
             $table->text('message');
             $table->tinyInteger('status');
+            $table->integer('delay');
+            $table->integer('order');
             $table->timestamps();
         });
     }

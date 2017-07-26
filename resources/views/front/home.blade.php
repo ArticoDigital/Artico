@@ -69,14 +69,25 @@
     <script src="{{asset('js/zenscroll-min.js')}}"></script>
     <script>
         const more = document.querySelector('.Header-more'),
-            target = document.getElementById("target")
+            target = document.getElementById("target"),
+            messages = document.querySelectorAll("#MessagesTyping li"),
+            messagesLength = messages.length,
+            messagesArray = [];
+        for (var i = 0; i < messagesLength; i++) {
+            var message = messages[i];
+            messagesArray.push(message.dataset.message + " ^" + message.dataset.delay)
+        }
+        console.log(messagesArray)
+
         document.addEventListener('DOMContentLoaded', function () {
             Typed.new('#typed', {
-                strings: ["Amamos lo que hacemos y por eso nunca trabajamos", "Creativos", "Creativos/Geeks"],
+                strings: messagesArray,
                 typeSpeed: 50,
                 backDelay: 20,
                 startDelay: 20,
-                cursorChar: "_"
+                cursorChar: "_",
+                smartBackspace: true,
+                loop: true
             });
         });
 
@@ -109,7 +120,6 @@
                 callback.call(scope, el, array[el]);
             });
         };
-
         [].map.call(buttonNavHome, function (el) {
             new scrollButtons(el)
         });
@@ -161,9 +171,9 @@
         }
         scrollMove.prototype.time = function () {
 
-            if(scrollObject.isKey){
+            if (scrollObject.isKey) {
                 animation = true
-            }else{
+            } else {
                 setTimeout(function () {
                     animation = true
                 }, 1300);

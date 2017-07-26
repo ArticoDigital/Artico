@@ -6,17 +6,25 @@ use App\Http\Requests\ContactBudgetRequest;
 use App\Http\Requests\ContactMessageRequest;
 use App\Mail\NewForm;
 use App\Models\Form;
+use App\Models\Message;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
-    public function contact(){
+    public function contact()
+    {
         return view('front.contact');
     }
-    public function home(){
-        return view('front.home');
+
+    public function home()
+    {
+        $messages = Message::where('day',Carbon::today()->dayOfWeek)->where('status',1)->get();
+        return view('front.home',compact('messages'));
     }
-    public function contactProject(ContactBudgetRequest $request){
+
+    public function contactProject(ContactBudgetRequest $request)
+    {
         $this->sendMessage($request);
         return redirect('/')->with(['messageModal' => [
             'title' => '¡Excelente!',
@@ -24,7 +32,9 @@ class HomeController extends Controller
             'type' => 'success',
         ]]);
     }
-    public function contactMessage(ContactMessageRequest $request){
+
+    public function contactMessage(ContactMessageRequest $request)
+    {
         $this->sendMessage($request);
         return redirect('/')->with(['messageModal' => [
             'title' => '¡Excelente!',
@@ -32,11 +42,13 @@ class HomeController extends Controller
             'type' => 'success',
         ]]);
     }
-    private function sendMessage($request){
-        $image = ($request->hasFile('attached')) ? $request->file('attached')->store('forms','public'):'';
+
+    private function sendMessage($request)
+    {
+        $image = ($request->hasFile('attached')) ? $request->file('attached')->store('forms', 'public') : '';
         $data = $request->all();
         $data['attached'] = $image;
         $form = Form::create($data);
-        \Mail::to('hola@artico.io')->send(new NewForm($form))  ;
+        \Mail::to('hola@artico.io')->send(new NewForm($form));
     }
 }

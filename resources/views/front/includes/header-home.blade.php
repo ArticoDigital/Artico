@@ -167,16 +167,25 @@
             </g>
         </svg>
     </div>
-    <div class="Header-message"><span id="typed"></span></div>
+    <div class="Header-message">
+        <ul id="MessagesTyping">
+            @foreach($messages as $message)
+                <li data-delay="{{$message->delay}}" data-message="{{$message->message}}"></li>
+            @endforeach
+        </ul>
+        <span id="typed"></span></div>
 
 </section>
 
 <div class="Header-more">
 
-    <svg width="11px" height="20px" viewBox="0 0 11 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg width="11px" height="20px" viewBox="0 0 11 20" version="1.1" xmlns="http://www.w3.org/2000/svg"
+         xmlns:xlink="http://www.w3.org/1999/xlink">
 
-        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
-            <g id="iPad-Pro-Portrait" transform="translate(-324.000000, -600.000000)" stroke="#4166B0" stroke-width="1.56521739">
+        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round"
+           stroke-linejoin="round">
+            <g id="iPad-Pro-Portrait" transform="translate(-324.000000, -600.000000)" stroke="#4166B0"
+               stroke-width="1.56521739">
                 <g id="1" transform="translate(325.000000, 601.000000)">
                     <polyline id="Shape" points="9 13.3043478 4.5 17.5304348 4.5 0.626086957"></polyline>
                     <path d="M0.163636364,13.3043478 L4.5,17.5304348" id="Shape"></path>
