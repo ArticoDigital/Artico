@@ -23,6 +23,11 @@ class HomeController extends Controller
         return view('front.home',compact('messages'));
     }
 
+    public function wedo()
+    {
+        return view('front.wedo');
+    }
+
     public function contactProject(ContactBudgetRequest $request)
     {
         $this->sendMessage($request);
