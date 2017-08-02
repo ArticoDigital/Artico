@@ -5,8 +5,9 @@
 @endsection
 @section('content')
     <section class="section-topPage row center middle wedo-top">
-        <h1>Diseño de Páginas Web en Bogotá </h1>
+        <h1>Desarrollo de aplicaciones en bogota</h1>
     </section>
+
     <section class=" wedo-title">
         <article class="content ">
             <h2>Cualquier marca sabe que un sitio web es su herramienta de marketing más importante. Puede entregar
@@ -23,14 +24,10 @@
             </p>
         </article>
     </section>
-    <section class="content row between wedo-content">
-        <article class="col-5">
-            <h3>Sitio web</h3>
-            <p>Comenzamos con la investigación inicial en su negocio, el mercado circundante y sus objetivos. Nos enteramos de lo que hace que usted y sus clientes y comprobar la mejor manera de conectarte. A continuación, se crea una estrategia basada en esta definición subyacente que diseñamos alrededor.</p>
-        </article>
-        <article class="col-5">asdasd</article>
-        <article class="col-5">asd</article>
+    <section class="wedo-content">
+        adsd
     </section>
+
 @endsection
 @section('scripts')
 

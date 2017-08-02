@@ -25,7 +25,12 @@ class HomeController extends Controller
 
     public function wedo()
     {
-        return view('front.wedo');
+        return view('front.web');
+    }
+
+    public function apps()
+    {
+        return view('front.apps');
     }
 
     public function contactProject(ContactBudgetRequest $request)

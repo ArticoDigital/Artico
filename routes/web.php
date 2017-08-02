@@ -13,7 +13,8 @@
 
 Route::get('/', 'HomeController@home');
 Route::get('/contacto', 'HomeController@contact');
-Route::get('/lo-que-hacemos/diseño-pagina-web-bogota', 'HomeController@wedo');
+Route::get('/servicios/diseño-pagina-web-bogota', 'HomeController@wedo');
+Route::get('/servicios/desarrollo-aplicaciones-bogota', 'HomeController@apps');
 Route::post('/contactProject', [
     'as' => 'contactProject',
     'uses' => 'HomeController@contactProject'
