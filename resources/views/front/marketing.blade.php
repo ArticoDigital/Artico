@@ -1,31 +1,45 @@
 @extends('layouts.front')
-@section('title') administracion de redes sociales para empresas en Bogotá @endsection
+@section('title') Marketing Digital @endsection
 @section('header')
 
 @endsection
 @section('content')
-    <section class="section-topPage row center middle wedo-top">
+    <section class="section-topPage row center middle wedo-top marketing">
         <h1>Marketing digital</h1>
     </section>
 
     <section class=" wedo-title">
         <article class="content ">
-            <h2>Cualquier marca sabe que un sitio web es su herramienta de marketing más importante. Puede entregar
-                contenido rico, a una amplia audiencia en un corto período de tiempo.
+            <h2>
+                La calidad de nuestros productos y la satisfacción de nuestros clientes es nuestra prioridad. Creamos
+                relaciones con nuestros clientes a largo plazo y proponemos varias soluciones post-desarrollo para
+                asegurarle los productos digitales más actualizados y rentables.
             </h2>
         </article>
     </section>
     <section class="wedo-content wedo-marketing" id="particles-js">
         <div class="content row">
             <article class="col-7 medium-7 small-13">
-                    <h2>Aplicaciones nativas</h2>
-                    <p>¿Estás listo para convertirse en el próximo App Store éxito con miles de descargas al día?
-                        Construimos
-                        asesino en iOS y Android que son intuitivas y divertido de usar.</p>
-          </article>
-          <figure class="col-7">
-              <img src="{{url('img/marketing.svg')}}" alt="">
-          </figure>
+                <h2>Posicionamiento SEO y SEM</h2>
+                <p>
+                    El propósito de su sitio web es generar valor ya sea generando ventas o en posicionamiento de marca.
+                </p>
+                <p>
+                    <b>SEO </b>significa Search Engine Optimization (optimización de motor de búsqueda) y es el proceso
+                    de mejorar la visibilidad de su sitio web en los resultados orgánicos de los diferentes buscadores.
+                </p>
+                <p>
+                    <b>SEM</b> significa Search Engine Marketing (Mercadeo en motor de búsqueda) y se refiere a la
+                    promoción de un sitio web en motores de búsqueda, mediante el uso de métodos de pago u otros medios,
+                    como la colocación de anuncios en sitios webs o blogs muy visitados y relevantes para su público
+                    objetivo.
+                </p>
+
+                </p>
+            </article>
+            <figure class="col-7">
+                <img src="{{url('img/marketing.svg')}}" alt="">
+            </figure>
         </div>
     </section>
 @endsection
