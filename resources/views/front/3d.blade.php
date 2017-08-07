@@ -1,69 +1,68 @@
 @extends('layouts.front')
-@section('title') Marketing Digital @endsection
+@section('title') Diseño y animación 3D @endsection
 @section('header')
 
 @endsection
 @section('content')
-    <section class="section-topPage row center middle wedo-top marketing">
-        <h1>Marketing digital</h1>
+    <section class="section-topPage row center middle wedo-top ">
+        <h1>Diseño y animación 3D</h1>
     </section>
 
     <section class=" wedo-title">
         <article class="content ">
             <h2>
-                La calidad de nuestros productos y la satisfacción de nuestros clientes es nuestra prioridad. Creamos
-                relaciones con nuestros clientes a largo plazo y proponemos varias soluciones post-desarrollo para
-                asegurarle los productos digitales más actualizados y rentables.
+                El diseño 3D, supone una gran ventaja competitiva al momento de mostrar o diseñar un producto y
+                servicios, por eso contamos con las más avanzadas técnicas de visualización 3D como la Animación,
+                Rendering, la Realidad Aumentada, la Realidad Virtual o los Simuladores Virtuales on line.
             </h2>
         </article>
     </section>
-    <section class="wedo-content wedo-marketing" id="particles-js">
+    <section class="wedo-content wedo-marketing ThreeD" id="particles-js">
         <div class="content row middle">
-            <article class="col-7 medium-7 small-13 ">
-                <h2>Posicionamiento SEO y SEM</h2>
+            <article class="col-16 medium-16 small-13 ">
+                <h2>Renders Arquitectonicos</h2>
+                <p>Infografías 3D o 2D para la comercialización de espacios inmobiliarios.  </p>
+            </article>
+            <article class="col-16 medium-16 small-13 ">
+                <h2>Animación Arquitectónica</h2>
                 <p>
-                    El propósito de su sitio web es generar valor ya sea generando ventas o en posicionamiento de marca.
+                    ecorridos virtuales en video, donde se muestra de una forma más detallada, amplía y estética los proyectos arquitectónicos.Realización de fotomontajes arquitectónicos, mezclando renders arquitectónicos con ambientes reales.
                 </p>
+            </article>
+            <article class="col-16 medium-16 small-13 ">
+                <h2>3D Mobile Marketing, Aplicaciones de Realidad Virtual y Aumentada.</h2>
                 <p>
-                    <b>SEO </b> Search Engine Optimization (optimización de motor de búsqueda), es el proceso
-                    de mejorar la visibilidad del sitio web en los resultados orgánicos de los diferentes buscadores.
+                    Aplicaciones en 3D para la comercialización de proyectos que busquen diferenciación en el mercado, Por medio de la personalización y el manejo de modelos 3D interactivos, enfocados en la experiencia positiva del espectador o usuario.
                 </p>
+            </article>
+            <article class="col-16 medium-16 small-13 ">
+                <h2>Animación 3D para videos industriales</h2>
                 <p>
-                    <b>SEM</b> Search Engine Marketing (Mercadeo en motor de búsqueda)
-                    promoción de un sitio web en motores de búsqueda, mediante el uso de métodos de pago,
-                    para la colocación de anuncios en sitios webs o blogs muy visitados y relevantes para su público.
-                </p>
+                    Simulaciones en video para mostrar de forma más detallada procesos industriales de productos o servicios.
 
                 </p>
             </article>
-            <figure class="col-7 medium-7 small-13">
-                <img src="{{url('img/marketing.svg')}}" alt="">
-            </figure>
-            <div class="col-16 medium-16 small-16 row">
-                <article class="col-7 medium-7 small-13 ">
-                    <h2>E-mail Marketing</h2>
-                    <p>
-                        El email marketing es un método eficaz para llegar a potenciales y existentes clientes. Es un sistema de comunicación, difusión, promoción y comercialización por correo electrónico de los servicios de una empresa a un potencial público objetivo.
-                    </p>
-                    <p>
-                        Informes y Respuesta: Puede realizar un seguimiento de la tasa de apertura, cuántas personas eliminaron o anulan la suscripción, importar listas de bases de datos y administrar grupos. No es sólo un caso de envío de un correo electrónico genérico, puede dirigirse a personas específicas y obtener información a través de los resultados para determinar su próxima campaña de correo electrónico.
+            <article class="col-16 medium-16 small-13 ">
+                <h2>Diseño Y publicidad 3D</h2>
+                <p>
+                    Presentación de Proyectos en 3D de exposiciones, congresos, conferencias, diseño de stands e infografías corporativas.
 
-                    </p>
+                </p>
+            </article>
+            <article class="col-16 medium-16 small-13 ">
+                <h2>Administración y soporte Moodle</h2>
+                <p>
+                    Implementamos el LMS moodle de acuerdo a su necesidad, apoyando la adquisición de la infraestructura
+                    adecuada en su organización, universidad, instituto, colegio o empresa.
+                </p>
+            </article>
+            <article class="col-16 medium-16 small-13 ">
+                <h2>Animación 3D y 2D</h2>
+                <p>
+                    Secuencias animadas digitales que involucren productos, objetos, personajes, escenarios, a través de la manipulación de recursos y técnicas como storys, modelado 3D, animación, cámaras, iluminación, texturización, render y postproducción.
 
-                </article>
-                <article class="col-7 medium-7 small-13 ">
-                    <h2>Campañas en redes sociales</h2>
-                    <p>
-                        Una Campaña proporciona a una empresa la capacidad de generar un plan estratégico enfocado en los objetivos empresariales, esto se realiza mediante el  procesos definidos, los cuales son, la formulación de la campaña, implementación y Control.
-
-                    </p>
-                    <p>
-                        ofrece una conexión directa con sus clientes que está separado de sus otros esfuerzos de publicidad. Es personal, directa, y una parte cada vez más importante de cualquier estrategia de negocio. Conseguir una buena estrategia es la parte más difícil, pero que es donde entramos nosotros.
-
-                    </p>
-
-                </article>
-            </div>
+                </p>
+            </article>
         </div>
     </section>
 @endsection

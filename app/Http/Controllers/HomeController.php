@@ -37,6 +37,14 @@ class HomeController extends Controller
     {
         return view('front.marketing');
     }
+    public function learning()
+    {
+        return view('front.learning');
+    }
+    public function ThreeD()
+    {
+        return view('front.3d');
+    }
 
     public function contactProject(ContactBudgetRequest $request)
     {

@@ -1,69 +1,76 @@
 @extends('layouts.front')
-@section('title') Marketing Digital @endsection
+@section('title') E-learning @endsection
 @section('header')
 
 @endsection
 @section('content')
-    <section class="section-topPage row center middle wedo-top marketing">
-        <h1>Marketing digital</h1>
+    <section class="section-topPage row center middle wedo-top ">
+        <h1>E-learning</h1>
     </section>
 
     <section class=" wedo-title">
         <article class="content ">
             <h2>
-                La calidad de nuestros productos y la satisfacción de nuestros clientes es nuestra prioridad. Creamos
-                relaciones con nuestros clientes a largo plazo y proponemos varias soluciones post-desarrollo para
-                asegurarle los productos digitales más actualizados y rentables.
+                Ofrecemos una amplia gama de servicios en el sector e-learning, para la comodidad de la empresa u
+                organización, dejando en manos expertas las tareas de construcción de cursos, implementaciones de
+                tecnología e-learning, administración de plataformas o desarrollo de interactividades especializadas.
             </h2>
         </article>
     </section>
-    <section class="wedo-content wedo-marketing" id="particles-js">
+    <section class="wedo-content wedo-marketing elearning" id="particles-js">
         <div class="content row middle">
-            <article class="col-7 medium-7 small-13 ">
-                <h2>Posicionamiento SEO y SEM</h2>
+            <article class="col-16 medium-16 small-13 ">
+                <h2>¿Cómo lo hacemos?</h2>
                 <p>
-                    El propósito de su sitio web es generar valor ya sea generando ventas o en posicionamiento de marca.
+                    Implementamos el LMS Moodle (Plataforma open-source más usada en el mundo) y contamos con un amplio conocimiento en el desarrollo de cursos con HTML5, CSS3, JAVASCRIPT y  estándar SCORM para el seguimiento y control adecuado de los estudiantes en los cursos.
                 </p>
                 <p>
-                    <b>SEO </b> Search Engine Optimization (optimización de motor de búsqueda), es el proceso
-                    de mejorar la visibilidad del sitio web en los resultados orgánicos de los diferentes buscadores.
+                    Hemos desarrollado soluciones e-learning para instituciones reconocidas como la Universidad Nacional de Colombia, Lumni Colombia, Unipanamericana, Universidad Central, e-lernova.
                 </p>
+            </article>
+            <article class="col-16 medium-16 small-13 ">
+                <h2>Asesorías:</h2>
                 <p>
-                    <b>SEM</b> Search Engine Marketing (Mercadeo en motor de búsqueda)
-                    promoción de un sitio web en motores de búsqueda, mediante el uso de métodos de pago,
-                    para la colocación de anuncios en sitios webs o blogs muy visitados y relevantes para su público.
-                </p>
+                    Asesoramos en la adquisición de herramientas LMS, o desarrollo de nuevas funcionalidades en la plataforma moodle. Al igual para la creación de cursos virtuales y generación de contenido web dirigido  a la educación virtual (e-learning y b-learning).
 
                 </p>
             </article>
-            <figure class="col-7 medium-7 small-13">
-                <img src="{{url('img/marketing.svg')}}" alt="">
-            </figure>
-            <div class="col-16 medium-16 small-16 row">
-                <article class="col-7 medium-7 small-13 ">
-                    <h2>E-mail Marketing</h2>
-                    <p>
-                        El email marketing es un método eficaz para llegar a potenciales y existentes clientes. Es un sistema de comunicación, difusión, promoción y comercialización por correo electrónico de los servicios de una empresa a un potencial público objetivo.
-                    </p>
-                    <p>
-                        Informes y Respuesta: Puede realizar un seguimiento de la tasa de apertura, cuántas personas eliminaron o anulan la suscripción, importar listas de bases de datos y administrar grupos. No es sólo un caso de envío de un correo electrónico genérico, puede dirigirse a personas específicas y obtener información a través de los resultados para determinar su próxima campaña de correo electrónico.
+            <article class="col-16 medium-16 small-13 ">
+                <h2>Desarrollo de cursos.</h2>
+                <p>
+                    Desarrollamos, diseñamos y realizamos todo el proceso para la creación de cursos virtuales, a través de procesos pedagógicos, corrección de estilo, diseño y desarrollo, para garantizar la calidad del contenido educativo en la web de acuerdo a su grupo objetivo. Desarrollamos los cursos con el estándar SCORM para poder generar registros en el LMS.
+                </p>
+            </article>
+            <article class="col-16 medium-16 small-13 ">
+                <h2>SCORM</h2>
+                <p>
+                    Si tienes contenidos en html o flash y deseas que cumplan con el estándar SCORM, nosotros te podemos asesorar y ayudar para que los contenidos puedan generar información valiosa a la plataforma, como tiempo del estudiante en el contenido, calificación por actividades, calificación general, última página visitada, módulos o temas finalizados y estado del estudiante en el curso.
 
-                    </p>
+                </p>
+            </article>
+            <article class="col-16 medium-16 small-13 ">
+                <h2>Implementación LMS </h2>
+                <p>
+                    Ofrecemos el servicio de administración y soporte de moodle por horas, ajustándose a sus necesidades.
+                    Algunas de las acciones administrativas son:
+                    Creación de cursos con las herramientas estándar de moodle.
+                    Creación de evaluaciones a partir de guión.
+                    Instalación de plugins.
+                    Administración de cursos.
+                    Asesorías.
+                    Creación de usuarios.
+                    Inscripción de usuarios a cursos.
+                    Soporte a usuarios.
+                    Modificaciones de temas gráficos.
 
-                </article>
-                <article class="col-7 medium-7 small-13 ">
-                    <h2>Campañas en redes sociales</h2>
-                    <p>
-                        Una Campaña proporciona a una empresa la capacidad de generar un plan estratégico enfocado en los objetivos empresariales, esto se realiza mediante el  procesos definidos, los cuales son, la formulación de la campaña, implementación y Control.
-
-                    </p>
-                    <p>
-                        ofrece una conexión directa con sus clientes que está separado de sus otros esfuerzos de publicidad. Es personal, directa, y una parte cada vez más importante de cualquier estrategia de negocio. Conseguir una buena estrategia es la parte más difícil, pero que es donde entramos nosotros.
-
-                    </p>
-
-                </article>
-            </div>
+                </p>
+            </article>
+            <article class="col-16 medium-16 small-13 ">
+                <h2>Administración y soporte Moodle</h2>
+                <p>
+                    Implementamos el LMS moodle de acuerdo a su necesidad, apoyando la adquisición de la infraestructura adecuada en su organización, universidad, instituto, colegio o empresa.
+                </p>
+            </article>
         </div>
     </section>
 @endsection

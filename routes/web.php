@@ -16,6 +16,8 @@ Route::get('/contacto', 'HomeController@contact');
 Route::get('/servicios/diseño-pagina-web-bogota', 'HomeController@wedo');
 Route::get('/servicios/desarrollo-aplicaciones-bogota', 'HomeController@apps');
 Route::get('/servicios/marketing-digital', 'HomeController@marketing');
+Route::get('/servicios/e-learning', 'HomeController@learning');
+Route::get('/servicios/diseño-animacion-3d', 'HomeController@ThreeD');
 Route::post('/contactProject', [
     'as' => 'contactProject',
     'uses' => 'HomeController@contactProject'
