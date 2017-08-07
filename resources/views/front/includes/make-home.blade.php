@@ -1,4 +1,4 @@
-<article class="Make row middle scrollTarget" id="howdo">
+<article class="Make row middle scrollTarget" id="#como-lo-hacemos">
     <div class="content row middle">
         <div class="col-8 medium-16 small-16 center">
 

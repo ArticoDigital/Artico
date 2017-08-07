@@ -8,13 +8,13 @@
     @include('front.includes.polo-footer')
     <aside class="Home-menu">
         <ul>
-            <li><a href="body" class="active" data-index="0"></a></li>
-            <li><a href="wedo" data-index="1"></a></li>
-            <li><a href="howdo" data-index="2"></a></li>
-            <li><a href="portfolio" data-index="3"></a></li>
-            <li><a href="artico" data-index="4"></a></li>
-            <li><a href="contact" data-index="5"></a></li>
-            <li><a href="footer" data-index="6"></a></li>
+            <li><a href="#body" class="active" data-index="0"></a></li>
+            <li><a href="#servicios" data-index="1"></a></li>
+            <li><a href="#como-lo-hacemos" data-index="2"></a></li>
+            <li><a href="#portafolio" data-index="3"></a></li>
+            <li><a href="#artico" data-index="4"></a></li>
+            <li><a href="#contacto" data-index="5"></a></li>
+            <li><a href="#redes-sociales" data-index="6"></a></li>
         </ul>
     </aside>
     <section class="container Home">
@@ -22,13 +22,12 @@
         @include('front.includes.make-home')
         @include('front.includes.porfolio-home')
     </section>
-    <section class="Home-about row center middle scrollTarget" id="artico">
+    <section class="Home-about row center middle scrollTarget" id="#artico">
         <blockquote>
             <span>‘‘</span>
             <svg width="152px" height="33px" viewBox="0 0 152 33" version="1.1" xmlns="http://www.w3.org/2000/svg"
                  xmlns:xlink="http://www.w3.org/1999/xlink">
-                <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
-                <desc>Created with Sketch.</desc>
+
                 <defs></defs>
                 <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                     <g id="iPad-Pro-Landscape" transform="translate(-80.000000, -90.000000)" fill="#FFFFFF">
@@ -56,7 +55,7 @@
 
     </section>
 
-    <section class="Home-contact row center middle scrollTarget" id="contact">
+    <section class="Home-contact row center middle scrollTarget" id="#contacto">
         <div class=" center Home-contactButton ">
             <p>¿Estás listo?<span>Hagámos algo grande juntos</span></p>
             <a href="/contacto">INICIA TU PROYECTO</a>

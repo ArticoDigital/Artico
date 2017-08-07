@@ -33,6 +33,11 @@ class HomeController extends Controller
         return view('front.apps');
     }
 
+    public function marketing()
+    {
+        return view('front.marketing');
+    }
+
     public function contactProject(ContactBudgetRequest $request)
     {
         $this->sendMessage($request);

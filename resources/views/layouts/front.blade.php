@@ -60,7 +60,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/sweetalert2/6.6.1/sweetalert2.css">
     @yield('styles')
 </head>
-<body id="body" class="@yield('classBody')">
+<body id="#body" class="@yield('classBody')">
 <header class="Header row middle center @yield('headerClass', '') scrollTarget">
     <div class="Header-bar row between middle">
         <figure>
@@ -124,10 +124,10 @@
                         <a id="WeDo" href="#LoQueHacemos">Lo que hacemos</a>
                         <div>
                             <ul class="submenu">
+                                <li><a href="/servicios/diseño-pagina-web-bogota">Diseño web</a></li>
                                 <li><a href="">E-learning</a></li>
-                                <li><a href="">Diseño web</a></li>
-                                <li><a href="">Marketing digital</a></li>
-                                <li><a href="">Desarrollo de Apps</a></li>
+                                <li><a href="/servicios/administracion-redes-sociales">Marketing digital</a></li>
+                                <li><a href="/servicios/desarrollo-aplicaciones-bogota">Desarrollo de Apps</a></li>
                                 <li><a href="">Diseño y animación 3D</a></li>
                             </ul>
                         </div>
@@ -186,7 +186,7 @@
 <main class="MainBack">
     @yield('content')
 </main>
-<footer class="Footer scrollTarget" id="footer">
+<footer class="Footer scrollTarget" id="#redes-sociales">
     <section>
         <div class="row content around">
             <div class="row col-5 medium-8 small-16 ">

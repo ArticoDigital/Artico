@@ -1,4 +1,4 @@
-<article class="Home-Client row middle scrollTarget" id="portfolio">
+<article class="Home-Client row middle scrollTarget" id="#portafolio">
     <div>
       {{--  <h2 style="text-align: center" id="target">Trabajamos con empresas únicas, ambiciosas y con buenas ideas.</h2>--}}
         <p>
