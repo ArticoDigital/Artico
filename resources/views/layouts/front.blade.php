@@ -125,7 +125,7 @@
                         <div>
                             <ul class="submenu">
                                 <li><a href="/servicios/diseño-pagina-web-bogota">Diseño web</a></li>
-                                <li><a href="e-learning">E-learning</a></li>
+                                <li><a href="/servicios/e-learning">E-learning</a></li>
                                 <li><a href="/servicios/marketing-digital">Marketing digital</a></li>
                                 <li><a href="/servicios/desarrollo-aplicaciones-bogota">Desarrollo de Apps</a></li>
                                 <li><a href="/servicios/diseño-animacion-3d">Diseño y animación 3D</a></li>
