@@ -49,20 +49,7 @@
 
                 </p>
             </article>
-            <article class="col-16 medium-16 small-13 ">
-                <h2>Administración y soporte Moodle</h2>
-                <p>
-                    Implementamos el LMS moodle de acuerdo a su necesidad, apoyando la adquisición de la infraestructura
-                    adecuada en su organización, universidad, instituto, colegio o empresa.
-                </p>
-            </article>
-            <article class="col-16 medium-16 small-13 ">
-                <h2>Animación 3D y 2D</h2>
-                <p>
-                    Secuencias animadas digitales que involucren productos, objetos, personajes, escenarios, a través de la manipulación de recursos y técnicas como storys, modelado 3D, animación, cámaras, iluminación, texturización, render y postproducción.
-
-                </p>
-            </article>
+           
         </div>
     </section>
 @endsection
