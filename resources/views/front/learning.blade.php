@@ -4,7 +4,7 @@
 
 @endsection
 @section('content')
-    <section class="section-topPage row center middle wedo-top ">
+    <section class="section-topPage row center middle wedo-top learning">
         <h1>E-learning</h1>
     </section>
 
