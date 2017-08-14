@@ -1,0 +1,65 @@
+
+.Portfolio
+  padding: rem(50)  rem(50)   rem(100)
+  background: url(../img/1.svg) bottom no-repeat
+  background-size: contain
+  @include respond-to(medium)
+    padding: rem(50)  rem(50)   rem(180)
+  img
+    max-width: 100%
+  article
+    background: white
+    border-radius: rem(4)
+    overflow: hidden
+    margin: rem(20) 0
+    box-shadow: 0 rem(8) rem(18) rem(-3) rgba(0, 0, 0, 0.1)
+    transition: all .25s cubic-bezier(.02, .01, .47, 1)
+    will-change: translateY
+    cursor: pointer
+    &:hover
+      box-shadow: 0 40px 40px rgba(0, 0, 0, .16)
+      transform: translateY(-10px)
+    &:hover svg
+      animation: bounceX 2s infinite
+      transition: color .3s cubic-bezier(.4, 0, .2, 1)
+  h2
+    font-size: rem(30)
+    font-weight: 500
+    padding: 0 rem(30)
+    text-align: left
+    margin: 0 0 rem(30)
+    position: relative
+  svg
+    transition: all .25s cubic-bezier(.02, .01, .47, 1)
+    will-change: translateX
+    cursor: pointer
+  span
+    position: absolute
+    right: rem(30)
+  p
+    font-size: rem(14)
+    color: #538bf4
+    padding: 0 rem(30)
+    margin: rem(30) 0 0
+
+.Portfolio-top
+  background: #538BF4
+  height: rem(160)
+  h1
+    font-size: rem(36)
+    color: white
+    @include respond-to(medium)
+      font-size: rem(40)
+
+
+
+@keyframes bounceX
+  0%, 100%, 20%, 50%, 80%
+    transform: translateX(0)
+  40%
+    transform: translateX(-1.25rem)
+  60%
+    transform: translateX(-.625rem)
+
+
+

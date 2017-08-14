@@ -132,7 +132,7 @@
                             </ul>
                         </div>
                     </li>
-                    <li><a id="Portfolio" href="#Logros">Logros</a></li>
+                    <li><a id="Portfolio" href="/portafolio">Logros</a></li>
                     <li><a id="Culture" href="#Cultura">Cultura</a></li>
                     <li><a href="">Blog</a></li>
                     <li class="Header-contact"><a href="/contacto">Inicia un proyecto</a></li>

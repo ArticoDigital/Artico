@@ -18,6 +18,8 @@ Route::get('/servicios/desarrollo-aplicaciones-bogota', 'HomeController@apps');
 Route::get('/servicios/marketing-digital', 'HomeController@marketing');
 Route::get('/servicios/e-learning', 'HomeController@learning');
 Route::get('/servicios/diseño-animacion-3d', 'HomeController@ThreeD');
+Route::get('/portafolio', 'HomeController@portfolios');
+Route::get('/portafolio/{porfolio}', 'HomeController@portfolio');
 Route::post('/contactProject', [
     'as' => 'contactProject',
     'uses' => 'HomeController@contactProject'

@@ -19,8 +19,8 @@ class HomeController extends Controller
 
     public function home()
     {
-        $messages = Message::where('day',Carbon::today()->dayOfWeek)->where('status',1)->orderBy('order')->get();
-        return view('front.home',compact('messages'));
+        $messages = Message::where('day', Carbon::today()->dayOfWeek)->where('status', 1)->orderBy('order')->get();
+        return view('front.home', compact('messages'));
     }
 
     public function wedo()
@@ -37,13 +37,25 @@ class HomeController extends Controller
     {
         return view('front.marketing');
     }
+
     public function learning()
     {
         return view('front.learning');
     }
+
     public function ThreeD()
     {
         return view('front.3d');
+    }
+
+    public function portfolios()
+    {
+        return view('front.portfolios');
+    }
+
+    public function portfolio($name)
+    {
+        return view('front.portfolio', compact('name'));
     }
 
     public function contactProject(ContactBudgetRequest $request)

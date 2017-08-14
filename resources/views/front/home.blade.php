@@ -90,7 +90,6 @@
             });
         });
 
-
         const buttonNavHome = document.querySelectorAll(".Home-menu a"),
             scrollTarget = document.querySelectorAll(".scrollTarget");
         function scrollButtons(el) {

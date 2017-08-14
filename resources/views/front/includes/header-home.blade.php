@@ -174,7 +174,6 @@
             @endforeach
         </ul>
         <span id="typed"></span></div>
-
 </section>
 
 <div class="Header-more">

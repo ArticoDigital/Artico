@@ -6,7 +6,7 @@
             Ya sea por redes sociales, email marketing, campañas o anuncios en google adwords y facebook ads, logramos
             llegar a sus usuarios en internet y hacemos que se enamoren de su marca, producto o servicio.
             Con el apoyo de especialistas apasionados, Ártico Digital ofrece dentro de su portafolio soluciones en desarrollo de
-            sitios web e E-commerce, aplicaiones para móbiles, web y de escritorio, E-elearning, marketing digital y posicionamiento en buscadores, diseño y animación 3d.
+            sitios web e E-commerce, aplicaiones para <móv></móv>iles, web y de escritorio, E-elearning, marketing digital y posicionamiento en buscadores, diseño y animación 3d.
 
         </p>
     </div>

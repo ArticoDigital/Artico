@@ -4,7 +4,7 @@
 
 @endsection
 @section('content')
-    <section class="section-topPage row center middle wedo-top">
+    <section class="section-topPage row center middle wedo-top web">
         <h1>Diseño de Páginas Web en Bogotá </h1>
     </section>
     <section class=" wedo-title">
