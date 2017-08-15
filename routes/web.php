@@ -20,6 +20,9 @@ Route::get('/servicios/e-learning', 'HomeController@learning');
 Route::get('/servicios/diseño-animacion-3d', 'HomeController@ThreeD');
 Route::get('/portafolio', 'HomeController@portfolios');
 Route::get('/portafolio/{porfolio}', 'HomeController@portfolio');
+Route::get('/quienes-somos', 'HomeController@culture');
+Route::get('/quienes-somos', 'HomeController@culture');
+
 Route::post('/contactProject', [
     'as' => 'contactProject',
     'uses' => 'HomeController@contactProject'

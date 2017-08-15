@@ -44,14 +44,12 @@
 
 .Portfolio-top
   background: #538BF4
-  height: rem(160)
+  height: rem(160) !important
   h1
     font-size: rem(36)
     color: white
     @include respond-to(medium)
       font-size: rem(40)
-
-
 
 @keyframes bounceX
   0%, 100%, 20%, 50%, 80%
@@ -62,4 +60,172 @@
     transform: translateX(-.625rem)
 
 
+.Portfolio-page-header
+  height: calc(100vh - 56px)
+  position: relative
+  top: rem(56)
+  position: relative
+  article
+    height: 100%
+    background-size: contain
+    background-position: right
+    background-repeat: no-repeat
+    background-size: cover
+    @include respond-to(large)
+      background-size: contain
+
+.wedo-top.apps
+  background-image: url("../img/desarrollo-apps-bogota.jpg")
+
+.wedo-top.learning
+  background-image: url("../img/elearning.jpg")
+
+.wedo-top.marketing
+  background-image: url("../img/marketing-digital.jpg")
+
+.wedo-top
+  background-image: url("../img/diseno-paginas-web-bogota.jpg")
+  background-size: cover
+  height: rem(224)
+  h1
+    font-size: rem(48)
+    color: white
+    text-align: center
+    margin: 0
+    @include respond-to(medium)
+      text-align: left
+
+  p
+    text-align: center
+    line-height: 1.1
+    letter-spacing: rem(2)
+    font-weight: 300
+    margin-top: rem(4)
+    @include respond-to(medium)
+      text-align: left
+
+.Portfolio-page-headerContent
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  > div
+    height: 100%
+    div.Portfolio-arrow
+      position: absolute
+      @include respond-to(large)
+        position: relative
+  span
+    display: block
+
+.Portfolio-pageTitle
+  padding: 4rem 0
+  background: #000
+  max-width: 100%
+  width: 100%
+  @include respond-to(medium)
+    padding: 3.7rem 4.2rem 3rem
+    width: auto
+  h1
+    color: white
+    text-align: center
+    font-size: rem(48)
+    margin: 0
+    @include respond-to(medium)
+  sup
+    margin-right: 0
+    display: block
+    color: #a9a9a9
+    top: rem(-2)
+    font-weight: 100
+    letter-spacing: rem(4)
+    text-align: center
+    @include respond-to(medium)
+      text-align: left
+  p
+    text-align: center
+    @include respond-to(medium)
+      text-align: left
+.Portfolio-arrow
+  background: black
+  padding: rem(32) rem(16) rem(8)
+  cursor: pointer
+  svg
+    animation: bounce 2s infinite
+    transition: color .3s cubic-bezier(.4, 0, .2, 1)
+
+.Portfolio-info
+  padding: rem(100) rem(50) rem(100)
+  background: url(../img/1.svg) bottom no-repeat
+  text-align: left
+  background-size: contain
+  @include respond-to(medium)
+    padding: rem(170) rem(50) rem(200)
+
+  article
+    margin: rem(8) 0
+    @include respond-to(medium)
+      margin: rem(8) 0
+  h3, h4
+    color: #1F2E4C
+    font-weight: 800
+    font-size: rem(30)
+    line-height: 1.4
+    text-align: left
+    text-transform: uppercase
+    margin: 0
+  p
+    line-height: rem(30)
+    margin: 1.375rem 0
+    font-size: 1.125rem
+    font-weight: 100
+    &.label
+      margin: 0 0 rem(24)
+      color: #9394A7
+      font-weight: 600
+      font-size: rem(12)
+      line-height: 1.5
+      text-transform: uppercase
+      letter-spacing: rem(1)
+      font-family: 'Raleway', sans-serif
+  em
+    display: block
+    margin: 0
+    font-weight: 100
+  ul
+    margin: rem(48) 0 0
+  li
+    margin: rem(40) 0
+  table
+    line-height: 34px
+    margin: 0 0 1rem
+  tr
+    margin: 0
+    padding: 0
+    border: 0
+    vertical-align: baseline
+    box-sizing: border-box
+    font-style: normal
+    font-weight: normal
+    text-decoration: none
+    outline: none
+    border-radius: 0
+  td
+    white-space: nowrap
+    padding-right: rem(20)
+    font-size: rem(16)
+    font-weight: 100
+    &:last-child
+      width: 60%
+      white-space: normal
+  td:first-child
+    width: 20%
+  a
+    color: #538bf4
+
+article.Portfolio-infoDataCreate
+  margin: 2rem 0 rem(11)
+
+.Portfolio-info .gallery
+  margin-top: rem(32)
 

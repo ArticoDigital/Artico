@@ -58,6 +58,11 @@ class HomeController extends Controller
         return view('front.portfolio', compact('name'));
     }
 
+    public function culture()
+    {
+        return view('front.culture');
+    }
+
     public function contactProject(ContactBudgetRequest $request)
     {
         $this->sendMessage($request);
