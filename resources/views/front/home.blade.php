@@ -76,7 +76,7 @@
             var message = messages[i];
             messagesArray.push(message.dataset.message + " ^" + message.dataset.delay)
         }
-        console.log(messagesArray)
+
 
         document.addEventListener('DOMContentLoaded', function () {
             Typed.new('#typed', {

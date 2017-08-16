@@ -6,7 +6,9 @@ use App\Http\Requests\ContactBudgetRequest;
 use App\Http\Requests\ContactMessageRequest;
 use App\Mail\NewForm;
 use App\Models\Form;
+use App\Models\Image;
 use App\Models\Message;
+use App\Models\Portfolio;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 
@@ -53,9 +55,9 @@ class HomeController extends Controller
         return view('front.portfolios');
     }
 
-    public function portfolio($name)
+    public function portfolio(Portfolio $porfolio)
     {
-        return view('front.portfolio', compact('name'));
+        return view('front.portfolio', compact('porfolio'));
     }
 
     public function culture()
