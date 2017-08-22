@@ -1,0 +1,60 @@
+.thumbnail
+  img
+    object-fit: cover
+    width: 50px
+    height: 50px
+
+.blogs-content
+  padding: rem(50) 0 3rem
+  background: url(../img/1.svg) bottom no-repeat
+  background-size: contain
+  position: relative
+  @include respond-to(medium)
+    padding: rem(50) 0 rem(128)
+  img
+    max-width: 100%
+  article
+    margin: 0 auto 3.75rem
+    padding-bottom: rem(26)
+    box-shadow: 0px 2px 4px rgba(45, 81, 148, 0.12)
+
+  h3
+    margin-bottom: rem(0)
+    line-height: 1.1em
+    color: #113769
+    padding: 0 rem(26)
+    text-align: left
+    font-weight: 600
+    margin-top: 0px
+    font-size: 1.5em
+  h4
+    margin-bottom: rem(15)
+    line-height: 1.1em
+    color: #113769
+    text-align: left
+    font-weight: 700
+    margin-top: 0px
+    font-size: 1.2em
+  p
+    padding: 0 rem(26)
+    font-size: 1rem
+    font-weight: 100
+    line-height: 1.61
+  .thumb-date
+    font-size: 0.8rem
+    font-weight: 100
+    color: #818181
+  .thumb-title
+    font-size: 1rem
+    font-weight: 500
+    color: #113769
+  .inner-image
+    width: 15px
+  .blog-mini
+    border-bottom: solid 1px #e6e6e6
+    padding: 10px 0px
+  .blog-block
+    margin-bottom: rem(46)
+  a.read-more
+    padding: 0 rem(26)
+    color: #5f9af4
