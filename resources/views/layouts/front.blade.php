@@ -281,11 +281,14 @@
 </footer>
 <aside class="messenger">
     <a href="http://m.me/ArticoDigital" target="_blank">
-   <svg width="37px" height="42px" viewBox="0 0 37 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <svg width="37px" height="42px" viewBox="0 0 37 42" version="1.1" xmlns="http://www.w3.org/2000/svg"
+             xmlns:xlink="http://www.w3.org/1999/xlink">
 
             <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                <g id="iPad-Pro-Portrait" transform="translate(-503.000000, -655.000000)" fill-rule="nonzero" fill="#5079CB">
-                    <path d="M517.726563,690.973437 L512,696.7 L512,688.833941 C506.603295,685.694216 503,679.869717 503,673.2 C503,663.1 511.1,655 521.2,655 C531.2,655 539.4,663.1 539.4,673.2 C539.3,683.2 531.2,691.3 521.2,691.3 C520.011162,691.3 518.850033,691.187775 517.726563,690.973437 Z M518.691358,667.111111 L510,681 L519.098765,674.333333 L523.444444,679.888889 L532,666 L522.62963,672.527778 L518.691358,667.111111 Z" id="Combined-Shape"></path>
+                <g id="iPad-Pro-Portrait" transform="translate(-503.000000, -655.000000)" fill-rule="nonzero"
+                   fill="#5079CB">
+                    <path d="M517.726563,690.973437 L512,696.7 L512,688.833941 C506.603295,685.694216 503,679.869717 503,673.2 C503,663.1 511.1,655 521.2,655 C531.2,655 539.4,663.1 539.4,673.2 C539.3,683.2 531.2,691.3 521.2,691.3 C520.011162,691.3 518.850033,691.187775 517.726563,690.973437 Z M518.691358,667.111111 L510,681 L519.098765,674.333333 L523.444444,679.888889 L532,666 L522.62963,672.527778 L518.691358,667.111111 Z"
+                          id="Combined-Shape"></path>
                 </g>
             </g>
         </svg>
@@ -301,9 +304,9 @@
         this.classList.toggle('open')
     });
     @if (session('messageModal'))
-            @php
-                 $infoModal = session('messageModal')
-            @endphp
+    @php
+        $infoModal = session('messageModal')
+    @endphp
 
     document.addEventListener("DOMContentLoaded", function () {
         const ButtonColor = {
@@ -322,6 +325,41 @@
     @endif
 
 </script>
+
+@if(config('app.debug') == 'production')
+    <script>
+        !function () {
+            var analytics = window.analytics = window.analytics || [];
+            if (!analytics.initialize) if (analytics.invoked) window.console && console.error && console.error("Segment snippet included twice."); else {
+                analytics.invoked = !0;
+                analytics.methods = ["trackSubmit", "trackClick", "trackLink", "trackForm", "pageview", "identify", "reset", "group", "track", "ready", "alias", "debug", "page", "once", "off", "on"];
+                analytics.factory = function (t) {
+                    return function () {
+                        var e = Array.prototype.slice.call(arguments);
+                        e.unshift(t);
+                        analytics.push(e);
+                        return analytics
+                    }
+                };
+                for (var t = 0; t < analytics.methods.length; t++) {
+                    var e = analytics.methods[t];
+                    analytics[e] = analytics.factory(e)
+                }
+                analytics.load = function (t) {
+                    var e = document.createElement("script");
+                    e.type = "text/javascript";
+                    e.async = !0;
+                    e.src = ("https:" === document.location.protocol ? "https://" : "http://") + "cdn.segment.com/analytics.js/v1/" + t + "/analytics.min.js";
+                    var n = document.getElementsByTagName("script")[0];
+                    n.parentNode.insertBefore(e, n)
+                };
+                analytics.SNIPPET_VERSION = "4.0.0";
+                analytics.load("qIjGwJudr8S9VFzyaBfveMcWiqQ7O7GD");
+                analytics.page();
+            }
+        }();
+    </script>
+@endif
 @yield('scripts')
 </body>
 </html>
