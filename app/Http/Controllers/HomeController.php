@@ -65,6 +65,12 @@ class HomeController extends Controller
         return view('front.culture');
     }
 
+    public function blogs()
+    {
+        return view('front.blogs');
+    }
+
+
     public function contactProject(ContactBudgetRequest $request)
     {
         $this->sendMessage($request);

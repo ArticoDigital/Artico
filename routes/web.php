@@ -22,6 +22,7 @@ Route::get('/portafolio', 'HomeController@portfolios');
 Route::get('/portafolio/{porfolio}', 'HomeController@portfolio');
 Route::get('/quienes-somos', 'HomeController@culture');
 Route::get('/quienes-somos', 'HomeController@culture');
+Route::get('/blogs', 'HomeController@blogs');
 
 Route::post('/contactProject', [
     'as' => 'contactProject',

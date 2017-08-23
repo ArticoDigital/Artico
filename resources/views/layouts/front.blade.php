@@ -134,7 +134,7 @@
                     </li>
                     <li><a id="Portfolio" href="/portafolio">Logros</a></li>
                     <li><a id="Culture" href="/quienes-somos">Cultura</a></li>
-                    <li><a href="">Blog</a></li>
+                    <li><a href="/blogs">Blog</a></li>
                     <li class="Header-contact"><a href="/contacto">Inicia un proyecto</a></li>
                     <li class="Header-number-mobile">
                         <a href="tel:3005549372">
