@@ -44,7 +44,7 @@
     </section>
     <section class="Portfolio-info">
         <div class="content row between">
-            <article class="col-9 medium-9 small-16">
+            <article class="col-10 medium-9 small-16">
                 <h3>Objetivo del proyecto</h3>
                 <p class="label">Aplicación web</p>
                 <p>{{$porfolio->target}} </p>
