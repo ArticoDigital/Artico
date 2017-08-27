@@ -1,11 +1,13 @@
 @extends('layouts.front')
-@section('title') E-learning @endsection
+@section('title') Desarrollo de Cursos Virtuales en Bogotá @endsection
 @section('header')
-
+@section('description')
+    Desarrollo de cursos virtuales e-learning, herramientas LMS Moodle, procesos pedagógicos y generación de contenido dirigido a educación virtual.
+@endsection
 @endsection
 @section('content')
     <section class="section-topPage row center middle wedo-top learning">
-        <h1>E-learning</h1>
+        <h1>Desarrollo de Cursos Virtuales en Bogotá</h1>
     </section>
 
     <section class=" wedo-title">

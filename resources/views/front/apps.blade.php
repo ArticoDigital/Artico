@@ -1,11 +1,12 @@
 @extends('layouts.front')
-@section('title') Diseño de páginas web en Bogotá @endsection
+@section('title') Diseño de aplicaciones móviles en Bogotá @endsection
+@section('description')Diseño y desarrollo de aplicaciones hibridas y nativas para móviles, iPhone, Android, iPad y Tablet, aplicaciones para web y de escritorio.@endsection
 @section('header')
 
 @endsection
 @section('content')
     <section class="section-topPage row center middle wedo-top apps">
-        <h1>Desarrollo de apps en Bogotá</h1>
+        <h1>Desarrollo de apicaciones en Bogotá</h1>
     </section>
 
     <section class=" wedo-title">

@@ -1,5 +1,5 @@
 @extends('layouts.front')
-@section('title') Portafolio {{$porfolio->name}} @endsection
+@section('title') Portafolio - {{$porfolio->name}} @endsection
 @section('header')
 
 @endsection

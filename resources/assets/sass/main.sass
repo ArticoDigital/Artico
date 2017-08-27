@@ -15,7 +15,7 @@
   @include respond-to(medium)
     padding: 0  0  rem(180)
   section.first > div
-    margin-top: rem(40)
+    margin: rem(10) 0 rem(30) 0
 
   article
     background: white
@@ -84,16 +84,33 @@
 
 .Culture-header
   width: 100%
-  height: rem(336)
-  background: url(../img/artico.png) no-repeat
+  height: rem(380)
+  background: url(../img/bta.jpg) no-repeat
   background-size: cover
+  overflow: hidden
+  position: relative
 
+  video
+    position: absolute
+    top: 18%
+    left: 50%
+    transform: translate(-50%, -15%)
+    width: 1913px
+    height: 1076.06px
 
 .Culture-member
   height: rem(224)
   border-radius: rem(8) rem(8) 0 0
   background-position: 0 rem(224)
   background-size: 100%
+.pattern
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  z-index: 2
+  background: rgba(0,0,0,0.2) url(../img/pattern.png) repeat 0 0
 
 .Rectangle
   background: #4482FF

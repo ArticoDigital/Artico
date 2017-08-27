@@ -1,7 +1,7 @@
 <article class="col-5 medium-7 small-16">
     <div>
         <a href="/portafolio/{{$slug}}">
-            <img src="{{asset($image)}}" alt="">
+            <img src="{{asset($image)}}" alt="Portafolio Ártico - {{$alt}} ">
             <p>{{$services}}</p>
             <h2>{{$name}}
                 <span>

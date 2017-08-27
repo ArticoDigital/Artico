@@ -1,8 +1,7 @@
 @extends('layouts.front')
-@section('title') Diseño y animación 3D @endsection
-@section('header')
-
-@endsection
+@section('title') Diseño y Animación 3D en Bogotá @endsection
+@section('description')Diseño y animación 3D y 2D, Animación y Renders Arquitectónicos, Aplicaciones de Realidad Virtual y Aumentada, Diseño Y publicidad 3D@endsection
+@section('header')@endsection
 @section('content')
     <section class="section-topPage row center middle wedo-top ">
         <h1>Diseño y animación 3D</h1>
@@ -19,8 +18,12 @@
     </section>
     <section class="wedo-content wedo-marketing ThreeD" id="particles-js">
         <div class="content row middle">
+            <div id="container" style="width:100%;height:300px;">
+                <br>Loading...<br><br>
+                This content requires HTML5 with CSS3 3D Transforms or WebGL.
+            </div>
             <article class="col-16 medium-16 small-13 ">
-                <h2>Renders Arquitectonicos</h2>
+                <h2>Renders Arquitectónicos</h2>
                 <p>Infografías 3D o 2D para la comercialización de espacios inmobiliarios.  </p>
             </article>
             <article class="col-16 medium-16 small-13 ">
@@ -55,7 +58,13 @@
 @endsection
 @section('scripts')
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script type="text/javascript" src={{asset("js/pano.js")}}></script>
+
     <script>
+        pano=new pano2vrPlayer("container");
+        window.addEventListener("load", function() {
+            pano.readConfigUrlAsync('{{asset("js/pano.xml")}}');
+        });
         particlesJS('particles-js', {
             "particles": {
                 "number": {

@@ -1,11 +1,11 @@
 @extends('layouts.front')
-@section('title') Marketing Digital @endsection
-@section('header')
+@section('title') Agencia de Marketing digital en Bogotá @endsection
 
-@endsection
+@section('description')Agencia de marketing digital en bogotá, estrategia en redes sociales, posicionamiento web seo y sem, E-mail Marketing. @endsection
+
 @section('content')
     <section class="section-topPage row center middle wedo-top marketing">
-        <h1>Marketing digital</h1>
+        <h1>Estrategias de Marketing Digital</h1>
     </section>
 
     <section class=" wedo-title">
@@ -37,7 +37,7 @@
                 </p>
             </article>
             <figure class="col-7 medium-7 small-13">
-                <img src="{{url('img/marketing.svg')}}" alt="">
+                <img src="{{url('img/marketing.svg')}}" alt="Marketing digital">
             </figure>
             <div class="col-16 medium-16 small-16 row">
                 <article class="col-7 medium-7 small-13 ">

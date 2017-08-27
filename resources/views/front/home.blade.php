@@ -1,4 +1,5 @@
 @extends('layouts.front')
+@section('title', 'Agencia de Publicidad en Bogotá')
 @section('headerClass') Header-home @endsection
 @section('classBody') home @endsection
 @section('header')
@@ -49,7 +50,7 @@
             y Analistas apasionados <b>creativos</b> - <b>geeks</b>, que resolvemos problemas a través de un buen
             diseño y una experiencia de usuario efectiva.<span>’’</span>
             <div class="col-16">
-                <a href=""> Cultura Ártico <em> → </em></a>
+                <a href="/quienes-somos"> Cultura Ártico <em> → </em></a>
             </div>
         </blockquote>
 

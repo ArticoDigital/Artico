@@ -1,5 +1,5 @@
 @extends('layouts.front')
-@section('title') Contacto @endsection
+
 @section('header')
 
 @endsection
