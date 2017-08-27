@@ -67,16 +67,16 @@
                     @slot('twitter','')
                     @slot('instagram','')
                 @endcomponent
-                    @component('components.teams')
-                        @slot('image', asset('img/daniel.jpg'))
-                        @slot('name','Daniel Quintero')
-                        @slot('email','daniel@artico.io')
-                        @slot('position','DIRECTOR E-LEARNING')
-                        @slot('facebook','')
-                        @slot('youtube','')
-                        @slot('twitter','')
-                        @slot('instagram','')
-                    @endcomponent
+                @component('components.teams')
+                    @slot('image', asset('img/daniel.jpg'))
+                    @slot('name','Daniel Quintero')
+                    @slot('email','daniel@artico.io')
+                    @slot('position','DIRECTOR E-LEARNING')
+                    @slot('facebook','')
+                    @slot('youtube','')
+                    @slot('twitter','')
+                    @slot('instagram','')
+                @endcomponent
                 @component('components.teams')
                     @slot('image', asset('img/doris.jpg'))
                     @slot('name','Doris Moncada')
@@ -98,16 +98,7 @@
                     @slot('twitter','')
                     @slot('instagram','')
                 @endcomponent
-                @component('components.teams')
-                    @slot('image', asset('img/clara.jpg'))
-                    @slot('name','Clara ')
-                    @slot('email','clara@artico.io')
-                    @slot('position','DISEÑADORA')
-                    @slot('facebook','')
-                    @slot('youtube','')
-                    @slot('twitter','')
-                    @slot('instagram','')
-                @endcomponent
+
                 @component('components.teams')
                     @slot('image', asset('img/david.jpg'))
                     @slot('name','David Lopez')
@@ -118,7 +109,16 @@
                     @slot('twitter','')
                     @slot('instagram','')
                 @endcomponent
-
+                @component('components.teams')
+                    @slot('image', asset('img/clara.jpg'))
+                    @slot('name','Clara ')
+                    @slot('email','clara@artico.io')
+                    @slot('position','DISEÑADORA')
+                    @slot('facebook','')
+                    @slot('youtube','')
+                    @slot('twitter','')
+                    @slot('instagram','')
+                @endcomponent
 
                 <article class="col-5 medium-7 small-16 row center middle">
                     <div class="col-16">
