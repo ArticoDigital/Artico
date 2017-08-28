@@ -42,7 +42,7 @@
                 </g>
             </svg>
 
-            Es una agencia creativa digital con sede en Bogotá, Colombia, especializada en <b>posicionamiento
+            <h1>Es una agencia creativa digital con sede en Bogotá, Colombia,</h1> especializada en <b>posicionamiento
                 digital</b>.
             Logramos que su marca, producto y/o servicio llegue de manera efectiva al público objetivo de su
             interés en internet. Contamos con un experimentado equipo de estrategas digitales, Diseñadores,
