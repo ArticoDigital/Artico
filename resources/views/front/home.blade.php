@@ -9,13 +9,13 @@
     @include('front.includes.polo-footer')
     <aside class="Home-menu">
         <ul>
-            <li><a href="#body" class="active" data-index="0"></a></li>
-            <li><a href="#servicios" data-index="1"></a></li>
-            <li><a href="#como-lo-hacemos" data-index="2"></a></li>
-            <li><a href="#portafolio" data-index="3"></a></li>
-            <li><a href="#artico" data-index="4"></a></li>
-            <li><a href="#contacto" data-index="5"></a></li>
-            <li><a href="#redes-sociales" data-index="6"></a></li>
+            <li><a href="#body" rel="nofollow" class="active" data-index="0" ></a></li>
+            <li><a href="#servicios" rel="nofollow" data-index="1"></a></li>
+            <li><a href="#como-lo-hacemos" rel="nofollow" data-index="2"></a></li>
+            <li><a href="#portafolio" rel="nofollow" rel="nofollow" data-index="3"></a></li>
+            <li><a href="#artico" rel="nofollow" data-index="4"></a></li>
+            <li><a href="#contacto" rel="nofollow" data-index="5"></a></li>
+            <li><a href="#redes-sociales" rel="nofollow" data-index="6"></a></li>
         </ul>
     </aside>
     <section class="container Home">
