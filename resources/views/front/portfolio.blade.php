@@ -62,7 +62,7 @@
                                 Sitio web:
                             </td>
                             <td valign="middle">
-                                <a href="http://agrosellers.com" target="_blank">{{$porfolio->website}}</a>
+                                <a href="{{$porfolio->website}}" target="_blank">{{$porfolio->website}}</a>
                             </td>
                         </tr>
                         <tr valign="middle">
@@ -120,18 +120,15 @@
                     @endforeach
                 </ul>
             </article>
-            <article class="col-16 medium-16 small-16">
+            {{--<article class="col-16 medium-16 small-16">
                 <h3>Vamos a verlo </h3>
 
                 <div class="carousel gallery">
                     @foreach($porfolio->images as $images)
                         <img src="{{asset($images->url)}}" class="carousel__item">
                     @endforeach
-
-
                 </div>
-
-            </article>
+            </article>--}}
         </div>
     </section>
 @endsection
