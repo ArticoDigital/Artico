@@ -62,7 +62,7 @@
                                 Sitio web:
                             </td>
                             <td valign="middle">
-                                <a href="{{$porfolio->website}}" target="_blank">{{$porfolio->website}}</a>
+                                <a href="http://{{$porfolio->website}}" target="_blank">{{$porfolio->website}}</a>
                             </td>
                         </tr>
                         <tr valign="middle">
