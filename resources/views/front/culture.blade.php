@@ -35,6 +35,10 @@
 </svg>
            </span>
                 <h2>Team Ártico</h2>
+                <p>Somos un experimentado equipo de estrategas digitales, Diseñadores,
+            Desarrolladores
+            y Analistas apasionados <b>creativos</b> - <b>geeks</b>, que resolvemos problemas a través de un buen
+            diseño y una experiencia de usuario efectiva.</p>
             </div>
             <div class="row around Team">
                 @component('components.teams')

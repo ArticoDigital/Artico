@@ -7,7 +7,7 @@
     <section class="error404 row center middle">
         <div>
             <h1>404</h1>
-            <h2>¡Ups!, No encontramos la página que buscas, o tal vez se hundió en el Ártico.io</h2>
+            <h2>¡Ups!, No encontramos la página que buscas, o tal vez se hundió llegando al Ártico.io</h2>
         </div>
     </section>
     <div class="error404-polo">
