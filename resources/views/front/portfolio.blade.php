@@ -5,9 +5,9 @@
 @endsection
 @section('content')
 
-    <section class="Portfolio-page-header row "
+    <section class="Portfolio-page-header row {{($porfolio->is_header_img_complete)?'Portfolio-page-headerContain':''}}"
              style= "{{($porfolio->is_header_img_complete)?
-             'background-image: url(' . asset($porfolio->img_header) . ')' : 'background: ' . $porfolio->color}} ">
+             'background-image: url(' . asset($porfolio->img_header) . ') ' : 'background: ' . $porfolio->color}} ">
         <article class="Portfolio-page-headerContent ">
             <div class="row col-8 bottom small-16">
                 <div class="Portfolio-pageTitle">
