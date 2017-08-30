@@ -45,7 +45,8 @@
             <h1>Es una agencia creativa con sede en Bogotá, Colombia,</h1> especializada en <b>POSICIONAMIENTO DIGITAL.</b> <br>
             Logramos que su marca, producto y/o servicio llegue de manera efectiva al público objetivo de su
             interés en internet. <br>
-Es una agencia de posicionamiento digital, si ud quiere que su marca, producto o servicio  se vea, sea conocido o se venda por internet hable con nosotros ,  ¡sabemos cómo hacerlo! 👊👌👍
+            Si quieres que tu marca, producto o servicio se vea y se venda por internet,
+            <br><b>habla con nosotros , ¡sabemos cómo hacerlo!</b>  👊👌👍
             <span>’’</span>
             <div class="col-16">
                 <a href="/quienes-somos"> Cultura Ártico <em> → </em></a>
