@@ -22,18 +22,17 @@
             <article class="col-7 medium-7 small-13 ">
                 <h2>Posicionamiento SEO y SEM</h2>
                 <p>
-                    El propósito de su sitio web es generar valor ya sea generando ventas o en posicionamiento de marca.
+                    El propósito de su sitio web es crear valor ya sea generando ventas o en posicionamiento de marca,
+                    producto o servicio.
                 </p>
                 <p>
-                    <b>SEO </b> Search Engine Optimization (optimización de motor de búsqueda), es el proceso
-                    de mejorar la visibilidad del sitio web en los resultados orgánicos de los diferentes buscadores.
+                    <b>SEO </b> Search Engine Optimization (optimización de motor de búsqueda), es el proceso de mejorar
+                    la visibilidad del sitio web en los resultados orgánicos de los diferentes buscadores.
                 </p>
                 <p>
-                    <b>SEM</b> Search Engine Marketing (Mercadeo en motor de búsqueda)
-                    promoción de un sitio web en motores de búsqueda, mediante el uso de métodos de pago,
-                    para la colocación de anuncios en sitios webs o blogs muy visitados y relevantes para su público.
-                </p>
-
+                    <b>SEM</b> Search Engine Marketing (Mercadeo en motor de búsqueda) es la promoción de un sitio web
+                    en motores de búsqueda, mediante el uso de métodos de pago, para la colocación de anuncios en sitios
+                    webs o blogs muy visitados y relevantes para su público.
                 </p>
             </article>
             <figure class="col-7 medium-7 small-13">
@@ -43,26 +42,36 @@
                 <article class="col-7 medium-7 small-13 ">
                     <h2>E-mail Marketing</h2>
                     <p>
-                        El email marketing es un método eficaz para llegar a potenciales y existentes clientes. Es un sistema de comunicación, difusión, promoción y comercialización por correo electrónico de los servicios de una empresa a un potencial público objetivo.
+                        El <b>email marketing </b>es un método eficaz para llegar a clientes potenciales y reales. Es un
+                        sistema de comunicación, difusión, promoción y comercialización por correo electrónico de los
+                        servicios de una empresa a un potencial público objetivo.
                     </p>
                     <p>
-                        Informes y Respuesta: Puede realizar un seguimiento de la tasa de apertura, cuántas personas eliminaron o anulan la suscripción, importar listas de bases de datos y administrar grupos. No es sólo un caso de envío de un correo electrónico genérico, puede dirigirse a personas específicas y obtener información a través de los resultados para determinar su próxima campaña de correo electrónico.
-
+                        Informes y Respuesta: Puede realizar un seguimiento de la tasa de apertura, cuántas personas
+                        eliminaron o anulan la suscripción, importar listas de bases de datos y administrar grupos.
+                       {{-- No es sólo un caso de envío de un correo electrónico genérico, puede dirigirse a personas
+                        específicas y obtener información a través de los resultados para determinar su próxima campaña
+                        de publicidad y mercadeo.--}}
                     </p>
 
                 </article>
                 <article class="col-7 medium-7 small-13 ">
                     <h2>Campañas en redes sociales</h2>
                     <p>
-                        Una Campaña proporciona a una empresa la capacidad de generar un plan estratégico enfocado en los objetivos empresariales, esto se realiza mediante el  procesos definidos, los cuales son, la formulación de la campaña, implementación y Control.
+                        Una Campaña en redes sociales proporciona a tu empresa la capacidad de crear una conexión
+                        directa con sus clientes de manera personal e informal, creando sólidos lazos de confianza entre
+                        el público objetivo y tu marca, producto o servicio.
 
                     </p>
                     <p>
-                        ofrece una conexión directa con sus clientes que está separado de sus otros esfuerzos de publicidad. Es personal, directa, y una parte cada vez más importante de cualquier estrategia de negocio. Conseguir una buena estrategia es la parte más difícil, pero que es donde entramos nosotros.
-
-                    </p>
 
                 </article>
+            </div>
+        </div>
+
+        <div class="row center">
+            <div class=" portfolioButton ">
+                <a href="/portafolio"> NUESTROS LOGROS</a>
             </div>
         </div>
     </section>

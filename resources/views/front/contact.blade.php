@@ -11,12 +11,9 @@
         <h2 class="Contact-h2">Deseamos trabajar contigo</h2>
         <p class="Contact-p ">
 
-            Su proyecto es muy importante para nosotros y por eso obtendrá lo mejor de nuestro equipo.
-            Creamos soluciones limpias, elegantes y originales, no nos basamos en plantillas o en diseños
-            preestablecidos,
-            lo que significa que tu proyecto será único y a la medida según su marca, sus clientes y nuestra genialidad.
-            Te invitamos a que ingrese la información en el formulario, recuerde que entre más detallado seas, más
-            precisa será nuestra reunión.
+            Te invitamos a que ingreses la información en el formulario y nos cuentes cuál es tu nuevo proyecto. Recuerda que entre más detallado seas, más acertados seremos en nuestro servicio.
+            <br>
+            Tu proyecto es muy importante para nosotros y por eso obtendrás lo mejor de nuestro equipo. Creamos soluciones limpias, elegantes y originales, lo que significa que tu proyecto será único y a la medida de lo que necesita tu marca y de lo que quieren tus clientes.
 
         </p>
 
@@ -38,7 +35,7 @@
                         </g>
                     </g>
                 </svg>
-                <span class="Contact-span">Envíenos un correo</span>
+                <span class="Contact-span">Envíanos un correo</span>
                 <a class="Contact-link" href="mailto:hola@artico.io">hola@artico.io</a>
             </li>
             <li class="col-4 small-8 medium-8">
@@ -58,7 +55,7 @@
                         </g>
                     </g>
                 </svg>
-                <span class="Contact-span">Llámenos </span>
+                <span class="Contact-span">Llámanos </span>
                 <a class="Contact-link" href="tel:573005549372">(+57) 300 554 93 72</a>
             </li>
             <li class="col-4 small-8 medium-8">
@@ -78,7 +75,7 @@
                         </g>
                     </g>
                 </svg>
-                <span class="Contact-span">Visítenos</span>
+                <span class="Contact-span">Visítanos</span>
                 <a class="Contact-link" id="Contact-mapLink" href="#">Cra 22 # 80-10 Bogotá - Col </a>
             </li>
             <li class="col-4 small-8 medium-8">
@@ -173,7 +170,7 @@
                                            placeholder="¿A qué se dedica tu empresa?"></label>
                             </div>
                         </div>
-                        <h3>¿Con que necesitas ayuda?</h3>
+                        <h3>¿En qué te podemos ayudar?</h3>
                         <hr>
 
                         <div class="row between">
@@ -256,7 +253,7 @@
                                 <span>No tengo idea</span>
                             </label>
                         </div>
-                        <h3>Resumen del proyecto</h3>
+                        <h3>Escribe de qué se trata tu proyecto.</h3>
                         <hr>
                         @if ($errors->has('summary'))
                             <div class="Contact-errorType Error  col-16 small-16 medium-16">

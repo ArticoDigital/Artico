@@ -6,14 +6,14 @@
 @endsection
 @section('content')
     <section class="section-topPage row center middle wedo-top apps">
-        <h1>Desarrollo de apicaciones en Bogotá</h1>
+        <h1>Desarrollo de aplicaciones en Bogotá</h1>
     </section>
 
     <section class=" wedo-title">
         <article class="content ">
-            <h2>Las aplicaciones han ganado gran terreno y seguirán creciendo.
-                Cada vez más las empresas necesitan aplicaciones ajustadas a su medida que
-                responden a necesidades puntuales con sus clientes o con sus mismos empleados.
+            <h2>Las aplicaciones han ganado gran terreno en los medios digitales y móviles. Cada vez más, empresas y
+                emprendedores necesitan aplicaciones ajustadas a sus objetivos que respondan a necesidades puntuales de
+                clientes y público objetivo.
             </h2>
         </article>
     </section>
@@ -58,11 +58,7 @@
                 </div>
                 <h2>Aplicaciones nativas</h2>
                 <p>
-                    Ya se trate de iOS, Android, Windows o una combinación de los tres, una aplicación a medida crea una
-                    experiencia de usuario más agradable, y tiene la capacidad de atraer a un público diferente, mostrar
-                    contenido específico y ser gamificado o monetizado, proporcionando una experiencia muy diferente que
-                    a través de una página web.
-
+                    Ya se trate de iOS, Android, Windows o una combinación de los tres, una aplicación a medida crea una experiencia de usuario más agradable con una fuerte capacidad de atraer a un público más variado, mostrando contenido específico dentro de la categoría (ya sea comercial o de entretenimiento) en la que se desea hacer presencia, proporcionando una experiencia diferente, personal e íntima entre marca y usuario.
                 </p>
             </article>
             <article class="col-7 medium-7 small-13">
@@ -90,13 +86,7 @@
                     </svg>
                 </div>
                 <h2>Aplicaciones hibridas </h2>
-                <p>
-                    Una aplicación hibrida ofrece un desarrollo rápido y a bajo costo, son basadas en código web que se
-                    ejecuta
-                    para varios sistemas operativos como Android y iOS. Una aplicación móvil basada en web bien diseñada
-                    con un óptimo
-                    código puede ofrecer una experiencia muy comparable a las nativas para muchos casos de uso.
-                </p>
+                <p>Una aplicación híbrida ofrece un desarrollo rápido y a bajo costo. Son basadas en código web que se ejecuta para varios sistemas operativos como Android y iOS. Una aplicación móvil basada en web bien diseñada, con un óptimo código, puede ofrecer una experiencia muy comparable a las nativas para muchos casos de uso. </p>
             </article>
             <article class="col-7  medium-7 small-13">
                 <div class="col-16">
@@ -126,11 +116,8 @@
                     </svg>
                 </div>
                 <h2>Aplicaciones web </h2>
-                <p>Las aplicaciones web son soluciones a la medida de los requerimientos de cada empresa,
-                    que pueden ser ejecutadas en cualquier navegador y además en cualquier dispositivo
-                    sin necesidad de un app, abarca desde un sistema de
-                    registro hasta un sistema de información complejo, con interacciones, registros de usuario, entre
-                    otras.
+                <p>
+                    Las aplicaciones web son soluciones a la medida de los requerimientos de cada empresa, que pueden ser ejecutadas en cualquier navegador y además en cualquier dispositivo sin necesidad de descargar una aplicación móvil. Tiene funciones básicas y avanzadas tales como un sistema de registro, un sistema de información complejo, con interacciones, registros de usuario, entre otras.
                 </p>
             </article>
             <article class="col-7  medium-7 small-13">
@@ -152,11 +139,16 @@
                     </svg>
                 </div>
                 <h2>Aplicaciones de escritorio</h2>
-                <p>Aunque no son tan populares, muchas empresas necesitan aplicaciones para ser instaladas
-                    en sus equipos de computo. Ofrecen mayor velocidad de uso y no necesitan de ninguna conexión.
-                    La desventaja que presentan, es la poca actualización y la portabildad para ser utilizadas
-                    en otros dispositivos.</p>
+                <p>
+                    La gran mayoría de empresas necesitan aplicaciones para ser instaladas en sus equipos de computo ya que ofrecen mayor velocidad de uso y no necesitan de ninguna conexión. Las aplicaciones de escritorio permiten realizar procesos internos empresariales tales como organización de bases de datos, organización de proveedores, lista de inventarios, entre otros.
+                </p>
             </article>
+
+        </div>
+        <div class="row center">
+            <div class=" portfolioButton ">
+                <a href="/portafolio"> NUESTROS LOGROS</a>
+            </div>
         </div>
     </section>
 @endsection

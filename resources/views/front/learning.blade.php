@@ -74,6 +74,12 @@
                 </p>
             </article>
         </div>
+
+        <div class="row center">
+            <div class=" portfolioButton " >
+                <a href="/portafolio"> NUESTROS LOGROS</a>
+            </div>
+        </div>
     </section>
 @endsection
 @section('scripts')

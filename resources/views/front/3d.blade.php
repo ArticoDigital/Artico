@@ -10,9 +10,7 @@
     <section class=" wedo-title">
         <article class="content ">
             <h2>
-                El diseño 3D, supone una gran ventaja competitiva al momento de mostrar o diseñar un producto y
-                servicios, por eso contamos con las más avanzadas técnicas de visualización 3D como la Animación,
-                Rendering, la Realidad Aumentada, la Realidad Virtual o los Simuladores Virtuales on line.
+                El diseño 3D, supone una gran ventaja competitiva al momento de mostrar o diseñar un producto o servicio. Por eso te ofrecemos e servicio de diseño y animación con las más avanzadas técnicas de visualización 3D como lo son: Animación, Rendering, Realidad Aumentada, Realidad Virtual o Simuladores Virtuales online.
             </h2>
         </article>
     </section>
@@ -29,20 +27,21 @@
             <article class="col-16 medium-16 small-13 ">
                 <h2>Animación Arquitectónica</h2>
                 <p>
-                    ecorridos virtuales en video, donde se muestra de una forma más detallada, amplía y estética los proyectos arquitectónicos.Realización de fotomontajes arquitectónicos, mezclando renders arquitectónicos con ambientes reales.
+                    Recorridos virtuales en video, donde se muestra de una forma más detallada, amplía y estética los proyectos arquitectónicos.
+                    Realización de fotomontajes arquitectónicos, mezclando renders arquitectónicos con ambientes reales
                 </p>
             </article>
             <article class="col-16 medium-16 small-13 ">
                 <h2>3D Mobile Marketing, Aplicaciones de Realidad Virtual y Aumentada.</h2>
                 <p>
-                    Aplicaciones en 3D para la comercialización de proyectos que busquen diferenciación en el mercado, Por medio de la personalización y el manejo de modelos 3D interactivos, enfocados en la experiencia positiva del espectador o usuario.
+                    Aplicaciones en 3D para la comercialización de proyectos que busquen diferenciación en el mercado por medio de la personalización y el manejo de modelos 3D interactivos, enfocados en la experiencia positiva del usuario.
+
                 </p>
             </article>
             <article class="col-16 medium-16 small-13 ">
                 <h2>Animación 3D para videos industriales</h2>
                 <p>
-                    Simulaciones en video para mostrar de forma más detallada procesos industriales de productos o servicios.
-
+                    Simulaciones en video que logran mostrar de forma más detallada procesos industriales de productos o servicios.
                 </p>
             </article>
             <article class="col-16 medium-16 small-13 ">
@@ -52,7 +51,11 @@
 
                 </p>
             </article>
-           
+        </div>
+        <div class="row center">
+            <div class=" portfolioButton " >
+                <a href="/portafolio"> NUESTROS LOGROS</a>
+            </div>
         </div>
     </section>
 @endsection

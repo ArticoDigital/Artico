@@ -192,42 +192,26 @@
                    </g>
                </svg>
            </span>
-                <h2>Estandares</h2>
-                <p>Somos una agencia creativa digital con sede en Bogotá, Colombia, especializada en posicionamiento
-                    digital. Logramos que su marca, producto y/o servicio llegue de manera efectiva al público objetivo
-                    de su interés en internet. Contamos con un experimentado equipo de estrategas en marketing digital,
-                    diseñadores y programadores que
-                    resolvemos problemas con un enfoque acertado, basados en la investigación y en nuestra experiencia.
+                <h2>CULTURA ÁRTICO</h2>
+                <p>Presentación de Proyectos en 3D de exposiciones, congresos, conferencias, diseño de stands e infografías corporativas.
                 </p>
                 <p>Nuestros principios, como personas y profesionales, son firmes y las aplicamos en nuestro día a día.
                     Así logramos grandes relaciones de trabajo con nuestros clientes, ofreciendo un producto final al
                     gusto de nuestros clientes y sus usuarios.</p>
 
-                <p><b>El usuario</b> Nos centramos en la investigación de su mercado, el grupo demográfico de sus
-                    usuarios y creamos diseños personalizados que proporcionan la experiencia de usuario más amigable y
-                    dinámico para ellos.
+                <p><b>Pensamos en el usuario</b> Nos centramos en la investigación del mercado, el grupo demográfico de los usuarios de nuestros clientes y creamos diseños personalizados que proporcionan la experiencia de usuario más amigable y dinámica para ellos.
                 </p>
-                <p><b>Diferentes</b> Sabemos que encontrar un lugar bajo el sol es un reto para cualquier negocio.
-                    Trabajar con nosotros es más que el desarrollo de un sitio en internet Es entender sus necesidades y
-                    darles una solución estratégica acorde a sus requerimientos de manera óptima y exitosa.</p>
-                <p><b>La investigación es primordial </b> No tiene sentido si no se entiende el problema que estamos
-                    tratando de resolver. Empezamos por la investigación y la comprensión de sus desafíos. El problema
-                    contiene la solución.
+                <p><b>APOYAMOS SER DIFERENTES</b> Sabemos que encontrar un lugar bajo el sol es un reto para cualquier negocio. Trabajar con nosotros es más que el desarrollo de un sitio en internet. Es entender las necesidades de cada cliente y darles una solución estratégica acorde a sus necesidades de manera óptima y exitosa.</p>
+                <p><b>LA INVESTIGACIÓN ES PRIMORDIAL. </b> No tiene sentido si no se entiende el problema que estamos tratando de resolver. Empezamos por la investigación y la comprensión de tus desafíos. El problema contiene la solución.
                 </p>
-                <p><b>Innovadores</b> No hacemos lo mismo en cada proyecto. Cada necesidad es única y por eso creamos
-                    una solución diferente, creativa y exitosa para cada uno de nuestros clientes.
+                <p><b>100% INNOVADORES.</b> No hacemos lo mismo en cada proyecto. Cada necesidad es única y por eso creamos una solución diferente, creativa y exitosa para cada uno de nuestros clientes.
                 </p>
-                <p><b>Trabajo en equipo </b>Trabajar con alegría y empatía es la clave de del éxito en cada proyecto.
-                    Por eso trabajamos en equipo con nuestros clientes, como socios en todo el proceso.
+                <p><b>TRABAJO EN EQUIPO.</b>Trabajar con alegría y empatía es la clave del éxito en cada proyecto. Por eso trabajamos en equipo con nuestros clientes, como socios en todo el proceso.
                 </p>
-                <p><b>Calidad </b> Con más de 8 años de experiencia, servimos a pequeñas y grandes marcas en la web
-                    desde 2009, con un alto nivel de calidad y profesionalismo.
+                <p><b>LA CALIDAD ANTE TODO. </b> Con más de 8 años de experiencia, apoyamos a pequeñas y grandes marcas en su posicionamiento en la web desde 2009, con un alto nivel de calidad y profesionalismo.
                 </p>
                 <p id="yeah">
-                    <b>Seguimiento y Garantía</b> La calidad de nuestros productos y la satisfacción de nuestros
-                    clientes es nuestra prioridad. Creamos relaciones con nuestros clientes a largo plazo y proponemos
-                    varias soluciones post-desarrollo para asegurarle los productos digitales más actualizados.
-
+                    <b>SEGUIMIENTO Y GARANTÍA.</b> a calidad de nuestros productos y la satisfacción de nuestros clientes es nuestra prioridad. Creamos relaciones con nuestros clientes a largo plazo y proponemos varias soluciones para asegurarle los productos digitales más actualizados y efectivos del mercado.
                 </p>
             </div>
         </section>

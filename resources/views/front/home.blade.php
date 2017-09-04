@@ -9,18 +9,16 @@
     @include('front.includes.polo-footer')
     <aside class="Home-menu">
         <ul>
-            <li><a href="#body" rel="nofollow" class="active" data-index="0" ></a></li>
-            <li><a href="#servicios" rel="nofollow" data-index="1"></a></li>
-            <li><a href="#como-lo-hacemos" rel="nofollow" data-index="2"></a></li>
+            <li><a href="#body" rel="nofollow" class="active" data-index="0"></a></li>
             <li><a href="#portafolio" rel="nofollow" rel="nofollow" data-index="3"></a></li>
             <li><a href="#artico" rel="nofollow" data-index="4"></a></li>
+            <li><a href="#servicios" rel="nofollow" data-index="1"></a></li>
+            <li><a href="#como-lo-hacemos" rel="nofollow" data-index="2"></a></li>
             <li><a href="#contacto" rel="nofollow" data-index="5"></a></li>
             <li><a href="#redes-sociales" rel="nofollow" data-index="6"></a></li>
         </ul>
     </aside>
     <section class="container Home">
-        @include('front.includes.wedo-home')
-        @include('front.includes.make-home')
         @include('front.includes.porfolio-home')
     </section>
     <section class="Home-about row center middle scrollTarget" id="#artico">
@@ -42,17 +40,21 @@
                 </g>
             </svg>
 
-            <h1>Es una agencia creativa con sede en Bogotá, Colombia,</h1> especializada en <b>POSICIONAMIENTO DIGITAL.</b> <br>
-            Logramos que su marca, producto y/o servicio llegue de manera efectiva al público objetivo de su
-            interés en internet. <br>
-Es una agencia de posicionamiento digital, si ud quiere que su marca, producto o servicio  se vea, sea conocido o se venda por internet hable con nosotros ,  ¡sabemos cómo hacerlo! 👊👌👍
+            <h1>es una agencia creativa con sede en Bogotá, Colombia,</h1> especializada en <b>POSICIONAMIENTO
+                DIGITAL.</b> <br>
+            Si quieres que tu marca, producto o servicio sea visto por tu público objetivo y se venda por internet,
+            <br> habla conmigo. ¡Yo sé cómo hacerlo! 👊👌👍
             <span>’’</span>
             <div class="col-16">
                 <a href="/quienes-somos"> Cultura Ártico <em> → </em></a>
             </div>
         </blockquote>
-
     </section>
+    <section class="container Home">
+        @include('front.includes.make-home')
+        @include('front.includes.wedo-home')
+    </section>
+
 
     <section class="Home-contact row center middle scrollTarget" id="#contacto">
         <div class=" center Home-contactButton ">
@@ -80,9 +82,10 @@ Es una agencia de posicionamiento digital, si ud quiere que su marca, producto o
         document.addEventListener('DOMContentLoaded', function () {
             Typed.new('#typed', {
                 strings: messagesArray,
-                typeSpeed: 50,
+                typeSpeed: 20,
                 backDelay: 20,
                 startDelay: 20,
+                backSpeed: 5,
                 cursorChar: "_",
                 smartBackspace: true,
                 loop: true
@@ -91,11 +94,13 @@ Es una agencia de posicionamiento digital, si ud quiere que su marca, producto o
 
         const buttonNavHome = document.querySelectorAll(".Home-menu a"),
             scrollTarget = document.querySelectorAll(".scrollTarget");
+
         function scrollButtons(el) {
             this.DOM = {}
             this.DOM.el = el
             this.initEvents();
         }
+
         scrollButtons.prototype.initEvents = function () {
 
             this.DOM.el.addEventListener('click', this.clickFn, false);
@@ -111,6 +116,7 @@ Es una agencia de posicionamiento digital, si ud quiere que su marca, producto o
             scrollObject.index = this.dataset.index;
 
         }
+
         function actionsClass(array, callback, scope) {
 
             [].map.call(array, function (el) {
@@ -121,12 +127,14 @@ Es una agencia de posicionamiento digital, si ud quiere que su marca, producto o
             new scrollButtons(el)
         });
         var animation = true;
+
         function scrollMove() {
             this.DOM = {}
             this._initEvents();
             this.index = 0;
             this.isKey = false;
         }
+
         scrollMove.prototype._initEvents = function () {
             window.addEventListener('mousewheel', this.someAction, false);
             window.addEventListener('wheel', this.someAction, false);
