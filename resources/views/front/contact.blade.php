@@ -56,7 +56,7 @@
                     </g>
                 </svg>
                 <span class="Contact-span">Llámanos </span>
-                <a class="Contact-link" href="tel:573005549372">(+57) 300 554 93 72</a>
+                <a class="Contact-link" href="tel:573227753537">(+57) 322 775 35 37</a>
             </li>
             <li class="col-4 small-8 medium-8">
                 <svg width="43px" height="60px" viewBox="0 0 43 60" version="1.1" xmlns="http://www.w3.org/2000/svg"
