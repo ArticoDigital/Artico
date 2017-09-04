@@ -40,10 +40,18 @@
                 </g>
             </svg>
 
+<<<<<<< HEAD
             <h1>es una agencia creativa con sede en Bogotá, Colombia,</h1> especializada en <b>POSICIONAMIENTO
                 DIGITAL.</b> <br>
             Si quieres que tu marca, producto o servicio sea visto por tu público objetivo y se venda por internet,
             <br> habla conmigo. ¡Yo sé cómo hacerlo! 👊👌👍
+=======
+            <h1>Es una agencia creativa con sede en Bogotá, Colombia,</h1> especializada en <b>POSICIONAMIENTO DIGITAL.</b> <br>
+            Logramos que su marca, producto y/o servicio llegue de manera efectiva al público objetivo de su
+            interés en internet. <br>
+            Si quieres que tu marca, producto o servicio se vea y se venda por internet,
+            <br><b>habla con nosotros , ¡sabemos cómo hacerlo!</b>  👊👌👍
+>>>>>>> 76fb9716f600ee2c0578e9b337c124fbb8de3502
             <span>’’</span>
             <div class="col-16">
                 <a href="/quienes-somos"> Cultura Ártico <em> → </em></a>
