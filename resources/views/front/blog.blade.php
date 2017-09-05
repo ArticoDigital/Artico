@@ -1,57 +1,57 @@
 @extends('layouts.front')
-@section('title') Blogs @php if(isset($blog_name_category)) echo '/'.$blog_name_category; @endphp @endsection
+@section('title') Blog  - {{$blog->post_title}}  @endsection
 @section('header')
 
 @endsection
 @section('content')
-    <section class="section-topPage row center middle wedo-top web">
-        <h1>Blogs @php if(isset($blog_name_category)) echo '/'.$blog_name_category; @endphp</h1> 
+    <section class="section-topPage row left middle wedo-top web">
+        
+        <p class="col-16"><a href="/blogs">Inicio</a>/<a href="/blog_categoria/{{$blog->blogCategory->slug}}">{{$blog->blogCategory->name}}</a></p><br>
+        <h1>{{$blog->post_title}}</h1>
     </section>
     
 
     <section id="particles-js" class="blogs-content">
         <div class="content row">
 
-            <div class="col-12" id="blog-zone">
+            <div class="col-12 medium-10 small-16" id="blog-zone">
                 
-                @foreach($blog_posts as $blog_post)
+               
                 @php
-                    $date = new DateTime($blog_post->updated_at);
+                    $date = new DateTime($blog->updated_at);
                     $date_formated = $date->format('F j, Y');
                     
                 @endphp 
-                <div class="row blog-block">
-                    <img src="{{$blog_post->post_img}}" class="col-8" alt="">
-                    <div class="col-8">
-                        <a href="/blog/{{$blog_post->post_slug}}"><h3 class="blog-title">{{$blog_post->post_title}}</h3></a>
-                        <p><span class="thumb-date">{{$date_formated}}/<img class="inner-image" src="{{asset('img/blog-view.svg')}}"> {{$blog_post->post_views_count}} / <img class="inner-image" src="{{asset('img/blog-comments.svg')}}"> {{$blog_post->post_comments_count}} comentarios</span></p>
-                        <p>{!!$blog_post->post_abstract!!} </p>
-                        <a class="read-more" href="/blog/{{$blog_post->post_slug}}">Seguir leyendo</a>
+                <div class="row blog-block content">
+                    <img src="{{$blog->post_img}}" class="col-16" alt="">
+                    <div class="col-16">
+                        <h2 class="blog-title">{{$blog->post_title}}</h2>
+                        <p><span class="thumb-date">{{$date_formated}}/<img class="inner-image" src="{{asset('img/blog-view.svg')}}"> {{$blog->post_views_count}} / <img class="inner-image" src="{{asset('img/blog-comments.svg')}}"> {{$blog->post_comments_count}} comentarios</span></p>
+                        <p>{!!$blog->post_content!!} </p>
                     </div>    
 
                 </div>
-                @endforeach
-            {{ $blog_posts->links() }}
+
+
                 
             </div>
-            <div class="col-4" id="right-side">
+            <div class="col-4 medium-6 small-16" id="right-side">
                 <h4>Búsqueda</h4>
                 
-                <div class="flexsearch">
-                        <div class="flexsearch--wrapper">
-                            <form class="flexsearch--form" action="{{route('search')}}" method="get">
-                                <div class="flexsearch--input-wrapper">
-                                    <input class="flexsearch--input" name="searchfor" id="searchfor" required type="search" placeholder="Buscar">
-                                </div>
-                                <input class="flexsearch--submit" type="submit" value="&#10140;"/>
-                            </form>
-                        </div>
+<div class="flexsearch">
+        <div class="flexsearch--wrapper">
+            <form class="flexsearch--form" action="#" method="post">
+                <div class="flexsearch--input-wrapper">
+                    <input class="flexsearch--input" type="search" placeholder="Buscar">
                 </div>
-
+                <input class="flexsearch--submit" type="submit" value="&#10140;"/>
+            </form>
+        </div>
+</div>
                 <h4>Categorías</h4>
                     <ul class="blog-categorias">
                     @foreach($blog_categories as $blog_category)
-                        <li><a href="/blog_categoria/{{$blog_category->slug}}">{{$blog_category->name}}</a></li>
+                        <li>{{$blog_category->name}}</li>
                     @endforeach
                     </ul>
                 
@@ -64,11 +64,11 @@
                          <div class="row blog-mini">
                             <div class="col-4">
                                 <div class="thumbnail">
-                                    <a href="/blog/{{$blog_view->post_slug}}"><img class="portrait" src="{{$blog_view->post_img}}" alt=""></a>
+                                    <img class="portrait" src="{{$blog_view->post_img}}" alt="">
                                 </div>
                             </div>
                             <div class="col-12">
-                                <a href="/blog/{{$blog_view->post_slug}}"><span class="thumb-title">{{$blog_view->post_title}}</span></a><br>
+                                <span class="thumb-title">{{$blog_view->post_title}}</span><br>
                                 <span class="thumb-date">{{$date_formated}}</span>
                             </div>    
 
