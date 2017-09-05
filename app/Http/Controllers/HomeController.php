@@ -9,6 +9,8 @@ use App\Models\Form;
 use App\Models\Image;
 use App\Models\Message;
 use App\Models\Portfolio;
+use App\Models\BlogCategory;
+use App\Models\Blog;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 
@@ -64,11 +66,59 @@ class HomeController extends Controller
     {
         return view('front.culture');
     }
+     public function blog_category(BlogCategory $category_name)
+    {
+        //dd($category_name);
+        $blog_name_category = $category_name->name;
+        $blog_categories = BlogCategory::all();
+        $blog_posts = Blog::where('post_active',1)->where('blog_category_id',$category_name->id)
+                ->orderBy('updated_at', 'desc')
+                ->paginate(4);
+        $blog_posts_viewed = Blog::where('post_active',1)->where('blog_category_id',$category_name->id)
+                ->orderBy('post_views_count', 'desc')
+                ->limit(3)
+                ->get();
+        return view('front.blogs', compact('blog_categories', 'blog_posts','blog_posts_viewed','blog_name_category'));
+    }
+
+    public function searchBlog(Request $request){
+        
+         $searchfor=$request->get('searchfor');
+         
+         $blog_categories = BlogCategory::all();
+        $blog_posts = Blog::where('post_active',1)->where('post_content', 'like','%' . $searchfor.'%')
+                ->orderBy('updated_at', 'desc')
+                ->paginate(4);
+        $blog_posts_viewed = Blog::where('post_active',1)
+                ->orderBy('post_views_count', 'desc')
+                ->limit(3)
+                ->get();
+        return view('front.blogs', compact('blog_categories', 'blog_posts','blog_posts_viewed'));
+    }
 
     public function blogs()
     {
-        return view('front.blogs');
+        $blog_categories = BlogCategory::all();
+        $blog_posts = Blog::where('post_active',1)
+                ->orderBy('updated_at', 'desc')
+                ->paginate(3);
+        $blog_posts_viewed = Blog::where('post_active',1)
+                ->orderBy('post_views_count', 'desc')
+                ->limit(3)
+                ->get();
+        return view('front.blogs', compact('blog_categories', 'blog_posts','blog_posts_viewed'));
     }
+    public function blog(Blog $blog)
+    {
+        //dd($blog);
+        $blog_categories = BlogCategory::all();
+         $blog_posts_viewed = Blog::where('post_active',1)
+                ->orderBy('post_views_count', 'desc')
+                ->limit(3)
+                ->get();
+        return view('front.blog', compact('blog','blog_categories','blog_posts_viewed'));
+    }
+
 
 
     public function contactProject(ContactBudgetRequest $request)

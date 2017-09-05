@@ -23,6 +23,16 @@ Route::get('/portafolio/{porfolio}', 'HomeController@portfolio');
 Route::get('/quienes-somos', 'HomeController@culture');
 Route::get('/quienes-somos', 'HomeController@culture');
 Route::get('/blogs', 'HomeController@blogs');
+Route::get('/blog_categoria/{category_name}', 'HomeController@blog_category');
+Route::get('/blog/{blog}', 'HomeController@blog');
+//Route::get('/buscar', 'HomeController@searchBlog');
+    
+
+Route::get('buscar', [
+    'as' => 'search',
+    'uses' => 'HomeController@searchBlog'
+]);
+
 
 Route::post('/contactProject', [
     'as' => 'contactProject',
