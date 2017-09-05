@@ -6,8 +6,8 @@
 @section('content')
     <section class="section-topPage row left middle wedo-top web">
         
-        <p class="col-16"><a href="/blogs">Inicio</a>/<a href="/blog_categoria/{{$blog->blogCategory->slug}}">{{$blog->blogCategory->name}}</a></p><br>
-        <h1>{{$blog->post_title}}</h1>
+        <div class="header-blogs"><p class="col-16 top-menu"><a href="/blogs">Inicio</a> > <a href="/blog_categoria/{{$blog->blogCategory->slug}}">{{$blog->blogCategory->name}}</a></p>
+        <h1>{{$blog->post_title}}</h1></div>
     </section>
     
 
@@ -25,9 +25,9 @@
                 <div class="row blog-block content">
                     <img src="{{$blog->post_img}}" class="col-16" alt="">
                     <div class="col-16">
-                        <h2 class="blog-title">{{$blog->post_title}}</h2>
-                        <p><span class="thumb-date">{{$date_formated}}/<img class="inner-image" src="{{asset('img/blog-view.svg')}}"> {{$blog->post_views_count}} / <img class="inner-image" src="{{asset('img/blog-comments.svg')}}"> {{$blog->post_comments_count}} comentarios</span></p>
-                        <p>{!!$blog->post_content!!} </p>
+                        <h2 class="blog-title-single-view">{{$blog->post_title}}</h2>
+                        <div><span class="thumb-date">{{$date_formated}}/<img class="inner-image" src="{{asset('img/blog-view.svg')}}"> {{$blog->post_views_count}} / <img class="inner-image" src="{{asset('img/blog-comments.svg')}}"> {{$blog->post_comments_count}} comentarios</span></div>
+                        <div class="post_content">{!!$blog->post_content!!} </div>
                     </div>    
 
                 </div>
@@ -38,20 +38,20 @@
             <div class="col-4 medium-6 small-16" id="right-side">
                 <h4>Búsqueda</h4>
                 
-<div class="flexsearch">
-        <div class="flexsearch--wrapper">
-            <form class="flexsearch--form" action="#" method="post">
-                <div class="flexsearch--input-wrapper">
-                    <input class="flexsearch--input" type="search" placeholder="Buscar">
+                <div class="flexsearch">
+                        <div class="flexsearch--wrapper">
+                            <form class="flexsearch--form" action="{{route('search')}}" method="get">
+                                <div class="flexsearch--input-wrapper">
+                                    <input class="flexsearch--input" name="searchfor" id="searchfor" required type="search" placeholder="Buscar">
+                                </div>
+                                <input class="flexsearch--submit" type="submit" value="&#10140;"/>
+                            </form>
+                        </div>
                 </div>
-                <input class="flexsearch--submit" type="submit" value="&#10140;"/>
-            </form>
-        </div>
-</div>
                 <h4>Categorías</h4>
                     <ul class="blog-categorias">
                     @foreach($blog_categories as $blog_category)
-                        <li>{{$blog_category->name}}</li>
+                        <li><a href="/blog_categoria/{{$blog_category->slug}}">{{$blog_category->name}}</a></li>
                     @endforeach
                     </ul>
                 
@@ -64,11 +64,11 @@
                          <div class="row blog-mini">
                             <div class="col-4">
                                 <div class="thumbnail">
-                                    <img class="portrait" src="{{$blog_view->post_img}}" alt="">
+                                    <a href="/blog/{{$blog_view->post_slug}}"><img class="portrait" src="{{$blog_view->post_img}}" alt=""></a>
                                 </div>
                             </div>
                             <div class="col-12">
-                                <span class="thumb-title">{{$blog_view->post_title}}</span><br>
+                                <a href="/blog/{{$blog_view->post_slug}}"><span class="thumb-title">{{$blog_view->post_title}}</span></a><br>
                                 <span class="thumb-date">{{$date_formated}}</span>
                             </div>    
 

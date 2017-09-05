@@ -73,8 +73,7 @@ class HomeController extends Controller
         $blog_categories = BlogCategory::all();
         $blog_posts = Blog::where('post_active',1)->where('blog_category_id',$category_name->id)
                 ->orderBy('updated_at', 'desc')
-                ->limit(6)
-                ->get();
+                ->paginate(4);
         $blog_posts_viewed = Blog::where('post_active',1)->where('blog_category_id',$category_name->id)
                 ->orderBy('post_views_count', 'desc')
                 ->limit(3)

@@ -3,7 +3,17 @@
     object-fit: cover
     width: 50px
     height: 50px
-
+.header-blogs
+    margin-left: rem(30)
+    h1
+      text-transform: uppercase
+    .top-menu
+      color: white
+      font-weight: 400
+      text-transform: uppercase
+      margin-bottom: 0px
+      a
+        color: inherit
 .blogs-content
   padding: rem(50) 0 3rem
   background: url(../img/1.svg) bottom no-repeat
@@ -25,7 +35,7 @@
     padding: 0 rem(26)
     text-align: left
     font-weight: 600
-    margin-top: 0px
+    margin-top: 20px
     font-size: 1.5em
   h4
     margin-bottom: rem(15)
@@ -35,6 +45,7 @@
     font-weight: 700
     margin-top: 0px
     font-size: 1.2em
+    margin-top: 30px
   p
     padding: 0 rem(26)
     font-size: 1rem
@@ -55,6 +66,40 @@
     padding: 10px 0px
   .blog-block
     margin-bottom: rem(46)
+  .blog-title-single-view
+    text-align: left
+    text-transform: uppercase
+    margin-bottom: 10px
+  #right-side
+    padding: 10px
+  .post_content
+    margin-top: 20px
+    p
+      padding: 0
   a.read-more
     padding: 0 rem(26)
     color: #5f9af4
+  ul.blog-categorias
+    li
+      margin: 5px
+      text-transform: uppercase
+
+  ul.pagination 
+    li
+      float: left
+      margin: 10px
+      font-size: 18px
+      a
+        border: solid 1px gray
+        padding: 10px
+        &:hover
+          background-color: green
+          color: white
+    li.active
+      span
+        padding: 10px
+        border: solid 2px green
+    li.disabled
+      span
+        padding: 10px
+        border: solid 1px gray

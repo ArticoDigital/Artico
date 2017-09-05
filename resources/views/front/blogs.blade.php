@@ -4,15 +4,18 @@
 
 @endsection
 @section('content')
-    <section class="section-topPage row center middle wedo-top web">
-        <h1>Blogs @php if(isset($blog_name_category)) echo '/'.$blog_name_category; @endphp</h1> 
+    <section class="section-topPage row left middle wedo-top web">
+
+
+        <div class="header-blogs"><p class="col-16 top-menu"><a href="/blogs">Inicio</a></p>
+        <h1>Blogs @php if(isset($blog_name_category)) echo '/'.$blog_name_category; @endphp</h1></div>
     </section>
     
 
     <section id="particles-js" class="blogs-content">
         <div class="content row">
 
-            <div class="col-12" id="blog-zone">
+            <div class="col-12 medium-10 small-16" id="blog-zone">
                 
                 @foreach($blog_posts as $blog_post)
                 @php
@@ -21,8 +24,8 @@
                     
                 @endphp 
                 <div class="row blog-block">
-                    <img src="{{$blog_post->post_img}}" class="col-8" alt="">
-                    <div class="col-8">
+                    <img src="{{$blog_post->post_img}}" class="col-8 medium-6 small-16" alt="">
+                    <div class="col-8 medium-10 small-16">
                         <a href="/blog/{{$blog_post->post_slug}}"><h3 class="blog-title">{{$blog_post->post_title}}</h3></a>
                         <p><span class="thumb-date">{{$date_formated}}/<img class="inner-image" src="{{asset('img/blog-view.svg')}}"> {{$blog_post->post_views_count}} / <img class="inner-image" src="{{asset('img/blog-comments.svg')}}"> {{$blog_post->post_comments_count}} comentarios</span></p>
                         <p>{!!$blog_post->post_abstract!!} </p>
@@ -34,7 +37,7 @@
             {{ $blog_posts->links() }}
                 
             </div>
-            <div class="col-4" id="right-side">
+            <div class="col-4 medium-6 small-16" id="right-side">
                 <h4>Búsqueda</h4>
                 
                 <div class="flexsearch">
@@ -48,7 +51,7 @@
                         </div>
                 </div>
 
-                <h4>Categorías</h4>
+                <h4 class="text_margin">Categorías</h4>
                     <ul class="blog-categorias">
                     @foreach($blog_categories as $blog_category)
                         <li><a href="/blog_categoria/{{$blog_category->slug}}">{{$blog_category->name}}</a></li>
