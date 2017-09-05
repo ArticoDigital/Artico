@@ -29,7 +29,7 @@
                         <a href="/blog/{{$blog_post->post_slug}}"><h3 class="blog-title">{{$blog_post->post_title}}</h3></a>
                         <p><span class="thumb-date" itemprop="datePublished" content="{{$blog_post->created_at}}">{{$date_formated}}/<img class="inner-image" src="{{asset('img/blog-view.svg')}}"> {{$blog_post->post_views_count}} / <img class="inner-image" src="{{asset('img/blog-comments.svg')}}"> {{$blog_post->post_comments_count}} comentarios</span></p>
                         <p>{!!$blog_post->post_abstract!!} </p>
-                        <a class="read-more" href="/blog/{{$blog_post->post_slug}}">Seguir leyendo</a>
+                        <a class="read-more" href="/blog/{{$blog_post->post_slug}}">Seguir leyendo</a>  <br><a class="read-more thumb-date" href="/blog/{{$blog_post->post_slug}}#disqus_thread">Comentarios</a>
                     </div>    
 
                 </div>
@@ -300,4 +300,5 @@ input:-moz-placeholder {
             "retina_detect": true
         });
     </script>
+    <script id="dsq-count-scr" src="//artico.disqus.com/count.js" async></script>
 @endsection
