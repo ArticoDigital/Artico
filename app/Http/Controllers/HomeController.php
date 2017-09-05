@@ -80,6 +80,19 @@ class HomeController extends Controller
                 ->get();
         return view('front.blogs', compact('blog_categories', 'blog_posts','blog_posts_viewed','blog_name_category'));
     }
+    public function searchBlogTag($tags){
+        
+         
+         $blog_categories = BlogCategory::all();
+        $blog_posts = Blog::where('post_active',1)->where('post_tags', 'like','%' . $tags.'%')
+                ->orderBy('updated_at', 'desc')
+                ->paginate(4);
+        $blog_posts_viewed = Blog::where('post_active',1)
+                ->orderBy('post_views_count', 'desc')
+                ->limit(3)
+                ->get();
+        return view('front.blogs', compact('blog_categories', 'blog_posts','blog_posts_viewed'));
+    }
 
     public function searchBlog(Request $request){
         
@@ -116,6 +129,8 @@ class HomeController extends Controller
                 ->orderBy('post_views_count', 'desc')
                 ->limit(3)
                 ->get();
+        
+        $blog->increment('post_views_count');
         return view('front.blog', compact('blog','blog_categories','blog_posts_viewed'));
     }
 

@@ -25,6 +25,7 @@ Route::get('/quienes-somos', 'HomeController@culture');
 Route::get('/blogs', 'HomeController@blogs');
 Route::get('/blog_categoria/{category_name}', 'HomeController@blog_category');
 Route::get('/blog/{blog}', 'HomeController@blog');
+Route::get('/blog_tag/{tag}','HomeController@searchBlogTag');
 //Route::get('/buscar', 'HomeController@searchBlog');
     
 

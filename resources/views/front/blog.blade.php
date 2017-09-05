@@ -22,15 +22,27 @@
                     $date_formated = $date->format('F j, Y');
                     
                 @endphp 
-                <div class="row blog-block content">
-                    <img src="{{$blog->post_img}}" class="col-16" alt="">
+                <div class="row blog-block content" itemid="{{url()->current()}}" itemscope itemtype="http://schema.org/BlogPosting">
+                    <img itemprop="image" src="{{$blog->post_img}}" class="col-16" alt="">
                     <div class="col-16">
-                        <h2 class="blog-title-single-view">{{$blog->post_title}}</h2>
-                        <div><span class="thumb-date">{{$date_formated}}/<img class="inner-image" src="{{asset('img/blog-view.svg')}}"> {{$blog->post_views_count}} / <img class="inner-image" src="{{asset('img/blog-comments.svg')}}"> {{$blog->post_comments_count}} comentarios</span></div>
-                        <div class="post_content">{!!$blog->post_content!!} </div>
+                        <h2 class="blog-title-single-view" itemprop="headline">{{$blog->post_title}}</h2>
+                        <div><time class="thumb-date" itemprop="datePublished" content="{{$blog->created_at}}">{{$date_formated}}</time><span class="thumb-date">/<img class="inner-image" src="{{asset('img/blog-view.svg')}}"> {{$blog->post_views_count}} / <img class="inner-image" src="{{asset('img/blog-comments.svg')}}"> {{$blog->post_comments_count}} comentarios</span></div>
+                        <div class="post_content" itemprop="articleBody">{!!$blog->post_content!!} </div>
                     </div>    
-
+                    
                 </div>
+                @php
+                        $tags = explode(",", $blog->post_tags);
+                    @endphp
+                    
+                    <ul class="tags">
+                        @foreach($tags as $tag)
+                     
+                          <li><a href="/blog_tag/{{$tag}}" class="tag">{{$tag}}</a></li>
+                        
+                        @endforeach
+                    </ul>
+               
 
 
                 
@@ -177,6 +189,63 @@
 
 input:-moz-placeholder {
   color: #888
+}
+
+.tags {
+  list-style: none;
+  margin: 0;
+  overflow: hidden; 
+  padding: 0;
+}
+
+.tags li {
+  float: left; 
+}
+
+.tag {
+  background: #eee;
+  border-radius: 3px 0 0 3px;
+  color: #999;
+  display: inline-block;
+  height: 26px;
+  line-height: 26px;
+  padding: 0 20px 0 23px;
+  position: relative;
+  margin: 0 10px 10px 0;
+  text-decoration: none;
+  -webkit-transition: color 0.2s;
+}
+
+.tag::before {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
+  content: '';
+  height: 6px;
+  left: 10px;
+  position: absolute;
+  width: 6px;
+  top: 10px;
+}
+
+.tag::after {
+  background: #fff;
+  border-bottom: 13px solid transparent;
+  border-left: 10px solid #eee;
+  border-top: 13px solid transparent;
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.tag:hover {
+  background-color: crimson;
+  color: white;
+}
+
+.tag:hover::after {
+   border-left-color: crimson; 
 }
 
 
