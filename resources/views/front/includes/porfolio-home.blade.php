@@ -60,7 +60,7 @@
                 </a>
             </div>
             <div class=" row  center middle avena">
-                <a href=/portafolio/avenacubana"></a>
+                <a href=/portafolio/avenacubana">
                 <svg width="252px" height="33px" viewBox="0 0 252 33" version="1.1" xmlns="http://www.w3.org/2000/svg"
                      xmlns:xlink="http://www.w3.org/1999/xlink">
 
@@ -73,6 +73,7 @@
                         </g>
                     </g>
                 </svg>
+                </a>
             </div>
             <div class=" row center middle">
                 <a href="/portafolio/via">
