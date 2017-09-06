@@ -27,9 +27,9 @@
                     <img src="{{$blog_post->post_img}}" class="col-8 medium-6 small-16" alt="">
                     <div class="col-8 medium-10 small-16">
                         <a href="/blog/{{$blog_post->post_slug}}"><h3 class="blog-title">{{$blog_post->post_title}}</h3></a>
-                        <p><span class="thumb-date" itemprop="datePublished" content="{{$blog_post->created_at}}">{{$date_formated}}/<img class="inner-image" src="{{asset('img/blog-view.svg')}}"> {{$blog_post->post_views_count}} / <img class="inner-image" src="{{asset('img/blog-comments.svg')}}"> {{$blog_post->post_comments_count}} comentarios</span></p>
+                        <p><span class="thumb-date" itemprop="datePublished" content="{{$blog_post->created_at}}">{{$date_formated}}/<img class="inner-image" src="{{asset('img/blog-view.svg')}}"> {{$blog_post->post_views_count}} / <img class="inner-image" src="{{asset('img/blog-comments.svg')}}"> <a class="thumb-date" href="/blog/{{$blog_post->post_slug}}#disqus_thread">Comentarios</a></span></p>
                         <p>{!!$blog_post->post_abstract!!} </p>
-                        <a class="read-more" href="/blog/{{$blog_post->post_slug}}">Seguir leyendo</a>  <br><a class="read-more thumb-date" href="/blog/{{$blog_post->post_slug}}#disqus_thread">Comentarios</a>
+                        <a class="read-more" href="/blog/{{$blog_post->post_slug}}">Seguir leyendo</a>
                     </div>    
 
                 </div>

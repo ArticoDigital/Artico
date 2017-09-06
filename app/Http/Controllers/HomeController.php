@@ -82,7 +82,7 @@ class HomeController extends Controller
     }
     public function searchBlogTag($tags){
         
-         
+        $blog_name_category = "TAG:".$tags;
          $blog_categories = BlogCategory::all();
         $blog_posts = Blog::where('post_active',1)->where('post_tags', 'like','%' . $tags.'%')
                 ->orderBy('updated_at', 'desc')
@@ -91,7 +91,7 @@ class HomeController extends Controller
                 ->orderBy('post_views_count', 'desc')
                 ->limit(3)
                 ->get();
-        return view('front.blogs', compact('blog_categories', 'blog_posts','blog_posts_viewed'));
+        return view('front.blogs', compact('blog_categories', 'blog_posts','blog_posts_viewed','blog_name_category'));
     }
 
     public function searchBlog(Request $request){

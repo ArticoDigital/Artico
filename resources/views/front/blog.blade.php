@@ -26,7 +26,7 @@
                     <img itemprop="image" src="{{$blog->post_img}}" class="col-16" alt="">
                     <div class="col-16">
                         <h2 class="blog-title-single-view" itemprop="headline">{{$blog->post_title}}</h2>
-                        <div><time class="thumb-date" itemprop="datePublished" content="{{$blog->created_at}}">{{$date_formated}}</time><span class="thumb-date">/<img class="inner-image" src="{{asset('img/blog-view.svg')}}"> {{$blog->post_views_count}} / <img class="inner-image" src="{{asset('img/blog-comments.svg')}}"> {{$blog->post_comments_count}} comentarios</span></div>
+                        <div><time class="thumb-date" itemprop="datePublished" content="{{$blog->created_at}}">{{$date_formated}}</time><span class="thumb-date">/<img class="inner-image" src="{{asset('img/blog-view.svg')}}"> {{$blog->post_views_count}} / <img class="inner-image" src="{{asset('img/blog-comments.svg')}}"> <a class="thumb-date" href="/blog/{{$blog->post_slug}}#disqus_thread">Comentarios</a></span></div>
                         <div class="post_content" itemprop="articleBody">{!!$blog->post_content!!} </div>
                     </div>    
                     
@@ -390,5 +390,6 @@ input:-moz-placeholder {
             "retina_detect": true
         });
     </script>
-    
+    <script id="dsq-count-scr" src="//artico.disqus.com/count.js" async></script>
+
 @endsection
