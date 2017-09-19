@@ -19,12 +19,12 @@
                 
                 @foreach($blog_posts as $blog_post)
                 @php
-                    $date = new DateTime($blog_post->updated_at);
+                    $date = new DateTime($blog_post->created_at);
                     $date_formated = $date->format('F j, Y');
                     
                 @endphp 
                 <div class="row blog-block">      
-                    <img src="{{$blog_post->post_img}}" class="col-8 medium-6 small-16" alt="">
+                    <img style="width:100%;height:100%" src="{{$blog_post->post_img}}" class="col-8 medium-6 small-16" alt="">
                     <div class="col-8 medium-10 small-16">
                         <a href="/blog/{{$blog_post->post_slug}}"><h3 class="blog-title">{{$blog_post->post_title}}</h3></a>
                         <p><span class="thumb-date" itemprop="datePublished" content="{{$blog_post->created_at}}">{{$date_formated}}/<img class="inner-image" src="{{asset('img/blog-view.svg')}}"> {{$blog_post->post_views_count}} / <img class="inner-image" src="{{asset('img/blog-comments.svg')}}"> <a class="thumb-date" href="/blog/{{$blog_post->post_slug}}#disqus_thread">Comentarios</a></span></p>
@@ -61,7 +61,7 @@
                 <h4>Populares</h4>
                     @foreach($blog_posts_viewed as $blog_view)
                         @php
-                            $date = new DateTime($blog_view->updated_at);
+                            $date = new DateTime($blog_view->created_at);
                             $date_formated = $date->format('F j, Y');
                         @endphp 
                          <div class="row blog-mini">

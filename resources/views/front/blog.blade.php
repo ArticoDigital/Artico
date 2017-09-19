@@ -18,7 +18,7 @@
                 
                
                 @php
-                    $date = new DateTime($blog->updated_at);
+                    $date = new DateTime($blog->created_at);
                     $date_formated = $date->format('F j, Y');
                     
                 @endphp 
@@ -70,7 +70,7 @@
                 <h4>Populares</h4>
                     @foreach($blog_posts_viewed as $blog_view)
                         @php
-                            $date = new DateTime($blog_view->updated_at);
+                            $date = new DateTime($blog_view->created_at);
                             $date_formated = $date->format('F j, Y');
                         @endphp 
                          <div class="row blog-mini">

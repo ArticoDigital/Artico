@@ -15,15 +15,23 @@ class BlogCategoriesTableSeeder extends Seeder
         //
          BlogCategory::create([
             'name'=>'Desarrollo',
-            'description'=>'descripción para desarrollo'
+            'description'=>'descripción para desarrollo',
+            'slug'=>'desarrollo'
         ]);
          BlogCategory::create([
             'name'=>'3D',
-            'description'=>'descripción para 3D'
+            'description'=>'descripción para 3D',
+            'slug'=>'3d'
         ]);
          BlogCategory::create([
             'name'=>'E-learning',
-            'description'=>'descripción para e-learning'
+            'description'=>'descripción para e-learning',
+            'slug'=>'e_learning'
+        ]);
+         BlogCategory::create([
+            'name'=>'Marketing digital',
+            'description'=>'Descripción para marketing digital',
+            'slug'=>'marketing_digital'
         ]);
 
 

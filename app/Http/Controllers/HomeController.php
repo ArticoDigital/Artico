@@ -113,7 +113,7 @@ class HomeController extends Controller
     {
         $blog_categories = BlogCategory::all();
         $blog_posts = Blog::where('post_active',1)
-                ->orderBy('updated_at', 'desc')
+                ->orderBy('created_at', 'desc')
                 ->paginate(3);
         $blog_posts_viewed = Blog::where('post_active',1)
                 ->orderBy('post_views_count', 'desc')
