@@ -1,2 +1,5 @@
 User-agent: *
-Disallow:
+Disallow: /servicios/desarrollo-web
+Disallow: /servicios/desarrollo-apps
+Disallow: /servicios/marketing-digital
+Disallow: /servicios/diseño-animacion-3d

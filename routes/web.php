@@ -27,7 +27,20 @@ Route::get('/blog_categoria/{category_name}', 'HomeController@blog_category');
 Route::get('/blog/{blog}', 'HomeController@blog');
 Route::get('/blog_tag/{tag}','HomeController@searchBlogTag');
 //Route::get('/buscar', 'HomeController@searchBlog');
-    
+
+
+Route::get('servicios/desarrollo-web',function(){
+    return redirect('/servicios/desarrollo-aplicaciones-bogota');
+});
+Route::get('servicios/desarrollo-apps',function(){
+    return redirect('/servicios/desarrollo-aplicaciones-bogota');
+});
+Route::get('servicios/marketing',function(){
+    return redirect('/servicios/marketing-digital');
+});
+Route::get('servicios/diseño-3d',function(){
+    return redirect('/servicios/diseño-animacion-3d');
+});
 
 Route::get('buscar', [
     'as' => 'search',
