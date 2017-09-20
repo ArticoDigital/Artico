@@ -24,7 +24,7 @@
                 @endphp 
                 <div class="row blog-block content" itemid="{{url()->current()}}" itemscope itemtype="http://schema.org/BlogPosting">
                     <img itemprop="image" src="{{$blog->post_img}}" class="col-16" alt="">
-                    <div class="col-16">
+                    <div class="col-16 medium-16 small-16">
                         <h2 class="blog-title-single-view" itemprop="headline">{{$blog->post_title}}</h2>
                         <div><time class="thumb-date" itemprop="datePublished" content="{{$blog->created_at}}">{{$date_formated}}</time><span class="thumb-date">/<img class="inner-image" src="{{asset('img/blog-view.svg')}}"> {{$blog->post_views_count}} / <img class="inner-image" src="{{asset('img/blog-comments.svg')}}"> <a class="thumb-date" href="/blog/{{$blog->post_slug}}#disqus_thread">Comentarios</a></span></div>
                         <div class="post_content" itemprop="articleBody">{!!$blog->post_content!!} </div>
