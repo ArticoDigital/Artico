@@ -23,7 +23,7 @@
                     
                 @endphp 
                 <div class="row blog-block content" itemid="{{url()->current()}}" itemscope itemtype="http://schema.org/BlogPosting">
-                    <img itemprop="image" src="{{$blog->post_img}}" class="col-16" alt="">
+                    <img itemprop="image" src="{{$blog->post_img}}" class="col-16 medium-16 small-16" style="height: 100%;" alt="">
                     <div class="col-16 medium-16 small-16">
                         <h2 class="blog-title-single-view" itemprop="headline">{{$blog->post_title}}</h2>
                         <div><time class="thumb-date" itemprop="datePublished" content="{{$blog->created_at}}">{{$date_formated}}</time><span class="thumb-date">/<img class="inner-image" src="{{asset('img/blog-view.svg')}}"> {{$blog->post_views_count}} / <img class="inner-image" src="{{asset('img/blog-comments.svg')}}"> <a class="thumb-date" href="/blog/{{$blog->post_slug}}#disqus_thread">Comentarios</a></span></div>
@@ -73,13 +73,13 @@
                             $date = new DateTime($blog_view->created_at);
                             $date_formated = $date->format('F j, Y');
                         @endphp 
-                         <div class="row blog-mini">
+                         <div class="row middle blog-mini">
                             <div class="col-4">
                                 <div class="thumbnail">
                                     <a href="/blog/{{$blog_view->post_slug}}"><img class="portrait" src="{{$blog_view->post_img}}" alt=""></a>
                                 </div>
                             </div>
-                            <div class="col-12">
+                            <div class="col-12 small-12 medium-12" style="padding:0 5px;">
                                 <a href="/blog/{{$blog_view->post_slug}}"><span class="thumb-title">{{$blog_view->post_title}}</span></a><br>
                                 <span class="thumb-date">{{$date_formated}}</span>
                             </div>    
@@ -274,122 +274,7 @@ input:-moz-placeholder {
     </script>
         <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script>
-        particlesJS('particles-js', {
-            "particles": {
-                "number": {
-                    "value": 10,
-                    "density": {
-                        "enable": true,
-                        "value_area": 800
-                    }
-                },
-                "color": {
-                    "value": "red",
-                    "value": {r: 255, g: 255, b: 255},
-                    "value": ["#f00", "#0f0", "#00f"],
-                    "value": "random"
-                },
-                "shape": {
-                    "type": "circle",
-                    "stroke": {
-                        "width": 0,
-                        "color": "#930e0e"
-                    },
-                    "polygon": {
-                        "nb_sides": 3
-                    },
-                    "image": {
-                        "src": "img/github.svg",
-                        "width": 100,
-                        "height": 100
-                    }
-                },
-                "opacity": {
-                    "value": 0.5,
-                    "random": false,
-                    "anim": {
-                        "enable": false,
-                        "speed": 1,
-                        "opacity_min": 0.1,
-                        "sync": false
-                    }
-                },
-                "size": {
-                    "value": 5,
-                    "random": true,
-                    "anim": {
-                        "enable": false,
-                        "speed": 40,
-                        "size_min": 0.1,
-                        "sync": false
-                    }
-                },
-                "line_linked": {
-                    "enable": false,
-                    "distance": 678.6669718037544,
-                    "color": "#c83232",
-                    "opacity": 1,
-                    "width": 12.626362266116363
-                },
-                "move": {
-                    "enable": true,
-                    "speed": 6,
-                    "direction": "none",
-                    "random": false,
-                    "straight": false,
-                    "out_mode": "out",
-                    "bounce": false,
-                    "attract": {
-                        "enable": false,
-                        "rotateX": 600,
-                        "rotateY": 1200
-                    }
-                }
-            },
-            "interactivity": {
-                "detect_on": "canvas",
-                "events": {
-                    "onhover": {
-                        "enable": false,
-                        "mode": "grab"
-                    },
-                    "onclick": {
-                        "enable": false,
-                        "mode": "push"
-                    },
-                    "resize": true
-                },
-                "modes": {
-                    "grab": {
-                        "distance": 1500,
-                        "line_linked": {
-                            "opacity": 1
-                        }
-                    },
-                    "bubble": {
-                        "distance": 400,
-                        "size": 272.0458661209506,
-                        "duration": 2,
-                        "opacity": 8,
-                        "speed": 3
-                    },
-                    "repulse": {
-                        "distance": 200,
-                        "duration": 0.4
-                    },
-                    "push": {
-                        "particles_nb": 4
-                    },
-                    "remove": {
-                        "particles_nb": 2
-                    }
-                }
-            },
-            "retina_detect": true
-        });
-    </script>
+    
     <script id="dsq-count-scr" src="//artico.disqus.com/count.js" async></script>
 
 @endsection
