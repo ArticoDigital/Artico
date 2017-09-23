@@ -335,7 +335,7 @@
 
 </script>
 
-@if(config('app.debug') == 'production')
+@if(config('app.env') == 'production')
     <script>
         !function () {
             var analytics = window.analytics = window.analytics || [];
