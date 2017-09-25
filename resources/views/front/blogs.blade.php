@@ -1,5 +1,7 @@
 @extends('layouts.front')
 @section('title') Blogs @php if(isset($blog_name_category)) echo '/'.$blog_name_category; @endphp @endsection
+
+@section('title') Blogs @php if(isset($blog_name_category)) echo '/'.$blog_name_category; @endphp @endsection
 @section('header')
 
 @endsection
@@ -8,9 +10,9 @@
 
 
         <div class="header-blogs"><p class="col-16 top-menu"><a href="/blogs">Inicio</a></p>
-        <h1>Blogs @php if(isset($blog_name_category)) echo '/'.$blog_name_category; @endphp</h1></div>
+        <h1>Blog @php if(isset($blog_name_category)) echo '/'.$blog_name_category; @endphp</h1></div>
     </section>
-    
+
 
     <section id="particles-js" class="blogs-content">
         <div class="content row">
