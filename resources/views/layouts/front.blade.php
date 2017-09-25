@@ -23,7 +23,7 @@
     <meta property="og:url" content="{{ request()->fullUrl() }}"/>
     <meta property="og:title" content="@yield('title', 'Agencia de Marketing Digital Bogotá') | Ártico Digital"/>
     <meta property="og:description" content="@yield('description', 'Ártico Agencia digital en Bogotá, especializada en web, apps móviles, e-learning, diseño 3D. Posicionamos su marca con campañas en redes sociales, SEO y SEM.')"/>
-    <meta property="og:image" content="@yield('image', request()->root() . '/img/artico-red.png') "/>
+    <meta property="og:image" content="@yield('image', request()->root() . '/img/artico-red.png')"/>
     <meta property="og:image:width" content="180" />
     <meta property="og:image:height" content="180" />
     <meta property="og:locale" content="es_CO"/>
