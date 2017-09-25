@@ -1,5 +1,6 @@
 @extends('layouts.front')
 @section('title') Blog  - {{$blog->post_title}}  @endsection
+@section('image') request()->root() . $blog->post_img @endsection
 @section('header')
 
 @endsection

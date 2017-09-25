@@ -1,7 +1,7 @@
 @extends('layouts.front')
 @section('title') Blogs @php if(isset($blog_name_category)) echo '/'.$blog_name_category; @endphp @endsection
 
-@section('title') Blogs @php if(isset($blog_name_category)) echo '/'.$blog_name_category; @endphp @endsection
+
 @section('header')
 
 @endsection
