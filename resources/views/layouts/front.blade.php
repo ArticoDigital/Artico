@@ -18,17 +18,14 @@
     <meta name="ICBM" content="4.667995, -74.062052"/>
 
     <!--Facebook Tags-->
-    <meta property="og:site_name" content="@yield('title', 'Agencia de Marketing Digital Bogotá') | Ártico Digital">
-    <meta property="og:type" content="website"/>
+
+    <meta property="og:type" content="article"/>
     <meta property="og:url" content="{{ request()->fullUrl() }}"/>
-    <meta property="og:title" content="@yield('title', 'Agencia de Marketing Digital Bogotá') | Ártico Digital"/>
+    <meta property="og:title" content="@yield('title', 'Artico Digital')"/>
     <meta property="og:description" content="@yield('description', 'Ártico Agencia digital en Bogotá, especializada en web, apps móviles, e-learning, diseño 3D. Posicionamos su marca con campañas en redes sociales, SEO y SEM.')"/>
     <meta property="og:image" content="@yield('image', request()->root() . '/img/artico-red.png')"/>
-    <meta property="og:image:width" content="180" />
-    <meta property="og:image:height" content="180" />
-    <meta property="og:locale" content="es_CO"/>
-    <meta property="og:image:alt" content="Ártico Digital"/>
-    <meta property="fb:app_id" content="334440100300860"/>
+
+
 
     <!--Twitter Tags-->
     <meta name="twitter:card" content="summary"/>
