@@ -71,16 +71,7 @@
                     @slot('twitter','')
                     @slot('instagram','')
                 @endcomponent
-                @component('components.teams')
-                    @slot('image', asset('img/daniel.jpg'))
-                    @slot('name','Daniel Quintero')
-                    @slot('email','daniel@artico.io')
-                    @slot('position','DIRECTOR E-LEARNING')
-                    @slot('facebook','')
-                    @slot('youtube','')
-                    @slot('twitter','')
-                    @slot('instagram','')
-                @endcomponent
+              
                 @component('components.teams')
                     @slot('image', asset('img/doris.jpg'))
                     @slot('name','Doris Moncada')
