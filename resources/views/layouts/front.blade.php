@@ -260,7 +260,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-16 small-16 medium-16 Footer-copy">© Artico Digital S.A.S</div>
+            <div class="col-16 small-16 medium-16 Footer-copy">© Ártico Digital S.A.S</div>
         </div>
     </section>
 
