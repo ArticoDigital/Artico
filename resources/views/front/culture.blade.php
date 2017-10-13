@@ -6,11 +6,7 @@
 @section('content')
     <div class="Culture">
         <div class="Culture-header">
-            <video autoplay="autoplay" loop="loop" muted="" width="100%">
-                <source src="{{asset('video/artico.mp4')}}" type="video/mp4"/>
-                <source src="{{asset('video/artico.webm')}}" type="application/webm"/>
-                <img src="https://www.saastr.com/wp-content/uploads/2015/04/annual_2016_bg.jpg"/>
-            </video>
+            
             <div class="pattern"></div>
         </div>
         <section class="content first">
