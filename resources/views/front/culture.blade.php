@@ -6,7 +6,7 @@
 @section('content')
     <div class="Culture">
         <div class="Culture-header">
-            
+
             <div class="pattern"></div>
         </div>
         <section class="content first">

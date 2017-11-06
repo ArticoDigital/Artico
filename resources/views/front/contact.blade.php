@@ -121,12 +121,42 @@
         </div>
         <article id="Contact-selectForm">
             <ul class="Contact-selectForm row center middle small-16">
-                <li class="col-8 medium-8 small-16 {{($errors->count() && $errors->has('message'))?'':'Contact-selectFormSelect'}}" data-form="project">Planea tu proyecto</li>
-                <li class="col-8 medium-8 small-16 {{($errors->count() && $errors->has('message'))?'Contact-selectFormSelect':''}}" data-form="message">Envia un mensaje</li>
-            </ul>
+                <li class="col-8 medium-8 small-16 {{($errors->count() && $errors->has('message'))?'':'Contact-selectFormSelect'}}" data-form="message">Envia un mensaje</li>
+                <li class="col-8 medium-8 small-16 {{($errors->count() && $errors->has('message'))?'Contact-selectFormSelect':''}}" data-form="project">Planea tu proyecto</li>
+                  </ul>
 
             <div class=" Contact-contentForms">
-                <form action="{{route('contactProject')}}"  id="project" class="Contact-form {{($errors->count() && $errors->has('message'))?'form-hidden':''}}" method="post"
+                <form method="post" class=" Contact-form Contact-formMessage {{($errors->count() && $errors->has('message'))?'form-hidden':''}}" id="message"
+                      action="{{route('contactMessage')}}">
+                    {{csrf_field()}}
+                    <input type="hidden" name="type-form" value="message">
+                    <h3>Dejanos tu mensaje</h3>
+                    <hr>
+                    <div class="row between ">
+                        <div class="row col-8 medium-8 small-16">
+                            <label for="" class="col-16 medium-16 small-16 required  {{($errors->has('name')) ? 'Contact-error Error': ''}}">
+                                <input type="text" value="{{old('name')}}"  required name="name" placeholder="Nombre">
+                            </label>
+                            <label for="" class="col-16 medium-16 small-16 required {{($errors->has('email')) ? 'Contact-error Error': ''}}">
+                                <input type="email" required placeholder="Email" value="{{old('email')}}" name="email"></label>
+                            <label for="" class="col-16 medium-16 small-16 required {{($errors->has('celphone')) ? 'Contact-error Error': ''}}">
+                                <input type="text" required placeholder="Celular" value="{{old('celphone')}}" name="celphone">
+                            </label>
+                        </div>
+                        <div class="row col-8 medium-8  small-16">
+                            @if ($errors->has('summary'))
+                                <div class="Contact-errorType Error  col-16 small-16 medium-16">
+                                    ¡Para nosotros es muy importante que nos quieres contar!
+                                </div>
+                            @endif
+                            <label for="" class="col-16 medium-16 small-16 required">
+                                <textarea required name="summary"  placeholder="Escribe tu mensaje">{{old('summary')}}</textarea>
+                            </label>
+                        </div>
+                    </div>
+                    <button class="button  Contact-formButton">ENVIAR SOLICITUD</button>
+                </form>
+                <form action="{{route('contactProject')}}"  id="project" class="Contact-form {{($errors->count() && $errors->has('message'))?'':'form-hidden'}}" method="post"
                       enctype="multipart/form-data">
                     {{csrf_field()}}
                     <input type="hidden" name="type-form" value="budget">
@@ -291,36 +321,7 @@
                     </fieldset>
 
                 </form>
-                <form method="post" class=" Contact-form Contact-formMessage {{($errors->count() && $errors->has('message'))?'':'form-hidden'}}" id="message"
-                      action="{{route('contactMessage')}}">
-                    {{csrf_field()}}
-                    <input type="hidden" name="type-form" value="message">
-                    <h3>Dejanos tu mensaje</h3>
-                    <hr>
-                    <div class="row between ">
-                        <div class="row col-8 medium-8 small-16">
-                            <label for="" class="col-16 medium-16 small-16 required  {{($errors->has('name')) ? 'Contact-error Error': ''}}">
-                                <input type="text" value="{{old('name')}}"  required name="name" placeholder="Nombre">
-                            </label>
-                            <label for="" class="col-16 medium-16 small-16 required {{($errors->has('email')) ? 'Contact-error Error': ''}}">
-                                <input type="email" required placeholder="Email" value="{{old('email')}}" name="email"></label>
-                            <label for="" class="col-16 medium-16 small-16 required {{($errors->has('celphone')) ? 'Contact-error Error': ''}}">
-                                <input type="text" required placeholder="Celular" value="{{old('celphone')}}" name="celphone">
-                            </label>
-                        </div>
-                        <div class="row col-8 medium-8  small-16">
-                            @if ($errors->has('summary'))
-                                <div class="Contact-errorType Error  col-16 small-16 medium-16">
-                                    ¡Para nosotros es muy importante que nos quieres contar!
-                                </div>
-                            @endif
-                            <label for="" class="col-16 medium-16 small-16 required">
-                                <textarea required name="summary"  placeholder="Escribe tu mensaje">{{old('summary')}}</textarea>
-                            </label>
-                        </div>
-                    </div>
-                    <button class="button  Contact-formButton">ENVIAR SOLICITUD</button>
-                </form>
+
             </div>
         </article>
 
