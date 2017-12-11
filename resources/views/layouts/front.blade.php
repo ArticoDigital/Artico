@@ -294,7 +294,7 @@
         <hr>
         <p>
             @if(Session::has('promo'))
-                Hemos registrado el Bono 978979 a tu nombre, recuerda que lo puedes redimir en cualquier momento hasta
+                Hemos registrado el Bono {{session('promo')}} a tu nombre, recuerda que lo puedes redimir en cualquier momento hasta
                 el 28 de Febrero de 2018
             @else
                 Diligencia el formulario y reclama el bono de descuento del 25% en el desarrollo de tu página web
