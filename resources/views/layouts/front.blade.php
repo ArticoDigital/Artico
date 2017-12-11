@@ -590,13 +590,17 @@
 
     const modalPromo = document.querySelector('#modal-promo'),
         modalPromoClose = document.querySelector('#modal-promo-close'),
-        modalPromoShow = document.querySelector('#modal-promo-show')
-    ;modalPromoClose.addEventListener('click', function () {
+        modalPromoShow = document.querySelector('#modal-promo-show');
+
+    modalPromoClose.addEventListener('click', function () {
         modalPromo.classList.remove('show')
     });
-    modalPromoShow.addEventListener('click', function () {
-        modalPromo.classList.add('show')
-    });
+    if(modalPromoShow){
+
+        modalPromoShow.addEventListener('click', function () {
+            modalPromo.classList.add('show')
+        });
+    }
 
 
     const btnMenu = document.querySelector('#Menu'),
