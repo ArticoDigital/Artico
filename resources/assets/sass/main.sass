@@ -312,18 +312,19 @@
   border-right: rem(24) solid white
   height: 100vh
   &.min
-    transform: translate(22px, 29px) scale(.8) !important
-    height: 281px
+    transform: translate(22px, 29px) scale(.5) !important
+    height: 286px
   svg
     position: absolute
     right: rem(-20)
+    top: 50%
     &.message
       right: 8px
-      top: calc(50% - 300px)
+      top: calc(50% - 180px);
   &.min
     button
       right: 80px
-      top: calc(50% + 50px)
+      top: calc(50% + 136px)
   button
     font-family: 'Play', sans-serif
     position: absolute
@@ -334,11 +335,12 @@
     text-align: center
     font-size: 18px
     color: white
-    right: 110px
-    top: calc(50% + 24px)
+    right: 96px
+    top: calc(50% + 140px)
     z-index: 100
     cursor: pointer
     max-width: 136px
+    background: #5e89e0
 .section-topPage.animation-3d
   margin-top: rem(40) !important
 
