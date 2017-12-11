@@ -559,7 +559,7 @@
         </div>
 
 
-        <p style="font-size: 14px">El bono podrá se redimido entre el 5 de Enero de 2018 y el 28 de Febrero de 2018</p>
+        <p style="font-size: 14px">El bono podrá ser redimido entre el 10 de diciembre de 2017 y el 28 de febrero de 2018.</p>
     </div>
 </div>
 <script defer src="https://cdn.jsdelivr.net/sweetalert2/6.6.1/sweetalert2.min.js"></script>
