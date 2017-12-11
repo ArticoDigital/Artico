@@ -56,3 +56,12 @@ Route::post('/contactMessage', [
     'as' => 'contactMessage',
     'uses' => 'HomeController@contactMessage'
 ]);
+
+
+Route::get('like', function(SammyK\LaravelFacebookSdk\LaravelFacebookSdk $fb) {
+    $login_link = $fb
+        ->getRedirectLoginHelper()
+        ->getLoginUrl('https://exmaple.com/facebook/callback', ['email', 'user_events']);
+
+    echo '<a href="' . $login_link . '">Log in with Facebook</a>';
+});

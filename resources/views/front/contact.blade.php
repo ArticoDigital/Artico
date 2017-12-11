@@ -4,6 +4,7 @@
 
 @endsection
 @section('content')
+
     <div id="map"></div>
 
     <section class="container Contact">

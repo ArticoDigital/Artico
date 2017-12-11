@@ -5,13 +5,13 @@ namespace App\Http\Controllers;
 use App\Http\Requests\ContactBudgetRequest;
 use App\Http\Requests\ContactMessageRequest;
 use App\Mail\NewForm;
+use App\Models\Blog;
+use App\Models\BlogCategory;
 use App\Models\Form;
-use App\Models\Image;
 use App\Models\Message;
 use App\Models\Portfolio;
-use App\Models\BlogCategory;
-use App\Models\Blog;
 use Carbon\Carbon;
+use Dirape\Token\Token;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -66,74 +66,78 @@ class HomeController extends Controller
     {
         return view('front.culture');
     }
-     public function blog_category(BlogCategory $category_name)
+
+    public function blog_category(BlogCategory $category_name)
     {
         //dd($category_name);
         $blog_name_category = $category_name->name;
         $blog_categories = BlogCategory::all();
-        $blog_posts = Blog::where('post_active',1)->where('blog_category_id',$category_name->id)
-                ->orderBy('updated_at', 'desc')
-                ->paginate(4);
-        $blog_posts_viewed = Blog::where('post_active',1)->where('blog_category_id',$category_name->id)
-                ->orderBy('post_views_count', 'desc')
-                ->limit(3)
-                ->get();
-        return view('front.blogs', compact('blog_categories', 'blog_posts','blog_posts_viewed','blog_name_category'));
-    }
-    public function searchBlogTag($tags){
-        
-        $blog_name_category = "TAG:".$tags;
-         $blog_categories = BlogCategory::all();
-        $blog_posts = Blog::where('post_active',1)->where('post_tags', 'like','%' . $tags.'%')
-                ->orderBy('updated_at', 'desc')
-                ->paginate(4);
-        $blog_posts_viewed = Blog::where('post_active',1)
-                ->orderBy('post_views_count', 'desc')
-                ->limit(3)
-                ->get();
-        return view('front.blogs', compact('blog_categories', 'blog_posts','blog_posts_viewed','blog_name_category'));
+        $blog_posts = Blog::where('post_active', 1)->where('blog_category_id', $category_name->id)
+            ->orderBy('updated_at', 'desc')
+            ->paginate(4);
+        $blog_posts_viewed = Blog::where('post_active', 1)->where('blog_category_id', $category_name->id)
+            ->orderBy('post_views_count', 'desc')
+            ->limit(3)
+            ->get();
+        return view('front.blogs', compact('blog_categories', 'blog_posts', 'blog_posts_viewed', 'blog_name_category'));
     }
 
-    public function searchBlog(Request $request){
-        
-         $searchfor=$request->get('searchfor');
-         
-         $blog_categories = BlogCategory::all();
-        $blog_posts = Blog::where('post_active',1)->where('post_content', 'like','%' . $searchfor.'%')
-                ->orderBy('updated_at', 'desc')
-                ->paginate(4);
-        $blog_posts_viewed = Blog::where('post_active',1)
-                ->orderBy('post_views_count', 'desc')
-                ->limit(3)
-                ->get();
-        return view('front.blogs', compact('blog_categories', 'blog_posts','blog_posts_viewed'));
+    public function searchBlogTag($tags)
+    {
+
+        $blog_name_category = "TAG:" . $tags;
+        $blog_categories = BlogCategory::all();
+        $blog_posts = Blog::where('post_active', 1)->where('post_tags', 'like', '%' . $tags . '%')
+            ->orderBy('updated_at', 'desc')
+            ->paginate(4);
+        $blog_posts_viewed = Blog::where('post_active', 1)
+            ->orderBy('post_views_count', 'desc')
+            ->limit(3)
+            ->get();
+        return view('front.blogs', compact('blog_categories', 'blog_posts', 'blog_posts_viewed', 'blog_name_category'));
+    }
+
+    public function searchBlog(Request $request)
+    {
+
+        $searchfor = $request->get('searchfor');
+
+        $blog_categories = BlogCategory::all();
+        $blog_posts = Blog::where('post_active', 1)->where('post_content', 'like', '%' . $searchfor . '%')
+            ->orderBy('updated_at', 'desc')
+            ->paginate(4);
+        $blog_posts_viewed = Blog::where('post_active', 1)
+            ->orderBy('post_views_count', 'desc')
+            ->limit(3)
+            ->get();
+        return view('front.blogs', compact('blog_categories', 'blog_posts', 'blog_posts_viewed'));
     }
 
     public function blogs()
     {
         $blog_categories = BlogCategory::all();
-        $blog_posts = Blog::where('post_active',1)
-                ->orderBy('created_at', 'desc')
-                ->paginate(3);
-        $blog_posts_viewed = Blog::where('post_active',1)
-                ->orderBy('post_views_count', 'desc')
-                ->limit(3)
-                ->get();
-        return view('front.blogs', compact('blog_categories', 'blog_posts','blog_posts_viewed'));
+        $blog_posts = Blog::where('post_active', 1)
+            ->orderBy('created_at', 'desc')
+            ->paginate(3);
+        $blog_posts_viewed = Blog::where('post_active', 1)
+            ->orderBy('post_views_count', 'desc')
+            ->limit(3)
+            ->get();
+        return view('front.blogs', compact('blog_categories', 'blog_posts', 'blog_posts_viewed'));
     }
+
     public function blog(Blog $blog)
     {
         //dd($blog);
         $blog_categories = BlogCategory::all();
-         $blog_posts_viewed = Blog::where('post_active',1)
-                ->orderBy('post_views_count', 'desc')
-                ->limit(3)
-                ->get();
-        
-        $blog->increment('post_views_count');
-        return view('front.blog', compact('blog','blog_categories','blog_posts_viewed'));
-    }
+        $blog_posts_viewed = Blog::where('post_active', 1)
+            ->orderBy('post_views_count', 'desc')
+            ->limit(3)
+            ->get();
 
+        $blog->increment('post_views_count');
+        return view('front.blog', compact('blog', 'blog_categories', 'blog_posts_viewed'));
+    }
 
 
     public function contactProject(ContactBudgetRequest $request)
@@ -148,7 +152,13 @@ class HomeController extends Controller
 
     public function contactMessage(ContactMessageRequest $request)
     {
-        $this->sendMessage($request);
+
+        $data = $this->sendMessage($request);
+
+        if ($request->input('promo'))
+            return back()->with('promo', $data['code']);
+
+
         return redirect('/')->with(['messageModal' => [
             'title' => '¡Excelente!',
             'text' => "!Hemos recibido tu mensaje, ya lo estamos leyendo en breve nos contactaremos contigo!",
@@ -160,8 +170,14 @@ class HomeController extends Controller
     {
         $image = ($request->hasFile('attached')) ? $request->file('attached')->store('forms', 'public') : '';
         $data = $request->all();
+        if ($request->input('promo')){
+            $t = new Token;
+            $data['code'] = $t->Unique('forms', 'code', 4 );
+        }
+
         $data['attached'] = $image;
         $form = Form::create($data);
         \Mail::to('hola@artico.io')->send(new NewForm($form));
+        return $data;
     }
 }
