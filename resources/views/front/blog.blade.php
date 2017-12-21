@@ -259,6 +259,10 @@ input:-moz-placeholder {
         list-style-image: inherit;
         list-style-position: inherit;
 }
+
+.post_content a{
+  color: #538BF4;
+}
 </style>
     <script>
 
