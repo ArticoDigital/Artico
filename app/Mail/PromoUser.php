@@ -30,7 +30,6 @@ class PromoUser extends Mailable
     public function build()
     {
         return $this->subject('🎄¡PROMOCIÓN NAVIDEÑA!🤶')->
-        from('hola@artico.io')->
         view('emails.promo');
 
     }
