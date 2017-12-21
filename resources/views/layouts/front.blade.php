@@ -25,7 +25,7 @@
     <meta property="og:title" content="@yield('title', 'Artico Digital')"/>
     <meta property="og:description"
           content="@yield('description', 'Ártico Agencia digital en Bogotá, especializada en web, apps móviles, e-learning, diseño 3D. Posicionamos su marca con campañas en redes sociales, SEO y SEM.')"/>
-    <meta property="og:image" content="@yield('image', request()->root() . '/img/artico-red.png')"/>
+    <meta property="og:image" content="@yield('image',  'artico.io/img/artico-red.png')"/>
 
 
     <!--Twitter Tags-->
