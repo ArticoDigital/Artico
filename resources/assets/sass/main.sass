@@ -311,8 +311,11 @@
   right: 0
   border-right: rem(24) solid white
   height: 100vh
+
   &.min
-    transform: translate(22px, 29px) scale(.5) !important
+    transform: translate(22px, 30px) scale(.5) !important
+    @include respond-to(medium)
+      transform: translate(22px, -40px) scale(.6) !important
     height: 286px
   svg
     position: absolute
@@ -320,7 +323,7 @@
     top: 50%
     &.message
       right: 8px
-      top: calc(50% - 180px);
+      top: calc(50% - 180px)
   &.min
     button
       right: 80px

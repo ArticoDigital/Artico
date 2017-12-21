@@ -541,8 +541,7 @@
                             </div>
                             <div class="checkbox">
                                 <input type="checkbox" name="newsletter" id="newsletter">
-                                <label for="newsletter"> Inscibir a
-                                    newsletter</label>
+                                <label for="newsletter"> Inscibir a newsletter</label>
                             </div>
                             <div class="checkbox">
                                 <input type="checkbox" name="terms" id="terms">
@@ -559,7 +558,7 @@
         </div>
 
 
-        <p style="font-size: 14px">El bono podrá ser redimido entre el 10 de diciembre de 2017 y el 28 de febrero de 2018.</p>
+        <p style="font-size: 14px">El bono podrá ser redimido entre el 5 de Enero y el 5 de Marzo de 2018 con tarifas de 2017. Aplican condiciones y restricciones</p>
     </div>
 </div>
 <script defer src="https://cdn.jsdelivr.net/sweetalert2/6.6.1/sweetalert2.min.js"></script>

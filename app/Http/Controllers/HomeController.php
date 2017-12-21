@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\ContactBudgetRequest;
 use App\Http\Requests\ContactMessageRequest;
 use App\Mail\NewForm;
+use App\Mail\PromoUser;
 use App\Models\Blog;
 use App\Models\BlogCategory;
 use App\Models\Form;
@@ -173,6 +174,7 @@ class HomeController extends Controller
         if ($request->input('promo')){
             $t = new Token;
             $data['code'] = $t->Unique('forms', 'code', 4 );
+            \Mail::to($data['name'])->send(new PromoUser($data));
         }
 
         $data['attached'] = $image;
