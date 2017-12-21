@@ -29,8 +29,6 @@ class PromoUser extends Mailable
      */
     public function build()
     {
-        return $this->subject('🎄¡PROMOCIÓN NAVIDEÑA!🤶')->
-        view('emails.promo');
-
+        return $this->subject('🎄¡PROMOCIÓN NAVIDEÑA!🤶')->view('emails.promo');
     }
 }

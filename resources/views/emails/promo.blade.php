@@ -92,7 +92,7 @@
                             <p class="text p" style="display: block; margin: 14px 0; font-family: Helvetica,Arial,sans-serif; font-size: 16px; line-height: 20px; color: #3B3B3B; font-weight: 500; text-align: justify;">¡Felicitaciones! ya tienes tu bono de descuento por el 25% en cualquiera de nuestros productos, recuerda que podrá ser redimido entre el 5 de Enero y el 5 de Marzo de 2018 con tarifas de 2017. Aplican condiciones y restricciones.</p>
                             <p class="text p" style="display: block; margin: 14px 0; font-family: Helvetica,Arial,sans-serif; font-size: 16px; line-height: 20px; color: #3B3B3B; font-weight: 500; text-align: justify;"> Tu número de bono es: <b>{{$data['code']}} </b></p>
                             <p class="text p" style="display: block; margin: 14px 0; font-family: Helvetica,Arial,sans-serif; font-size: 16px; line-height: 20px; color: #3B3B3B; font-weight: 500; text-align: justify;">
-                                Pronto nos estaremos comunicando. Si tienes alguna duda, puedes comunicarte al 💌 correo hola@artico.io o al ☎ número 22 775 3537 </p>
+                                Pronto nos estaremos comunicando. Si tienes alguna duda, puedes comunicarte al 💌 correo hola@artico.io o al ☎ número 322 775 3537 </p>
                         </td>
                     </tr>
                 </table> <!--[if mso | IE]> </td>
