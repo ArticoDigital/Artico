@@ -21,7 +21,8 @@
     <!--Facebook Tags-->
 
     <meta property="og:type" content="article"/>
-    <meta property="og:url" content="{{ request()->fullUrl() }}"/>
+    <meta property="og:type" content="article"/>
+    <meta property="fb:app_id" content="334440100300860"/>
     <meta property="og:title" content="@yield('title', 'Artico Digital')"/>
     <meta property="og:description"
           content="@yield('description', 'Ártico Agencia digital en Bogotá, especializada en web, apps móviles, e-learning, diseño 3D. Posicionamos su marca con campañas en redes sociales, SEO y SEM.')"/>
