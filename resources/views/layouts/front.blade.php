@@ -541,7 +541,7 @@
                                 <span> <b>BONO</b> <br>DESCUESTO</span>
                             </div>
                             <div class="checkbox">
-                                <input type="checkbox" name="newsletter" id="newsletter">
+                                <input type="checkbox" name="newsletter" value="1" id="newsletter">
                                 <label for="newsletter"> Inscibir a newsletter</label>
                             </div>
                             <div class="checkbox">
