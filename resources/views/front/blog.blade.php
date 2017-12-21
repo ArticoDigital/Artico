@@ -253,7 +253,12 @@ input:-moz-placeholder {
    border-left-color: crimson; 
 }
 
-
+.post_content li {
+    list-style: inherit !important;
+        list-style-type: inherit;
+        list-style-image: inherit;
+        list-style-position: inherit;
+}
 </style>
     <script>
 
