@@ -27,6 +27,9 @@
     <meta property="og:description"
           content="@yield('description', 'Ártico Agencia digital en Bogotá, especializada en web, apps móviles, e-learning, diseño 3D. Posicionamos su marca con campañas en redes sociales, SEO y SEM.')"/>
     <meta property="og:image" content="@yield('image','https://artico.io/img/artico-facebook.jpg')"/>
+    <meta property="og:image:secure_url" content="@yield('image','https://artico.io/img/artico-facebook.jpg')"/>
+    <meta property="og:image:width" content="698" />
+    <meta property="og:image:height" content="522" />
 
 
     <!--Twitter Tags-->
