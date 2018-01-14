@@ -6,9 +6,7 @@
     <section class="section-topPage row center middle wedo-top animation-3d">
         <h1>Diseño y animación 3D</h1>
         <div class="promo-navidad row middle min">
-
             <svg width="140px" height="220px" viewBox="0 0 140 220" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
                 <desc>Created with Sketch.</desc>
                 <defs>
                     <radialGradient cx="92.2823699%" cy="56.6410369%" fx="92.2823699%" fy="56.6410369%" r="90.6862045%" gradientTransform="translate(0.922824,0.566410),scale(0.815556,1.000000),translate(-0.922824,-0.566410)" id="radialGradient-1">
