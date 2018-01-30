@@ -18,6 +18,12 @@
     <meta name="geo.position" content="4.667995;-74.062052"/>
     <meta name="ICBM" content="4.667995, -74.062052"/>
 
+
+    <!-- Google / Search Engine Tags -->
+    <meta itemprop="name" content="@yield('title', 'Agencia de Marketing Digital Bogotá') | Ártico Digital">
+    <meta itemprop="description" content="@yield('description', 'Ártico Agencia digital en Bogotá, especializada en web, apps móviles, e-learning, diseño 3D. Posicionamos su marca con campañas en redes sociales, SEO y SEM.')">
+    <meta itemprop="image" content="@yield('image','https://artico.io/img/artico-digital.jpg')">
+
     <!--Facebook Tags-->
 
     <meta property="og:type" content="article"/>
@@ -33,12 +39,12 @@
     <meta property="og:image:height" content="522" />
 
     <!--Twitter Tags-->
-    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="{{ '@articodigital'  }}"/>
     <meta name="twitter:title" content="@yield('title', 'Agencia de Marketing Digital Bogotá') | Ártico Digital"/>
     <meta name="twitter:description"
           content="@yield('description', 'Ártico Agencia digital en Bogotá, especializada en web, apps móviles, e-learning, diseño 3D. Posicionamos su marca con campañas en redes sociales, SEO y SEM.')"/>
-    <meta name="twitter:image" content="{{ request()->root() }}/img/artico-twitter.jpg"/>
+    <meta name="twitter:image" content="@yield('image','https://artico.io/img/artico-digital.jpg')"/>
 
 
     <link rel="apple-touch-icon" sizes="57x57" href="{{asset('img/ico/apple-icon-57x57.png')}}">
@@ -679,11 +685,11 @@ n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window,document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
- fbq('init', '581549115518673'); 
+ fbq('init', '581549115518673');
 fbq('track', 'PageView');
 </script>
 <noscript>
- <img height="1" width="1" 
+ <img height="1" width="1"
 src="https://www.facebook.com/tr?id=581549115518673&ev=PageView
 &noscript=1"/>
 </noscript>
