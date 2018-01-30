@@ -40,7 +40,7 @@
 
     <!--Twitter Tags-->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="{{ '@articodigital'  }}"/>
+    <meta name="twitter:site" content="{{ '@artico_digital'  }}"/>
     <meta name="twitter:title" content="@yield('title', 'Agencia de Marketing Digital Bogotá') | Ártico Digital"/>
     <meta name="twitter:description"
           content="@yield('description', 'Ártico Agencia digital en Bogotá, especializada en web, apps móviles, e-learning, diseño 3D. Posicionamos su marca con campañas en redes sociales, SEO y SEM.')"/>
