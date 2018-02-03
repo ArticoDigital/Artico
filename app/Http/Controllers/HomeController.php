@@ -78,7 +78,7 @@ class HomeController extends Controller
             ->paginate(4);
         $blog_posts_viewed = Blog::where('post_active', 1)->where('blog_category_id', $category_name->id)
             ->orderBy('post_views_count', 'desc')
-            ->limit(3)
+            ->limit(4)
             ->get();
         return view('front.blogs', compact('blog_categories', 'blog_posts', 'blog_posts_viewed', 'blog_name_category'));
     }
@@ -93,7 +93,7 @@ class HomeController extends Controller
             ->paginate(4);
         $blog_posts_viewed = Blog::where('post_active', 1)
             ->orderBy('post_views_count', 'desc')
-            ->limit(3)
+            ->limit(4)
             ->get();
         return view('front.blogs', compact('blog_categories', 'blog_posts', 'blog_posts_viewed', 'blog_name_category'));
     }
@@ -109,7 +109,7 @@ class HomeController extends Controller
             ->paginate(4);
         $blog_posts_viewed = Blog::where('post_active', 1)
             ->orderBy('post_views_count', 'desc')
-            ->limit(3)
+            ->limit(4)
             ->get();
         return view('front.blogs', compact('blog_categories', 'blog_posts', 'blog_posts_viewed'));
     }
@@ -119,10 +119,10 @@ class HomeController extends Controller
         $blog_categories = BlogCategory::all();
         $blog_posts = Blog::where('post_active', 1)
             ->orderBy('created_at', 'desc')
-            ->paginate(3);
+            ->paginate(5);
         $blog_posts_viewed = Blog::where('post_active', 1)
             ->orderBy('post_views_count', 'desc')
-            ->limit(3)
+            ->limit(4)
             ->get();
         return view('front.blogs', compact('blog_categories', 'blog_posts', 'blog_posts_viewed'));
     }
@@ -133,7 +133,7 @@ class HomeController extends Controller
         $blog_categories = BlogCategory::all();
         $blog_posts_viewed = Blog::where('post_active', 1)
             ->orderBy('post_views_count', 'desc')
-            ->limit(3)
+            ->limit(4)
             ->get();
 
         $blog->increment('post_views_count');
